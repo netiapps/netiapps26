@@ -1,0 +1,93 @@
+.productBanner {
+    padding: 120px 0 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pillBadge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 999px;
+    padding: 4px 6px 4px 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 35px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    }
+}
+
+.pillText {
+    margin-right: 12px;
+}
+
+.pillIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18191b;
+    color: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+
+    @media (max-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+.gradientText {
+    background: linear-gradient(to right, #f6e8ff 0%, #c496f8 40%, #8765e9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #a1a1aa;
+    /* Light grayish/neutral text */
+    line-height: 1.6;
+    font-weight: 400;
+
+    @media (max-width: 768px) {
+        font-size: 1.1rem;
+
+        .desktopBr {
+            display: none;
+        }
+    }
+}
