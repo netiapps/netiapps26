@@ -1,93 +1,135 @@
-.productBanner {
-    padding: 120px 0 100px;
-    text-align: center;
+.heroSection {
+    background-color: #FFF4D9;
+    /* Soft warm beige from image */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 400px;
-}
+    position: relative;
+    padding-top: 130px;
+    /* Space for the navbar */
+    padding-bottom: 60px;
+    overflow: hidden;
 
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pillBadge {
-    display: inline-flex;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 999px;
-    padding: 4px 6px 4px 20px;
-    text-decoration: none;
-    color: #1a1a1a;
-    font-weight: 600;
-    font-size: 0.875rem;
-    margin-bottom: 35px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
-
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    @media (max-width: 992px) {
+        padding-top: 110px;
     }
 }
 
-.pillText {
-    margin-right: 12px;
-}
-
-.pillIcon {
+.brandTitle {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #18191b;
-    color: white;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
+    margin-bottom: 2rem;
+}
 
-    svg {
-        width: 14px;
-        height: 14px;
+.iconBox {
+    margin-right: 15px;
+
+    img {
+        width: 60px;
+        height: auto;
+        border-radius: 8px;
+        /* Depending on the transparent icon, adjust if needed */
     }
 }
 
-.title {
-    font-size: 4.5rem;
+.brandText {
+    display: flex;
+    flex-direction: column;
+}
+
+.productName {
+    font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 24px;
-    line-height: 1.1;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.companyName {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.mainTitle {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.15;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
 
+    @media (max-width: 1200px) {
+        font-size: 2.4rem;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 2.1rem;
+
+        br {
+            display: none;
+        }
+    }
+
     @media (max-width: 768px) {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
 }
 
-.gradientText {
-    background: linear-gradient(to right, #f6e8ff 0%, #c496f8 40%, #8765e9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+
+    br {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
 }
 
-.subtitle {
-    font-size: 1.25rem;
-    color: #a1a1aa;
-    /* Light grayish/neutral text */
-    line-height: 1.6;
-    font-weight: 400;
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 
-    @media (max-width: 768px) {
-        font-size: 1.1rem;
+.btnPrimary {
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-        .desktopBr {
-            display: none;
+    &:hover {
+        background-color: transparent;
+        color: #000;
+    }
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .heroImage {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        transform: scale(1.05);
+        /* Make the image slightly bigger to match the mock */
+
+        @media (max-width: 992px) {
+            transform: none;
         }
     }
 }
