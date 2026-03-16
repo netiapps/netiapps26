@@ -7,14 +7,14 @@ import Image from 'next/image';
 import styles from './Navbar.module.scss';
 import SearchOverlay from '@/components/SearchOverlay';
 import { ChevronDown, Menu, X, Phone } from 'lucide-react';
-import { Language } from "@/types/language";
+
 import { getMediaUrl } from "@/lib/media";
 
 // Navigation data structure
 
 export default function Navbar(nav: any) {
     // console.log('Nav',nav);
-    const { language, setLanguage, translate } = useLanguage();
+    const { language, translate } = useLanguage();
     const [translatedNav, setTranslatedNav] = useState<any>(null);
 
     // const originalNav = nav.nav.navigation_data;
@@ -81,24 +81,7 @@ export default function Navbar(nav: any) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
 
-    // Language Dropdown State
-    const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
 
-    const languages: { code: Language; name: string; countryCode: string }[] = [
-        { code: "EN", name: "English", countryCode: "us" },
-        { code: "FR", name: "French", countryCode: "fr" },
-        { code: "DE", name: "German", countryCode: "de" },
-        { code: "NL", name: "Dutch", countryCode: "nl" },
-        { code: "PT", name: "Portuguese", countryCode: "pt" },
-        { code: "IT", name: "Italian", countryCode: "it" },
-        { code: "ES", name: "Spanish", countryCode: "es" },
-        { code: "PL", name: "Polish", countryCode: "pl" },
-        { code: "SE", name: "Swedish", countryCode: "se" },
-        { code: "FI", name: "Finnish", countryCode: "fi" },
-    ];
-
-    // const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
-    const selectedLanguage = languages.find((l) => l.code === language) || languages[0];
 
 
     const handleMouseEnter = (menu: string) => {
@@ -200,54 +183,6 @@ export default function Navbar(nav: any) {
 
                     {/* Right Section Actions */}
                     <div className={styles.actionsSection}>
-                        <div
-                            className={styles.languageSelector}
-                            onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-                            ref={(node) => {
-                                // Close dropdown when clicking outside logic could be added here or via a global click listener if needed
-                                // For simplicity we toggle on click
-                            }}
-                        >
-                            <span className="me-2 d-flex align-items-center">
-                                <img
-                                    src={`https://flagcdn.com/w40/${selectedLanguage.countryCode}.png`}
-                                    srcSet={`https://flagcdn.com/w80/${selectedLanguage.countryCode}.png 2x`}
-                                    width="20"
-                                    alt={selectedLanguage.name}
-                                    style={{ borderRadius: '2px', objectFit: 'cover' }}
-                                />
-                            </span>
-                            <span className="ms-1">{selectedLanguage.code}</span>
-                            <ChevronDown size={12} className="ms-1" />
-
-                            <div className={`${styles.languageDropdown} ${isLangDropdownOpen ? styles.open : ''}`}>
-                                <ul>
-                                    {languages.map((lang) => (
-                                        <li
-                                            key={lang.code}
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                // setSelectedLanguage(lang);
-                                                setLanguage(lang.code);
-                                                setIsLangDropdownOpen(false);
-                                            }}
-                                        >
-                                            <span className="me-2 d-flex align-items-center">
-                                                <img
-                                                    src={`https://flagcdn.com/w40/${lang.countryCode}.png`}
-                                                    srcSet={`https://flagcdn.com/w80/${lang.countryCode}.png 2x`}
-                                                    width="20"
-                                                    alt={lang.name}
-                                                    style={{ borderRadius: '2px', objectFit: 'cover' }}
-                                                />
-                                            </span>
-                                            {lang.name}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
 
                         <Link href={navigationData.contact.link} className={styles.contactBtn}>
                             <span className="d-none d-lg-block">{navigationData.contact.name}</span>
@@ -270,53 +205,6 @@ export default function Navbar(nav: any) {
             <div className={`${styles.mobileMenuOverlay} ${isMobileMenuOpen ? styles.open : ''}`}>
                 <div className="container">
                     <ul className={styles.mobileNavList}>
-                        {/* Mobile Language Selector */}
-                        <li className={styles.mobileNavItem}>
-                            <div className={styles.mobileNavHeader} onClick={() => toggleMobileAccordion('language')}>
-                                <div className="d-flex align-items-center">
-                                    <span className="me-2 d-flex align-items-center">
-                                        <img
-                                            src={`https://flagcdn.com/w40/${selectedLanguage.countryCode}.png`}
-                                            srcSet={`https://flagcdn.com/w80/${selectedLanguage.countryCode}.png 2x`}
-                                            width="20"
-                                            alt={selectedLanguage.name}
-                                            style={{ borderRadius: '2px', objectFit: 'cover' }}
-                                        />
-                                    </span>
-                                    <span>{selectedLanguage.name}</span>
-                                </div>
-                                <ChevronDown size={16} className={expandedMobileMenu === 'language' ? styles.rotate : ''} />
-                            </div>
-                            <div className={`${styles.mobileSubMenu} ${expandedMobileMenu === 'language' ? styles.open : ''}`}>
-                                <ul>
-                                    {languages.map((lang) => (
-                                        <li
-                                            key={lang.code}
-                                            onClick={() => {
-                                                setLanguage(lang.code);
-                                                toggleMobileMenu();
-                                            }}
-                                            style={{ cursor: 'pointer', padding: '0.8rem 0' }}
-                                        >
-                                            <div className="d-flex align-items-center">
-                                                <span className="me-2 d-flex align-items-center">
-                                                    <img
-                                                        src={`https://flagcdn.com/w40/${lang.countryCode}.png`}
-                                                        srcSet={`https://flagcdn.com/w80/${lang.countryCode}.png 2x`}
-                                                        width="20"
-                                                        alt={lang.name}
-                                                        style={{ borderRadius: '2px', objectFit: 'cover' }}
-                                                    />
-                                                </span>
-                                                <span style={{ color: lang.code === selectedLanguage.code ? '#E30613' : '#555', fontSize: '1rem' }}>
-                                                    {lang.name}
-                                                </span>
-                                            </div>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </li>
 
                         <li>
                             <Link href={navigationData.home.link} onClick={toggleMobileMenu}>
