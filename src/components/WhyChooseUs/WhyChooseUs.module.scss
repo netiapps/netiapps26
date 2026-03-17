@@ -1,126 +1,107 @@
-.section {
-    padding: 0 0;
-    background-color: transparent; // Uses global #F1F0EE
-    overflow: hidden;
+.whyChooseUsSection {
+    background-color: #000000;
+    /* Subtle radial gradient to mimic the design glow */
+    background: radial-gradient(circle at center, #0a0a2a 0%, #000000 70%);
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pillBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 6px 20px;
+    border-radius: 50px;
+    border: 1px solid #fca000;
+    margin-bottom: 25px;
 }
 
 .title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 3.5rem;
-    padding-left: 15px;
-}
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
 
-.scrollWrapper {
-    width: 100%;
-    overflow-x: auto;
-    padding: 2rem 0 4rem;
-    cursor: grab;
-    user-select: none;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-
-    &::-webkit-scrollbar {
-        display: none;
-        /* Chrome, Safari and Opera */
-    }
-
-    &:active {
-        cursor: grabbing;
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
     }
 }
 
-.cardsRow {
+.gridContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridItem {
+    padding: 40px;
     display: flex;
-    gap: 2rem;
-    width: max-content;
-    padding-left: calc((100vw - 1320px) / 2 + 15px); // Align with container start
-    padding-right: 2rem;
-
-    @media (max-width: 1400px) {
-        padding-left: calc((100vw - 1140px) / 2 + 15px);
+    flex-direction: column;
+    
+    /* Cross borders */
+    &:nth-child(1) {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-
-    @media (max-width: 1200px) {
-        padding-left: calc((100vw - 960px) / 2 + 15px);
+    
+    &:nth-child(2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-
-    @media (max-width: 991px) {
-        padding-left: calc((100vw - 720px) / 2 + 15px);
+    
+    &:nth-child(3) {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    &:nth-child(4) {
+        /* No borders for bottom right */
     }
 
     @media (max-width: 768px) {
-        padding-left: 20px;
+        /* Reset borders on mobile */
+        padding: 30px 20px;
+        
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            border-right: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        &:nth-child(4) {
+            border: none;
+        }
     }
 }
 
-.card {
-    background: #fff;
-    border-radius: 30px;
-    padding: 3rem 2.5rem;
-    width: 320px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-    transition: all 0.3s ease;
-    flex-shrink: 0;
-
-    &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-    }
+.itemTitle {
+    color: #fca000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.numberCircle {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: 400;
-    color: #666;
-    margin-bottom: auto;
-}
-
-.content {
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.3;
-    color: #000;
-    margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-    .section {
-        padding: 0;
-    }
-
-    .title {
-        font-size: 1.75rem;
-        margin-bottom: 2rem;
-    }
-
-    .card {
-        width: 280px;
-        height: 350px;
-        padding: 2.5rem 2rem;
-    }
-
-    .numberCircle {
-        width: 80px;
-        height: 80px;
-        font-size: 1.5rem;
-    }
-
-    .content {
-        font-size: 1.2rem;
+.itemDesc {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    
+    :global(p) {
+        margin: 0;
     }
 }

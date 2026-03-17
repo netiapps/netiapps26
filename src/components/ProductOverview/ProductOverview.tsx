@@ -2,50 +2,54 @@
 
 import React from 'react';
 import styles from './ProductOverview.module.scss';
+import Image from 'next/image';
 
-export default function ProductOverview() {
+interface ProductOverviewProps {
+    overviewData?: any;
+}
+
+export default function ProductOverview({ overviewData }: ProductOverviewProps) {
+    if (!overviewData) return null;
+
+    const mainTitle = overviewData.title;
+    const mainDesc = overviewData.description;
+    const listTitle = overviewData.list_title;
+    
+    const hasList = Array.isArray(overviewData.list) && overviewData.list.length > 0;
+    
+    const imageUrl = overviewData.image ? overviewData.image : null; 
+
     return (
         <section className={styles.overviewSection}>
             <div className="container">
                 <div className={styles.header}>
                     <div className={styles.pillBadge}>Product Overview</div>
-                    <h2 className={styles.title}>What Is Document Lifecycle &amp; Workflow Management?</h2>
-                    <p className={styles.description}>
-                        A fully customized web application designed to manage documents from creation to archival,
-                        while automating approvals, tracking every action, and ensuring compliance at every stage of
-                        the document lifecycle.
-                    </p>
+                    {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
+                    {mainDesc && (
+                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
+                    )}
                 </div>
 
                 <div className={styles.contentGrid}>
                     <div className={styles.imageColumn}>
-                        <img
-                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=600"
-                            alt="Document Management Dashboard"
-                            className={styles.dashboardImage}
-                        />
+                        {imageUrl && (
+                            <img
+                                src={imageUrl}
+                                alt="Product Overview"
+                                className={styles.dashboardImage}
+                            />
+                        )}
                     </div>
 
                     <div className={styles.textColumn}>
-                        <h3 className={styles.columnTitle}>What It Does</h3>
-                        <ul className={styles.featureList}>
-                            <li>
-                                Centralizes all organizational documents
-                                in a single, secure repository
-                            </li>
-                            <li>
-                                Automates multi-level approval workflows
-                                to streamline document processing
-                            </li>
-                            <li>
-                                Provides real-time visibility into document
-                                status, ownership, and history
-                            </li>
-                            <li>
-                                Maintains complete, tamper-proof audit
-                                trails for transparency and compliance
-                            </li>
-                        </ul>
+                        {listTitle && <h3 className={styles.columnTitle}>{listTitle}</h3>}
+                        {hasList && (
+                            <ul className={styles.featureList}>
+                                {overviewData.list.map((item: any, idx: number) => (
+                                    <li key={idx} dangerouslySetInnerHTML={{ __html: item.list }} />
+                                ))}
+                            </ul>
+                        )}
                     </div>
                 </div>
             </div>

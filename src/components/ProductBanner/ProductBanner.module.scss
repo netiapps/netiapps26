@@ -133,3 +133,17 @@
         }
     }
 }
+
+.productSlider {
+    width: 100%;
+
+    :global(.swiper-pagination-bullet) {
+        background: #000;
+        opacity: 0.3;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+        opacity: 1;
+        background: #000;
+    }
+}

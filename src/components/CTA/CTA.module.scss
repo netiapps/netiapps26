@@ -1,0 +1,82 @@
+.ctaSection {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contentWrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+
+    :global(strong) {
+        font-weight: 500;
+        /* Prevent the <strong> tag from ACF from making it too bold */
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.2rem;
+    }
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-weight: 400;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.primaryBtn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #333333;
+        color: #ffffff;
+    }
+}
+
+.secondaryLink {
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #666666;
+    }
+}

@@ -1,116 +1,43 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
-import styles from "./WhyChooseUs.module.scss";
-import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
+import React from 'react';
+import styles from './WhyChooseUs.module.scss';
 
-export default function WhyChooseUs(why: any) {
-  const { language, translate } = useLanguage();
+interface WhyChooseUsProps {
+    whyChooseUsData?: any;
+    industriesApplicationData?: any; // To support the screenshot's header
+}
 
-  const originalWhy = why.why;
-  const [translatedWhy, setTranslatedWhy] =
-    useState(originalWhy);
+export default function WhyChooseUs({ whyChooseUsData, industriesApplicationData }: WhyChooseUsProps) {
+    if (!whyChooseUsData) return null;
 
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
+    // Based on the screenshot, it says "Industries Application \n Built for..."
+    // as the title, but the items are from "why_choose_us". We'll combine them or use whyChooseUs title.
+    const pillBadge = "Why Choose us";
+    const mainTitle = whyChooseUsData.title || (industriesApplicationData?.title || "What makes this different?");
 
-  /* ---------- TRANSLATION ---------- */
+    const items = Array.isArray(whyChooseUsData.description) ? whyChooseUsData.description : [];
 
-  useEffect(() => {
-    async function translateWhy() {
-      // EN → no translation
-      if (language.toUpperCase() === "EN") {
-        setTranslatedWhy(originalWhy);
-        return;
-      }
-
-      const translated = JSON.parse(
-        JSON.stringify(originalWhy)
-      );
-
-      const tasks: Promise<any>[] = [];
-      const t = (text: string) =>
-        cachedTranslate(text, language, translate);
-
-      // Title
-      if (translated.title) {
-        tasks.push(
-          t(translated.title).then((r) => (translated.title = r))
-        );
-      }
-
-      // Reason texts
-      translated.reasons?.forEach((reason: any) => {
-        if (reason.text) {
-          tasks.push(
-            t(reason.text).then((r) => (reason.text = r))
-          );
-        }
-      });
-
-      await Promise.all(tasks);
-      setTranslatedWhy(translated);
-    }
-
-    translateWhy();
-  }, [language, originalWhy]);
-
-  if (!translatedWhy) return null;
-
-  /* ---------- DRAG SCROLL ---------- */
-
-  const onMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!scrollRef.current) return;
-    setIsDragging(true);
-    setStartX(e.pageX - scrollRef.current.offsetLeft);
-    setScrollLeft(scrollRef.current.scrollLeft);
-  };
-
-  const onMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!isDragging || !scrollRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    scrollRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  return (
-    <section className={styles.section}>
-      <div className="container">
-        <h2 className={styles.title}>
-          {translatedWhy.title}
-        </h2>
-      </div>
-
-      <div
-        className={styles.scrollWrapper}
-        ref={scrollRef}
-        onMouseDown={onMouseDown}
-        onMouseLeave={onMouseUp}
-        onMouseUp={onMouseUp}
-        onMouseMove={onMouseMove}
-      >
-        <div className={styles.cardsRow}>
-          {translatedWhy.reasons.map(
-            (reason: any, index: number) => (
-              <div key={index} className={styles.card}>
-                <div className={styles.numberCircle}>
-                  {reason.number}
+    return (
+        <section className={styles.whyChooseUsSection}>
+            <div className="container">
+                <div className={styles.header}>
+                    <div className={styles.pillBadge}>{pillBadge}</div>
+                    {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
                 </div>
-                <p className={styles.content}>
-                  {reason.text}
-                </p>
-              </div>
-            )
-          )}
-        </div>
-      </div>
-    </section>
-  );
+
+                <div className={styles.gridContainer}>
+                    {items.map((item: any, idx: number) => (
+                        <div key={idx} className={styles.gridItem}>
+                            <h3 className={styles.itemTitle}>{item.list_}</h3>
+                            <div 
+                                className={styles.itemDesc} 
+                                dangerouslySetInnerHTML={{ __html: item.details }} 
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }

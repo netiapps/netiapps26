@@ -175,6 +175,32 @@ export default function Navbar(nav: any) {
                                 </span>
                             </li>
 
+                            {/* Products Dropdown */}
+                            {nav.products && nav.products.length > 0 && (
+                                <li
+                                    className={styles.hasDropdown}
+                                    onMouseEnter={() => handleMouseEnter('products')}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+                                    <span className={styles.dropdownTrigger}>
+                                        {navigationData.products?.title || "Products"} <ChevronDown size={16} />
+                                    </span>
+                                    {activeDropdown === 'products' && (
+                                        <div className={styles.dropdown}>
+                                            <ul>
+                                                {nav.products.map((product: any) => (
+                                                    <li key={product.id}>
+                                                        <Link href={`/${product.slug === 'automated-document-operations' ? 'product' : 'product/' + product.slug}`}>
+                                                            <span dangerouslySetInnerHTML={{ __html: product.title.rendered }} />
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                </li>
+                            )}
+
                             <li>
                                 <Link href={navigationData.career.link}>{navigationData.career.name}</Link>
                             </li>
@@ -276,6 +302,27 @@ export default function Navbar(nav: any) {
                                 ))}
                             </div>
                         </li>
+
+                        {/* Mobile Products */}
+                        {nav.products && nav.products.length > 0 && (
+                            <li className={styles.mobileNavItem}>
+                                <div className={styles.mobileNavHeader} onClick={() => toggleMobileAccordion('products')}>
+                                    {navigationData.products?.title || "Products"}
+                                    <ChevronDown size={16} className={expandedMobileMenu === 'products' ? styles.rotate : ''} />
+                                </div>
+                                <div className={`${styles.mobileSubMenu} ${expandedMobileMenu === 'products' ? styles.open : ''}`}>
+                                    <ul>
+                                        {nav.products.map((product: any) => (
+                                            <li key={product.id}>
+                                                <Link href={`/${product.slug === 'automated-document-operations' ? 'product' : 'product/' + product.slug}`} onClick={toggleMobileMenu}>
+                                                    <span dangerouslySetInnerHTML={{ __html: product.title.rendered }} />
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </li>
+                        )}
 
                         <li>
                             <Link href={navigationData.career.link} onClick={toggleMobileMenu}>
