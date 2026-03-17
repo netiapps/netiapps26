@@ -7,74 +7,71 @@ import styles from './KeyFeatures.module.scss';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
-const features = [
-    {
-        title: "Role-Based\nAccess Control",
-        description: "Fine-grained control over who can create, view, approve, or modify. Access is precisely defined so each role sees only what's necessary",
-        icon: "https://cdn-icons-png.flaticon.com/512/2040/2040504.png"
-    },
-    {
-        title: "Workflow\nAutomation",
-        description: "Single or multi-level approvals with conditional routing. Documents move automatically — no chasing, no manual follow-up emails",
-        icon: "https://cdn-icons-png.flaticon.com/512/2040/2040504.png"
-    },
-    {
-        title: "Real-Time\nDocument Tracking",
-        description: "Always know where a document stands, who has it, and how long it has been sitting there. Full visibility at every stage.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1164/1164338.png"
-    },
-    {
-        title: "Reporting &\nAnalytics",
-        description: "Track approval timelines, detect bottlenecks, and access compliance records anytime, not just before an audit.",
-        icon: "https://cdn-icons-png.flaticon.com/512/2921/2921222.png"
-    }
-];
+interface KeyFeaturesProps {
+    keyFeaturesData?: any;
+}
 
-export default function KeyFeatures() {
+export default function KeyFeatures({ keyFeaturesData }: KeyFeaturesProps) {
+    if (!keyFeaturesData) return null;
+
+    const mainTitle = keyFeaturesData.title;
+    const mainDesc = keyFeaturesData.description;
+    
+    // Fallback if list is missing
+    const featuresList = Array.isArray(keyFeaturesData.list) ? keyFeaturesData.list : [];
+
     return (
         <section className={styles.keyFeaturesSection}>
             <div className="container">
                 <div className={styles.header}>
                     <div className={styles.pillBadge}>Key Features</div>
-                    <h2 className={styles.title}>Everything you need. Nothing you don&apos;t.</h2>
-                    <p className={styles.description}>
-                        Built for organisations that handle documents seriously—from the front-line employee
-                        creating a draft to the senior executive signing off.
-                    </p>
+                    {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
+                    {mainDesc && (
+                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
+                    )}
                 </div>
             </div>
 
-            <div className={styles.sliderContainer}>
-                <Swiper
-                    modules={[FreeMode]}
-                    spaceBetween={30}
-                    slidesPerView={1.2}
-                    freeMode={true}
-                    centeredSlides={true}
-                    breakpoints={{
-                        576: { slidesPerView: 2.2 },
-                        768: { slidesPerView: 2.5 },
-                        992: { slidesPerView: 3.2 },
-                        1200: { slidesPerView: 3.5 },
-                    }}
-                    className={styles.swiperInstance}
-                >
-                    {features.map((feature, index) => (
-                        <SwiperSlide key={index} className={styles.slide}>
-                            <div className={styles.card}>
-                                <div className={styles.iconWrapper}>
-                                    <img src={feature.icon} alt="Feature Icon" className={styles.featureIcon} />
+            {featuresList.length > 0 && (
+                <div className={styles.sliderContainer}>
+                    <Swiper
+                        modules={[FreeMode]}
+                        spaceBetween={30}
+                        slidesPerView={1.2}
+                        freeMode={true}
+                        centeredSlides={true}
+                        breakpoints={{
+                            576: { slidesPerView: 2.2 },
+                            768: { slidesPerView: 2.5 },
+                            992: { slidesPerView: 3.2 },
+                            1200: { slidesPerView: 3.5 },
+                        }}
+                        className={styles.swiperInstance}
+                    >
+                        {featuresList.map((feature: any, index: number) => (
+                            <SwiperSlide key={index} className={styles.slide}>
+                                <div className={styles.card}>
+                                    {feature.image && (
+                                        <div className={styles.iconWrapper}>
+                                            <img
+                                                src={feature.image}
+                                                alt={feature.feature_name || "Feature Icon"}
+                                                className={styles.featureIcon}
+                                            />
+                                        </div>
+                                    )}
+                                    <h3
+                                        className={styles.cardTitle}
+                                        dangerouslySetInnerHTML={{ __html: feature.feature_name ? feature.feature_name.replace('\n', '<br />') : '' }}
+                                    />
+                                    <p className={styles.cardDescription}>{feature.feature}</p>
                                 </div>
-                                <h3
-                                    className={styles.cardTitle}
-                                    dangerouslySetInnerHTML={{ __html: feature.title.replace('\n', '<br />') }}
-                                />
-                                <p className={styles.cardDescription}>{feature.description}</p>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            )}
         </section>
     );
 }
+

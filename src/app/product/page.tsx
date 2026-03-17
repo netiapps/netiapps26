@@ -41,7 +41,7 @@ export default async function ProductPage() {
             <TheProblem problemData={acf?.problem} />
             <ProductOverview overviewData={acf?.overview} />
             <HowItWorks howItWorksData={acf?.how_it_works} />
-            <KeyFeatures />
+            <KeyFeatures keyFeaturesData={acf?.key_features} />
             <Security securityData={acf?.security_compliance} />
             <IndustriesApplication />
             <WhyChooseUs whyChooseUsData={acf?.why_choose_us} industriesApplicationData={acf?.industry_applications} />

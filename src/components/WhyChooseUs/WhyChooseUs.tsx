@@ -6,17 +6,21 @@ import styles from './WhyChooseUs.module.scss';
 interface WhyChooseUsProps {
     whyChooseUsData?: any;
     industriesApplicationData?: any; // To support the screenshot's header
+    why?: any; // Backwards compatibility for previously existing service pages
 }
 
-export default function WhyChooseUs({ whyChooseUsData, industriesApplicationData }: WhyChooseUsProps) {
-    if (!whyChooseUsData) return null;
+export default function WhyChooseUs({ whyChooseUsData, industriesApplicationData, why }: WhyChooseUsProps) {
+    // Determine the data source. Fallback to `why` if `whyChooseUsData` is empty (for services pages)
+    const activeData = whyChooseUsData || why;
+
+    if (!activeData) return null;
 
     // Based on the screenshot, it says "Industries Application \n Built for..."
     // as the title, but the items are from "why_choose_us". We'll combine them or use whyChooseUs title.
     const pillBadge = "Why Choose us";
-    const mainTitle = whyChooseUsData.title || (industriesApplicationData?.title || "What makes this different?");
+    const mainTitle = activeData.title || (industriesApplicationData?.title || "What makes this different?");
 
-    const items = Array.isArray(whyChooseUsData.description) ? whyChooseUsData.description : [];
+    const items = Array.isArray(activeData.description) ? activeData.description : [];
 
     return (
         <section className={styles.whyChooseUsSection}>
