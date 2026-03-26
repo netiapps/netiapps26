@@ -3,62 +3,62 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './IndustriesApplication.module.scss';
-import { getMediaUrl } from '@/lib/media';
 
-const industries = [
-    {
-        id: 1,
-        title: "Banking & Financial Services",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800&h=500"
-    },
-    {
-        id: 2,
-        title: "Government & Public Sector",
-        image: "https://images.unsplash.com/photo-1596489392224-5d51de58f50c?auto=format&fit=crop&q=80&w=800&h=500"
-    },
-    {
-        id: 3,
-        title: "Healthcare",
-        image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&q=80&w=800&h=500"
-    },
-    {
-        id: 4,
-        title: "Enterprises & Manufacturing",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800&h=500"
-    }
-];
+interface IndustriesApplicationProps {
+    industriesApplicationData?: any;
+}
 
-export default function IndustriesApplication() {
+export default function IndustriesApplication({ industriesApplicationData }: IndustriesApplicationProps) {
+    if (!industriesApplicationData) return null;
+
+    const mainTitle = industriesApplicationData.title;
+    const mainDesc = industriesApplicationData.description;
+    const industriesList = Array.isArray(industriesApplicationData.industry_details) ? industriesApplicationData.industry_details : [];
+
     return (
         <section className={styles.industriesSection}>
             <div className="container">
                 <div className={styles.header}>
                     <div className={styles.pillBadge}>Industries Application</div>
-                    <h2 className={styles.title}>
-                        Built for organizations where documents<br />
-                        actually matter.
-                    </h2>
-                    <p className={styles.description}>
-                        We work best with teams that have real document volume, real compliance obligations, and
-                        real consequences when something goes wrong.
-                    </p>
+                    {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
+                    {mainDesc && (
+                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
+                    )}
                 </div>
 
                 <div className={styles.grid}>
-                    {industries.map((ind) => (
-                        <div key={ind.id} className={styles.card}>
-                            <div className={styles.imageWrapper}>
-                                <img
-                                    src={ind.image}
-                                    alt={ind.title}
-                                    className={styles.image}
-                                />
+                    {industriesList.map((ind: any, index: number) => {
+                        const rawHtml = ind.industry_description || "";
+                        
+                        // Extract title cleanly from <p><b>...</b></p>
+                        const pMatch = typeof rawHtml === 'string' ? rawHtml.match(/<p>\s*<b>([\s\S]*?)<\/b>\s*<\/p>/i) : null;
+                        const cardTitle = pMatch ? pMatch[1].trim() : "";
+
+                        // Extract list cleanly from <ul>...</ul>
+                        const ulMatch = typeof rawHtml === 'string' ? rawHtml.match(/<ul>([\s\S]*?)<\/ul>/i) : null;
+                        const listHtml = ulMatch ? ulMatch[1] : "";
+
+                        return (
+                            <div key={index} className={styles.card}>
+                                {ind.industry_image && (
+                                    <div className={styles.imageWrapper}>
+                                        <img
+                                            src={ind.industry_image}
+                                            alt={cardTitle || "Industry"}
+                                            className={styles.image}
+                                        />
+                                    </div>
+                                )}
+                                {cardTitle && <h3 className={styles.cardTitle} dangerouslySetInnerHTML={{ __html: cardTitle }} />}
+                                {listHtml && (
+                                    <ul className={styles.featureList} dangerouslySetInnerHTML={{ __html: listHtml }} />
+                                )}
                             </div>
-                            <h3 className={styles.cardTitle}>{ind.title}</h3>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
     );
 }
+

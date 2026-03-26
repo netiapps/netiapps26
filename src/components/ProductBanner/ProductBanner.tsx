@@ -19,21 +19,21 @@ interface ProductBannerProps {
 export default function ProductBanner({ banner, title }: ProductBannerProps) {
     // Data mapped from ACF
     let sliderImages: any[] = [];
-    if (banner?.title?.[''] && Array.isArray(banner.title['']) && banner.title[''].length > 0) {
-        sliderImages = banner.title[''].filter((img: any) => img.image).map((img: any) => ({
+    if (banner?.banner_details?.[''] && Array.isArray(banner.banner_details['']) && banner.banner_details[''].length > 0) {
+        sliderImages = banner.banner_details[''].filter((img: any) => img.image).map((img: any) => ({
             type: 'remote',
             src: img.image,
-            alt: banner?.tag || "Dashboard Mockup"
+            alt: banner?.title || "Product Banner"
         }));
     }
 
-    const productName = banner?.tag;
+    const productName = banner?.title;
     const mainTitle = title;
     const builtFor = banner?.built_for;
     
-    const demoButton = banner?.title?.get_demo_button;
-    const downloadPdfBtn = banner?.title?.download_pdf;
-    const demoLink = banner?.title?.link || "#";
+    const demoButton = banner?.banner_details?.get_demo_button;
+    const downloadPdfBtn = banner?.banner_details?.download_pdf;
+    const demoLink = banner?.banner_details?.link || "#";
 
     return (
         <section className={styles.heroSection}>

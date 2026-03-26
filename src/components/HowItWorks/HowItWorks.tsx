@@ -16,26 +16,34 @@ export default function HowItWorks({ howItWorksData }: HowItWorksProps) {
     const pillBadge = howItWorksData.how_it_works;
     const mainTitle = howItWorksData.title_; // the ACF field is 'title_'
 
-    const rawHtml = howItWorksData.list || "";
+    const descriptionText = howItWorksData.description || "";
 
-    // Extract description from the first <p> tag
-    const pMatch = rawHtml.match(/<p>([\s\S]*?)<\/p>/);
-    const descriptionText = pMatch ? pMatch[1].trim() : "";
-
-    // Extract items from <li> tags. We look for a bold title and then a text description.
-    const liRegex = /<li>\s*(?:<b>)?\s*(.*?)\s*(?:<\/b>)?\s*(?:<br\s*\/?>|—|–)?\s*([\s\S]*?)<\/li>/gi;
     const steps: { id: number; title: string; description: string; image: any }[] = [];
 
-    let match;
-    while ((match = liRegex.exec(rawHtml)) !== null) {
-        // match[1] should be the title, match[2] should be the content after the break/separator
+    const stepsData = Array.isArray(howItWorksData.list) ? howItWorksData.list : [];
+    
+    stepsData.forEach((item: any) => {
+        const text = item.list || "";
+        let stepTitle = "";
+        let stepDesc = "";
+        
+        // Split by dash/em-dash/en-dash
+        const splitIndex = text.search(/[-—–]/);
+        if (splitIndex !== -1) {
+            stepTitle = text.substring(0, splitIndex).trim();
+            // remove leading spaces
+            stepDesc = text.substring(splitIndex + 1).trim();
+        } else {
+            stepTitle = text;
+        }
+
         steps.push({
             id: steps.length,
-            title: match[1] ? match[1].trim() : "",
-            description: match[2] ? match[2].trim() : "",
+            title: stepTitle,
+            description: stepDesc,
             image: howItWorksData.image || null
         });
-    }
+    });
 
     const currentStep = steps[activeIndex] || null;
     const hasImage = currentStep && currentStep.image;

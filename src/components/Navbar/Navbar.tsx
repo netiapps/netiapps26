@@ -64,6 +64,15 @@ export default function Navbar(nav: any) {
                 });
             });
 
+            if (translated.products?.mega_menu) {
+                translated.products.mega_menu.forEach((cat: any) => {
+                    tasks.push(t(cat.title).then((r: any) => cat.title = r));
+                    cat.menu_items.forEach((item: any) => {
+                        tasks.push(t(item.name).then((r: any) => item.name = r));
+                    });
+                });
+            }
+
             await Promise.all(tasks);
             setTranslatedNav(translated);
         }
@@ -175,26 +184,29 @@ export default function Navbar(nav: any) {
                                 </span>
                             </li>
 
+
                             {/* Products Dropdown */}
-                            {nav.products && nav.products.length > 0 && (
+                            {navigationData.products?.mega_menu?.[0]?.menu_items && navigationData.products.mega_menu[0].menu_items.length > 0 && (
                                 <li
                                     className={styles.hasDropdown}
                                     onMouseEnter={() => handleMouseEnter('products')}
                                     onMouseLeave={handleMouseLeave}
                                 >
                                     <span className={styles.dropdownTrigger}>
-                                        {navigationData.products?.title || "Products"} <ChevronDown size={16} />
+                                        {navigationData.products.title || "Products"} <ChevronDown size={16} />
                                     </span>
                                     {activeDropdown === 'products' && (
                                         <div className={styles.dropdown}>
                                             <ul>
-                                                {nav.products.map((product: any) => (
-                                                    <li key={product.id}>
-                                                        <Link href={`/${product.slug === 'automated-document-operations' ? 'product' : 'product/' + product.slug}`}>
-                                                            <span dangerouslySetInnerHTML={{ __html: product.title.rendered }} />
-                                                        </Link>
-                                                    </li>
-                                                ))}
+                                                {navigationData.products.mega_menu[0].menu_items.map((item: any, index: number) => {
+                                                    return (
+                                                        <li key={index}>
+                                                            <Link href={item.link}>
+                                                                <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                            </Link>
+                                                        </li>
+                                                    );
+                                                })}
                                             </ul>
                                         </div>
                                     )}
@@ -304,21 +316,23 @@ export default function Navbar(nav: any) {
                         </li>
 
                         {/* Mobile Products */}
-                        {nav.products && nav.products.length > 0 && (
+                        {navigationData.products?.mega_menu?.[0]?.menu_items && navigationData.products.mega_menu[0].menu_items.length > 0 && (
                             <li className={styles.mobileNavItem}>
                                 <div className={styles.mobileNavHeader} onClick={() => toggleMobileAccordion('products')}>
-                                    {navigationData.products?.title || "Products"}
+                                    {navigationData.products.title || "Products"}
                                     <ChevronDown size={16} className={expandedMobileMenu === 'products' ? styles.rotate : ''} />
                                 </div>
                                 <div className={`${styles.mobileSubMenu} ${expandedMobileMenu === 'products' ? styles.open : ''}`}>
                                     <ul>
-                                        {nav.products.map((product: any) => (
-                                            <li key={product.id}>
-                                                <Link href={`/${product.slug === 'automated-document-operations' ? 'product' : 'product/' + product.slug}`} onClick={toggleMobileMenu}>
-                                                    <span dangerouslySetInnerHTML={{ __html: product.title.rendered }} />
-                                                </Link>
-                                            </li>
-                                        ))}
+                                        {navigationData.products.mega_menu[0].menu_items.map((item: any, index: number) => {
+                                            return (
+                                                <li key={index}>
+                                                    <Link href={item.link} onClick={toggleMobileMenu}>
+                                                        <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                    </Link>
+                                                </li>
+                                            );
+                                        })}
                                     </ul>
                                 </div>
                             </li>

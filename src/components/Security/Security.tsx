@@ -14,19 +14,31 @@ export default function Security({ securityData }: SecurityProps) {
     const pillBadge = securityData.tag;
     const mainTitle = securityData.title;
 
-    // description object in ACF is an HTML string containing both <p> and <ul> tags.
+    // description object in ACF is an HTML string containing both paragraphs and <ul> tags.
     const rawHtml = securityData.description || "";
 
-    // Extract the first <p> section for the subtitle
-    const pMatch = rawHtml.match(/<p>([\s\S]*?)<\/p>/);
-    const descriptionText = pMatch ? pMatch[1].trim() : "";
+    // More robust splitting rather than strict <p> / <ul> regex
+    const ulIndex = typeof rawHtml === 'string' ? rawHtml.indexOf('<ul') : -1;
+    
+    let descriptionText = "";
+    let ulContent = "";
 
-    // Extract the <ul> list items separately
-    const ulMatch = rawHtml.match(/<ul>([\s\S]*?)<\/ul>/);
+    if (ulIndex !== -1) {
+        descriptionText = rawHtml.substring(0, ulIndex).trim();
+        const afterUlStart = rawHtml.substring(ulIndex);
+        
+        // Extract inner HTML of the first <ul>
+        const ulMatch = afterUlStart.match(/<ul[^>]*>([\s\S]*?)<\/ul>/i);
+        if (ulMatch) {
+            ulContent = ulMatch[1];
+        }
+    } else {
+        descriptionText = rawHtml;
+    }
     
     // Default image from local if provided in the screenshot? No, the user says "dont had static data if data is not available"
     // So we just render dynamic image, or if missing we hide the image explicitly.
-    const imageUrl = securityData.image ? securityData.image : null;
+    const imageUrl = securityData.image?.url || (typeof securityData.image === 'string' ? securityData.image : null);
 
     return (
         <section className={styles.securitySection}>
@@ -41,8 +53,8 @@ export default function Security({ securityData }: SecurityProps) {
 
                 <div className={styles.contentGrid}>
                     <div className={styles.textColumn}>
-                        {ulMatch && (
-                            <ul className={styles.featureList} dangerouslySetInnerHTML={{ __html: ulMatch[1] }} />
+                        {ulContent && (
+                            <ul className={styles.featureList} dangerouslySetInnerHTML={{ __html: ulContent }} />
                         )}
                     </div>
                     
