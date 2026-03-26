@@ -47,7 +47,7 @@ export default function Security({ securityData }: SecurityProps) {
                     {pillBadge && <div className={styles.pillBadge}>{pillBadge}</div>}
                     {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
                     {descriptionText && (
-                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: descriptionText }} />
+                        <div className={styles.description} dangerouslySetInnerHTML={{ __html: descriptionText }} />
                     )}
                 </div>
 
