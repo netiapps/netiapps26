@@ -1,0 +1,140 @@
+.securitySection {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pillBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 6px 20px;
+    border-radius: 50px;
+    border: 1px solid #fca000;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+    }
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 0.9rem;
+    }
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    &:has(.imageColumn:empty) {
+         grid-template-columns: 1fr; 
+         text-align: center;
+         .textColumn {
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            ul {
+                text-align: left;
+                display: inline-block;
+            }
+         }
+    }
+
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.textColumn {
+    padding-left: 20px;
+
+    @media (max-width: 992px) {
+        padding-left: 0;
+    }
+}
+
+.featureList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    :global(li) {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 12px;
+        font-size: 1.15rem;
+        color: #1a1a1a;
+        line-height: 1.5;
+        font-weight: 500;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 5px;
+            height: 5px;
+            background-color: #1a1a1a;
+            border-radius: 1px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+
+            &::before {
+                top: 8px;
+            }
+        }
+    }
+}
+
+.imageColumn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
+}
+
+.featuredImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}

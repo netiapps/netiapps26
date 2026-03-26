@@ -47,15 +47,19 @@ async function safeFetch(url: string) {
 }
 
 export default async function RootLayout({ children }: RootLayoutProps) {
+    // We use the staging server for products as per user request to test fetching products
     const baseUrl = new ApiService().getBaseUrl();
+    const stagingUrl = "https://2026wp.netiapps.net/";
 
-    const [footerRes, navRes] = await Promise.all([
+    const [footerRes, navRes, productsRes] = await Promise.all([
         safeFetch(`${baseUrl}wp-json/wp/v2/footersection`),
         safeFetch(`${baseUrl}wp-json/wp/v2/navigationsection`),
+        safeFetch(`${stagingUrl}wp-json/wp/v2/product`)
     ]);
 
     const footerData = footerRes?.[0]?.acf ?? null;
     const navData = navRes?.[0]?.acf ?? null;
+    const productsData = productsRes ?? [];
 
     return (
         <html lang="en">
@@ -81,7 +85,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
                 <LanguageProvider>
 
                     {navData ? (
-                        <Navbar nav={navData} />
+                        <Navbar nav={navData} products={productsData} />
                     ) : (
                         <div style={{ height: 80 }} />
                     )}
