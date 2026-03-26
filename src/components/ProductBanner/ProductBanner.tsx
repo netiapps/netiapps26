@@ -30,30 +30,28 @@ export default function ProductBanner({ banner, title }: ProductBannerProps) {
     const productName = banner?.title;
     const mainTitle = title;
     const builtFor = banner?.built_for;
-    
+
     const demoButton = banner?.banner_details?.get_demo_button;
     const downloadPdfBtn = banner?.banner_details?.download_pdf;
     const demoLink = banner?.banner_details?.link || "#";
+
+    const productLogoData = banner?.logo || banner?.banner_details?.logo;
+    const productLogoSrc = typeof productLogoData === 'string' ? productLogoData : productLogoData?.url || null;
 
     return (
         <section className={styles.heroSection}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        <div className={styles.brandTitle}>
-                            <div className={styles.iconBox}>
-                                <Image
-                                    src={getMediaUrl("/images/product_logo.png")}
-                                    alt="Product Logo"
-                                    width={60}
-                                    height={60}
+                        {productLogoSrc && (
+                            <div style={{ marginBottom: '30px' }}>
+                                <img
+                                    src={productLogoSrc}
+                                    alt={productName || "Product Logo"}
+                                    style={{ maxWidth: '100%', maxHeight: '80px', objectFit: 'contain' }}
                                 />
                             </div>
-                            <div className={styles.brandText}>
-                                {productName && <h3 className={styles.productName}>{productName}</h3>}
-                                <p className={styles.companyName}>by Netiapps</p>
-                            </div>
-                        </div>
+                        )}
 
                         {mainTitle && (
                             <h1 className={styles.mainTitle} dangerouslySetInnerHTML={{ __html: mainTitle }} />
