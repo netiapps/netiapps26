@@ -24,7 +24,17 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "2026wp.netiapps.net",
+        hostname: "*.netiapps.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "netiapps.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
         pathname: "/**",
       },
     ],
