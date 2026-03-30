@@ -1,5 +1,5 @@
 .heroSection {
-    background-color: #FFF4D9;
+    background-color: #d4f6e1;
     /* Soft warm beige from image */
     display: flex;
     align-items: center;
@@ -136,6 +136,11 @@
 
 .productSlider {
     width: 100%;
+    padding-bottom: 40px !important;
+
+    :global(.swiper-pagination) {
+        bottom: 0;
+    }
 
     :global(.swiper-pagination-bullet) {
         background: #000;

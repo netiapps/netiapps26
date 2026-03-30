@@ -60,7 +60,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     const productsData = productsRes ?? [];
 
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <head>
                 {/* Google tag (gtag.js) */}
                 <Script
