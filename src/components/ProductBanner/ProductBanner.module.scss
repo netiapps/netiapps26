@@ -51,7 +51,7 @@
 }
 
 .mainTitle {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 500;
     line-height: 1.15;
     color: #1a1a1a;
@@ -125,8 +125,8 @@
         width: 100%;
         height: auto;
         object-fit: contain;
-        transform: scale(1.05);
-        /* Make the image slightly bigger to match the mock */
+        transform: scale(1);
+        /* Make the image bigger as requested */
 
         @media (max-width: 992px) {
             transform: none;

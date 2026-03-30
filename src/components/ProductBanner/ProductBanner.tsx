@@ -42,7 +42,7 @@ export default function ProductBanner({ banner, title }: ProductBannerProps) {
         <section className={styles.heroSection}>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6">
+                    <div className="col-lg-4">
                         {productLogoSrc && (
                             <div style={{ marginBottom: '30px' }}>
                                 <img
@@ -76,7 +76,7 @@ export default function ProductBanner({ banner, title }: ProductBannerProps) {
                             )}
                         </div>
                     </div>
-                    <div className="col-lg-6 mt-5 mt-lg-0">
+                    <div className="col-lg-8 mt-5 mt-lg-0">
                         {sliderImages.length > 0 && (
                             <div className={styles.imageWrapper}>
                                 <Swiper

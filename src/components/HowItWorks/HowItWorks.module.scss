@@ -1,5 +1,5 @@
 .howItWorksSection {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #ffffff;
 }
 
@@ -85,14 +85,24 @@
         gap: 36px;
 
         // on mobile always show image first
-        .orderFirst  { order: 1; }
-        .orderLast   { order: 2; }
+        .orderFirst {
+            order: 1;
+        }
+
+        .orderLast {
+            order: 2;
+        }
     }
 }
 
 // desktop order helpers
-.orderFirst { order: 1; }
-.orderLast  { order: 2; }
+.orderFirst {
+    order: 1;
+}
+
+.orderLast {
+    order: 2;
+}
 
 
 .accordionColumn {
@@ -205,6 +215,11 @@
 }
 
 @keyframes fadeIn {
-    from { opacity: 0.5; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
