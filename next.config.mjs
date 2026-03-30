@@ -22,6 +22,11 @@ const nextConfig = {
         hostname: "*.digitaloceanspaces.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "2026wp.netiapps.net",
+        pathname: "/**",
+      },
     ],
   },
 };

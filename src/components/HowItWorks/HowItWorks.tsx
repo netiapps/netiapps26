@@ -13,14 +13,18 @@ export default function HowItWorks({ howItWorksData }: HowItWorksProps) {
 
     if (!howItWorksData) return null;
 
-    const pillBadge = howItWorksData.how_it_works;
-    const mainTitle = howItWorksData.title_; // the ACF field is 'title_'
+    const data = Array.isArray(howItWorksData) ? howItWorksData[0] : howItWorksData;
+    
+    if (!data) return null;
 
-    const descriptionText = howItWorksData.description || "";
+    const pillBadge = data.how_it_works;
+    const mainTitle = data.title || data.title_; // ACF field might be 'title' or 'title_'
+
+    const descriptionText = data.description || "";
 
     const steps: { id: number; title: string; description: string; image: any }[] = [];
 
-    const stepsData = Array.isArray(howItWorksData.list) ? howItWorksData.list : [];
+    const stepsData = Array.isArray(data.list) ? data.list : [];
     
     stepsData.forEach((item: any) => {
         const text = item.list || "";
@@ -41,7 +45,7 @@ export default function HowItWorks({ howItWorksData }: HowItWorksProps) {
             id: steps.length,
             title: stepTitle,
             description: stepDesc,
-            image: howItWorksData.image || null
+            image: data.image || null
         });
     });
 

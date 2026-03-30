@@ -13,13 +13,14 @@ export default function IndustriesApplication({ industriesApplicationData }: Ind
 
     const mainTitle = industriesApplicationData.title;
     const mainDesc = industriesApplicationData.description;
+    const pillBadge = industriesApplicationData.tag || industriesApplicationData.industry_applications || null;
     const industriesList = Array.isArray(industriesApplicationData.industry_details) ? industriesApplicationData.industry_details : [];
 
     return (
         <section className={styles.industriesSection}>
             <div className="container">
                 <div className={styles.header}>
-                    <div className={styles.pillBadge}>Industries Application</div>
+                    {pillBadge && <div className={styles.pillBadge}>{pillBadge}</div>}
                     {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
                     {mainDesc && (
                         <p className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />

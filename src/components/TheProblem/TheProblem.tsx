@@ -17,8 +17,8 @@ export default function TheProblem({ problemData }: TheProblemProps) {
         return null; // Or some meaningful fallback. But per user "dont had static data"
     }
 
-    const problemBadge = problemData.the_problem;
-    const mainTitle = problemData.ttile; // Note the spelling in ACF JSON "ttile"
+    const problemBadge = problemData.tag || problemData.the_problem;
+    const mainTitle = problemData.title || problemData.ttile; // fallback for spelling error in ACF JSON
     const mainDesc = problemData.description;
     const listTitle = problemData.list_title;
 

@@ -196,13 +196,20 @@ export default function Navbar(nav: any) {
                                         {navigationData.products.title || "Products"} <ChevronDown size={16} />
                                     </span>
                                     {activeDropdown === 'products' && (
-                                        <div className={styles.dropdown}>
+                                        <div className={`${styles.dropdown} ${styles.productsDropdown}`}>
                                             <ul>
                                                 {navigationData.products.mega_menu[0].menu_items.map((item: any, index: number) => {
                                                     return (
                                                         <li key={index}>
                                                             <Link href={item.link}>
-                                                                <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                                <div className={styles.productMenuItem}>
+                                                                    <div className={styles.productMenuIcon}>
+                                                                        <Image src={item.product_icon || getMediaUrl("/images/product_logo.png")} alt="Product Logo" width={80} height={30} />
+                                                                    </div>
+                                                                    <div className={styles.productMenuText}>
+                                                                        <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                                    </div>
+                                                                </div>
                                                             </Link>
                                                         </li>
                                                     );
@@ -322,13 +329,20 @@ export default function Navbar(nav: any) {
                                     {navigationData.products.title || "Products"}
                                     <ChevronDown size={16} className={expandedMobileMenu === 'products' ? styles.rotate : ''} />
                                 </div>
-                                <div className={`${styles.mobileSubMenu} ${expandedMobileMenu === 'products' ? styles.open : ''}`}>
+                                <div className={`${styles.mobileSubMenu} ${styles.mobileProductsMenu} ${expandedMobileMenu === 'products' ? styles.open : ''}`}>
                                     <ul>
                                         {navigationData.products.mega_menu[0].menu_items.map((item: any, index: number) => {
                                             return (
                                                 <li key={index}>
                                                     <Link href={item.link} onClick={toggleMobileMenu}>
-                                                        <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                        <div className={styles.productMenuItem}>
+                                                            <div className={styles.productMenuIcon}>
+                                                                <Image src={item.product_icon || getMediaUrl("/images/product_logo.png")} alt="Product Logo" width={60} height={24} />
+                                                            </div>
+                                                            <div className={styles.productMenuText}>
+                                                                <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                            </div>
+                                                        </div>
                                                     </Link>
                                                 </li>
                                             );
