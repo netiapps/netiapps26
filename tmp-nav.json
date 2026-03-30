@@ -1,386 +1,585 @@
-{
-  "logo": {
-    "img": "https://2026wp.netiapps.net/wp-content/uploads/2026/01/logo.svg",
-    "link": "/"
-  },
-  "navigation_data": {
-    "home": {
-      "name": "Home",
-      "link": "/"
+[
+  {
+    "id": 102,
+    "date": "2026-01-14T12:56:30",
+    "date_gmt": "2026-01-14T12:56:30",
+    "guid": {
+      "rendered": "https://2026wp.netiapps.net/?post_type=navigationsection&#038;p=102"
     },
-    "about": {
-      "title": "About",
-      "menu_items": [
-        {
-          "name": "About NetiApps",
-          "link": "/about/about-us"
+    "modified": "2026-03-30T07:53:49",
+    "modified_gmt": "2026-03-30T07:53:49",
+    "slug": "menu",
+    "status": "publish",
+    "type": "navigationsection",
+    "link": "https://2026wp.netiapps.net/navigation-section/menu/",
+    "title": {
+      "rendered": "Menu"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-102",
+      "navigationsection",
+      "type-navigationsection",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "logo": {
+        "img": "https://2026wp.netiapps.net/wp-content/uploads/2026/01/logo.svg",
+        "link": "/"
+      },
+      "navigation_data": {
+        "home": {
+          "name": "Home",
+          "link": "/"
         },
-        {
-          "name": "Development Process ",
-          "link": "/about/development-process"
+        "about": {
+          "title": "About",
+          "menu_items": [
+            {
+              "name": "About NetiApps",
+              "link": "/about/about-us"
+            },
+            {
+              "name": "Development Process ",
+              "link": "/about/development-process"
+            },
+            {
+              "name": "Clients ",
+              "link": "/about/clients"
+            },
+            {
+              "name": "Blogs",
+              "link": "/blogs"
+            },
+            {
+              "name": "Terms of Use ",
+              "link": "/about/terms-of-use"
+            },
+            {
+              "name": "Privacy Policy ",
+              "link": "/about/privacy-policy"
+            }
+          ]
         },
-        {
-          "name": "Clients ",
-          "link": "/about/clients"
+        "services": {
+          "title": "Services",
+          "mega_menu": [
+            {
+              "title": "Web Development Services",
+              "link": "/services/web-development-services",
+              "menu_items": [
+                {
+                  "name": "Corporate & Enterprise Websites",
+                  "link": "/services/corporate-enterprise-websites"
+                },
+                {
+                  "name": "Custom Web Application Development",
+                  "link": "/services/custom-web-application-development"
+                },
+                {
+                  "name": "CMS Development (WordPress, Headless CMS)",
+                  "link": "/services/cms-development"
+                },
+                {
+                  "name": "Progressive Web Apps (PWA)",
+                  "link": "/services/progressive-web-apps"
+                },
+                {
+                  "name": "Portal & Dashboard Development",
+                  "link": "/services/portal-dashboard-development"
+                },
+                {
+                  "name": "Website Revamp & Performance Optimization",
+                  "link": "/services/website-revamp-performance-optimization"
+                }
+              ]
+            },
+            {
+              "title": "Mobile App Development",
+              "link": "/services/mobile-app-development",
+              "menu_items": [
+                {
+                  "name": "Native iOS & Android Apps",
+                  "link": "/services/native-ios-android-apps"
+                },
+                {
+                  "name": "Cross-Platform Apps (Flutter, React Native)",
+                  "link": "/services/cross-platform-applications"
+                },
+                {
+                  "name": "Enterprise Mobility Solutions",
+                  "link": "/services/enterprise-mobility-solutions"
+                },
+                {
+                  "name": "App Modernization & Migration",
+                  "link": "/services/app-modernization-migration"
+                },
+                {
+                  "name": "UI/UX-Focused App Design",
+                  "link": "/services/ui-ux-focused-app-design"
+                }
+              ]
+            },
+            {
+              "title": "Custom Software Development ",
+              "link": "/services/custom-software-development",
+              "menu_items": [
+                {
+                  "name": "Enterprise Software Solutions",
+                  "link": "/services/enterprise-software-solutions"
+                },
+                {
+                  "name": "SaaS Product Development",
+                  "link": "/services/saas-product-development"
+                },
+                {
+                  "name": "Microservices Architecture",
+                  "link": "/services/microservices-architecture"
+                },
+                {
+                  "name": "API Development & Integration",
+                  "link": "/services/api-development-integration"
+                },
+                {
+                  "name": "Legacy System Modernization",
+                  "link": "/services/legacy-system-modernization"
+                }
+              ]
+            },
+            {
+              "title": "Cloud and DevOps Services",
+              "link": "/services/cloud-and-devops-services",
+              "menu_items": [
+                {
+                  "name": "Cloud Migration (AWS, Azure, GCP)",
+                  "link": "/services/cloud-migration-aws-azure-gcp"
+                },
+                {
+                  "name": "Cloud-Native Application Development",
+                  "link": "/services/cloud-native-application-development"
+                },
+                {
+                  "name": "DevOps & CI/CD Implementation",
+                  "link": "/services/devops-ci-cd-implementation"
+                },
+                {
+                  "name": "Security & Compliance",
+                  "link": "/services/security-compliance"
+                }
+              ]
+            },
+            {
+              "title": "UI/UX Experience Design",
+              "link": "/services/ui-ux-experience-design",
+              "menu_items": [
+                {
+                  "name": "User Experience (UX) Strategy",
+                  "link": "/services/user-experience-strategy"
+                },
+                {
+                  "name": "User Interface (UI) Design",
+                  "link": "/services/user-interface-design"
+                },
+                {
+                  "name": "Design Systems",
+                  "link": "/services/design-systems"
+                },
+                {
+                  "name": "Prototyping & Usability Testing",
+                  "link": "/services/prototyping-usability-testing"
+                },
+                {
+                  "name": "Enterprise UX Optimization",
+                  "link": "/services/enterprise-ux-optimization"
+                }
+              ]
+            },
+            {
+              "title": "Integration and API Services ",
+              "link": "/services/integration-and-api-services",
+              "menu_items": [
+                {
+                  "name": "Third-Party System Integration",
+                  "link": "/services/third-party-system-integration"
+                },
+                {
+                  "name": "ERP, CRM & HRMS Integration",
+                  "link": "/services/erp-crm-hrms-integration"
+                },
+                {
+                  "name": "Payment, Logistics & CRM APIs",
+                  "link": "/services/payment-logistics-crm-apis"
+                },
+                {
+                  "name": "Middleware & Integration Platforms",
+                  "link": "/services/middleware-integration-platforms"
+                }
+              ]
+            },
+            {
+              "title": "Maintenance and Managed Services",
+              "link": "/services/maintenance-and-managed-services",
+              "menu_items": [
+                {
+                  "name": "Application Support & Maintenance",
+                  "link": "/services/application-support-maintenance"
+                },
+                {
+                  "name": "Performance Monitoring",
+                  "link": "/services/performance-monitoring"
+                },
+                {
+                  "name": "Security Updates & Patching",
+                  "link": "/services/security-updates-patching"
+                },
+                {
+                  "name": "SLA-Based Managed Services",
+                  "link": "/services/sla-based-managed-services"
+                }
+              ]
+            },
+            {
+              "title": "Digital Strategy and Consulting ",
+              "link": "/services/digital-strategy-and-consulting",
+              "menu_items": [
+                {
+                  "name": "Digital Transformation Consulting",
+                  "link": "/services/digital-transformation-consulting"
+                },
+                {
+                  "name": "Product & Platform Strategy",
+                  "link": "/services/product-platform-strategy"
+                },
+                {
+                  "name": "Business Process Analysis & Optimization",
+                  "link": "/services/business-process-analysis-optimization"
+                },
+                {
+                  "name": "Technology Road mapping",
+                  "link": "/services/technology-road-mapping"
+                },
+                {
+                  "name": "AI Adoption & Readiness Assessment",
+                  "link": "/services/ai-adoption-readiness-assessment"
+                }
+              ]
+            }
+          ]
         },
-        {
-          "name": "Blogs",
-          "link": "/blogs"
+        "solutions": {
+          "title": "Solutions",
+          "mega_menu": [
+            {
+              "title": "AI and Intelligent Solutions ",
+              "link": "/solutions/ai-and-intelligent-solutions",
+              "menu_items": [
+                {
+                  "name": "AI-Driven Business Automation",
+                  "link": "/solutions/ai-driven-business-automation"
+                },
+                {
+                  "name": "Chatbots & Virtual Assistants",
+                  "link": "/solutions/chatbots-virtual-assistants"
+                },
+                {
+                  "name": "Predictive Analytics & BI",
+                  "link": "/solutions/predictive-analytics-bi"
+                },
+                {
+                  "name": "Machine Learning Models",
+                  "link": "/solutions/machine-learning-models"
+                },
+                {
+                  "name": "Recommendation Engines",
+                  "link": "/solutions/recommendation-engines"
+                },
+                {
+                  "name": "Computer Vision & NLP Solutions",
+                  "link": "/solutions/computer-vision-nlp-solutions"
+                }
+              ]
+            },
+            {
+              "title": "Data Analytics and BI",
+              "link": "/solutions/data-analytics-and-bi",
+              "menu_items": [
+                {
+                  "name": "Data Engineering & Warehousing",
+                  "link": "/solutions/data-engineering-warehousing"
+                },
+                {
+                  "name": "Business Intelligence Dashboards",
+                  "link": "/solutions/business-intelligence-dashboards"
+                },
+                {
+                  "name": "Data Visualization",
+                  "link": "/solutions/data-visualization"
+                },
+                {
+                  "name": "Real-Time Reporting",
+                  "link": "/solutions/real-time-reporting"
+                },
+                {
+                  "name": "AI-Driven Insights",
+                  "link": "/solutions/ai-driven-insights"
+                }
+              ]
+            },
+            {
+              "title": "E-Commerce Solutions ",
+              "link": "/solutions/e-commerce-solutions",
+              "menu_items": [
+                {
+                  "name": "Custom E-Commerce Development",
+                  "link": "/solutions/custom-e-commerce-development"
+                },
+                {
+                  "name": "B2B & B2C Commerce Platforms",
+                  "link": "/solutions/b2b-b2c-commerce-platforms"
+                },
+                {
+                  "name": "Marketplace Development",
+                  "link": "/solutions/marketplace-development"
+                },
+                {
+                  "name": "Payment Gateway & ERP Integration",
+                  "link": "/solutions/payment-gateway-erp-integration"
+                },
+                {
+                  "name": "Subscription & SaaS Commerce",
+                  "link": "/solutions/subscription-saas-commerce"
+                },
+                {
+                  "name": "E-Commerce Automation & Analytics",
+                  "link": "/solutions/e-commerce-automation-analytics"
+                }
+              ]
+            },
+            {
+              "title": "Business Process Automation",
+              "link": "/solutions/business-process-automation",
+              "menu_items": [
+                {
+                  "name": "Workflow Automation",
+                  "link": "/solutions/workflow-automation"
+                },
+                {
+                  "name": "Robotic Process Automation (RPA)",
+                  "link": "/solutions/robotic-process-automation"
+                },
+                {
+                  "name": "CRM & ERP Automation",
+                  "link": "/solutions/crm-erp-automation"
+                },
+                {
+                  "name": "Document & Data Automation",
+                  "link": "/solutions/document-data-automation"
+                },
+                {
+                  "name": "AI-Powered Decision Systems ",
+                  "link": "/solutions/ai-powered-decision-systems"
+                }
+              ]
+            }
+          ]
         },
-        {
-          "name": "Terms of Use ",
-          "link": "/about/terms-of-use"
+        "products": {
+          "title": "Products",
+          "mega_menu": [
+            {
+              "title": "Products",
+              "link": "/product/",
+              "menu_items": [
+                {
+                  "name": "Automated Document Operations",
+                  "link": "/product/automated-document-operations/",
+                  "product_icon": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/Group-23.png"
+                },
+                {
+                  "name": "Corporate Sustainability Tool",
+                  "link": "/product/corporate-sustainability-tool/",
+                  "product_icon": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/Group-34.png"
+                },
+                {
+                  "name": "Document Governance System",
+                  "link": "/product/document-governance-system/",
+                  "product_icon": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/Group-32.png"
+                },
+                {
+                  "name": "Conduct Management Tool",
+                  "link": "/product/conduct-management-tool/",
+                  "product_icon": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/logo21-1.png"
+                }
+              ]
+            }
+          ]
         },
+        "career": {
+          "name": "Career",
+          "link": "/careers"
+        },
+        "contact": {
+          "name": "Contact Us",
+          "link": "/contact"
+        }
+      }
+    },
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Menu - Netiapps Staging 2026</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://2026wp.netiapps.net/navigation-section/menu/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Menu - Netiapps Staging 2026\" />\n<meta property=\"og:url\" content=\"https://2026wp.netiapps.net/navigation-section/menu/\" />\n<meta property=\"og:site_name\" content=\"Netiapps Staging 2026\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/netiapps\" />\n<meta property=\"article:modified_time\" content=\"2026-03-30T07:53:49+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@netiapps\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://2026wp.netiapps.net/navigation-section/menu/\",\"url\":\"https://2026wp.netiapps.net/navigation-section/menu/\",\"name\":\"Menu - Netiapps Staging 2026\",\"isPartOf\":{\"@id\":\"https://2026wp.netiapps.net/#website\"},\"datePublished\":\"2026-01-14T12:56:30+00:00\",\"dateModified\":\"2026-03-30T07:53:49+00:00\",\"breadcrumb\":{\"@id\":\"https://2026wp.netiapps.net/navigation-section/menu/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://2026wp.netiapps.net/navigation-section/menu/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://2026wp.netiapps.net/navigation-section/menu/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://2026wp.netiapps.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Navigation Section\",\"item\":\"https://2026wp.netiapps.net/navigation-section/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Menu\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://2026wp.netiapps.net/#website\",\"url\":\"https://2026wp.netiapps.net/\",\"name\":\"Netiapps Staging 2026\",\"description\":\"A software Company\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://2026wp.netiapps.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Menu - Netiapps Staging 2026",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://2026wp.netiapps.net/navigation-section/menu/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Menu - Netiapps Staging 2026",
+      "og_url": "https://2026wp.netiapps.net/navigation-section/menu/",
+      "og_site_name": "Netiapps Staging 2026",
+      "article_publisher": "https://www.facebook.com/netiapps",
+      "article_modified_time": "2026-03-30T07:53:49+00:00",
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@netiapps",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://2026wp.netiapps.net/navigation-section/menu/",
+            "url": "https://2026wp.netiapps.net/navigation-section/menu/",
+            "name": "Menu - Netiapps Staging 2026",
+            "isPartOf": {
+              "@id": "https://2026wp.netiapps.net/#website"
+            },
+            "datePublished": "2026-01-14T12:56:30+00:00",
+            "dateModified": "2026-03-30T07:53:49+00:00",
+            "breadcrumb": {
+              "@id": "https://2026wp.netiapps.net/navigation-section/menu/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://2026wp.netiapps.net/navigation-section/menu/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://2026wp.netiapps.net/navigation-section/menu/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://2026wp.netiapps.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Navigation Section",
+                "item": "https://2026wp.netiapps.net/navigation-section/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Menu"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://2026wp.netiapps.net/#website",
+            "url": "https://2026wp.netiapps.net/",
+            "name": "Netiapps Staging 2026",
+            "description": "A software Company",
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://2026wp.netiapps.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
         {
-          "name": "Privacy Policy ",
-          "link": "/about/privacy-policy"
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/navigationsection/102",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/navigationsection"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/types/navigationsection"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 53,
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/navigationsection/102/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 2907,
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/navigationsection/102/revisions/2907"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/media?parent=102"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
         }
       ]
-    },
-    "services": {
-      "title": "Services",
-      "mega_menu": [
-        {
-          "title": "Web Development Services",
-          "link": "/services/web-development-services",
-          "menu_items": [
-            {
-              "name": "Corporate & Enterprise Websites",
-              "link": "/services/corporate-enterprise-websites"
-            },
-            {
-              "name": "Custom Web Application Development",
-              "link": "/services/custom-web-application-development"
-            },
-            {
-              "name": "CMS Development (WordPress, Headless CMS)",
-              "link": "/services/cms-development"
-            },
-            {
-              "name": "Progressive Web Apps (PWA)",
-              "link": "/services/progressive-web-apps"
-            },
-            {
-              "name": "Portal & Dashboard Development",
-              "link": "/services/portal-dashboard-development"
-            },
-            {
-              "name": "Website Revamp & Performance Optimization",
-              "link": "/services/website-revamp-performance-optimization"
-            }
-          ]
-        },
-        {
-          "title": "Mobile App Development",
-          "link": "/services/mobile-app-development",
-          "menu_items": [
-            {
-              "name": "Native iOS & Android Apps",
-              "link": "/services/native-ios-android-apps"
-            },
-            {
-              "name": "Cross-Platform Apps (Flutter, React Native)",
-              "link": "/services/cross-platform-applications"
-            },
-            {
-              "name": "Enterprise Mobility Solutions",
-              "link": "/services/enterprise-mobility-solutions"
-            },
-            {
-              "name": "App Modernization & Migration",
-              "link": "/services/app-modernization-migration"
-            },
-            {
-              "name": "UI/UX-Focused App Design",
-              "link": "/services/ui-ux-focused-app-design"
-            }
-          ]
-        },
-        {
-          "title": "Custom Software Development ",
-          "link": "/services/custom-software-development",
-          "menu_items": [
-            {
-              "name": "Enterprise Software Solutions",
-              "link": "/services/enterprise-software-solutions"
-            },
-            {
-              "name": "SaaS Product Development",
-              "link": "/services/saas-product-development"
-            },
-            {
-              "name": "Microservices Architecture",
-              "link": "/services/microservices-architecture"
-            },
-            {
-              "name": "API Development & Integration",
-              "link": "/services/api-development-integration"
-            },
-            {
-              "name": "Legacy System Modernization",
-              "link": "/services/legacy-system-modernization"
-            }
-          ]
-        },
-        {
-          "title": "Cloud and DevOps Services",
-          "link": "/services/cloud-and-devops-services",
-          "menu_items": [
-            {
-              "name": "Cloud Migration (AWS, Azure, GCP)",
-              "link": "/services/cloud-migration-aws-azure-gcp"
-            },
-            {
-              "name": "Cloud-Native Application Development",
-              "link": "/services/cloud-native-application-development"
-            },
-            {
-              "name": "DevOps & CI/CD Implementation",
-              "link": "/services/devops-ci-cd-implementation"
-            },
-            {
-              "name": "Security & Compliance",
-              "link": "/services/security-compliance"
-            }
-          ]
-        },
-        {
-          "title": "UI/UX Experience Design",
-          "link": "/services/ui-ux-experience-design",
-          "menu_items": [
-            {
-              "name": "User Experience (UX) Strategy",
-              "link": "/services/user-experience-strategy"
-            },
-            {
-              "name": "User Interface (UI) Design",
-              "link": "/services/user-interface-design"
-            },
-            {
-              "name": "Design Systems",
-              "link": "/services/design-systems"
-            },
-            {
-              "name": "Prototyping & Usability Testing",
-              "link": "/services/prototyping-usability-testing"
-            },
-            {
-              "name": "Enterprise UX Optimization",
-              "link": "/services/enterprise-ux-optimization"
-            }
-          ]
-        },
-        {
-          "title": "Integration and API Services ",
-          "link": "/services/integration-and-api-services",
-          "menu_items": [
-            {
-              "name": "Third-Party System Integration",
-              "link": "/services/third-party-system-integration"
-            },
-            {
-              "name": "ERP, CRM & HRMS Integration",
-              "link": "/services/erp-crm-hrms-integration"
-            },
-            {
-              "name": "Payment, Logistics & CRM APIs",
-              "link": "/services/payment-logistics-crm-apis"
-            },
-            {
-              "name": "Middleware & Integration Platforms",
-              "link": "/services/middleware-integration-platforms"
-            }
-          ]
-        },
-        {
-          "title": "Maintenance and Managed Services",
-          "link": "/services/maintenance-and-managed-services",
-          "menu_items": [
-            {
-              "name": "Application Support & Maintenance",
-              "link": "/services/application-support-maintenance"
-            },
-            {
-              "name": "Performance Monitoring",
-              "link": "/services/performance-monitoring"
-            },
-            {
-              "name": "Security Updates & Patching",
-              "link": "/services/security-updates-patching"
-            },
-            {
-              "name": "SLA-Based Managed Services",
-              "link": "/services/sla-based-managed-services"
-            }
-          ]
-        },
-        {
-          "title": "Digital Strategy and Consulting ",
-          "link": "/services/digital-strategy-and-consulting",
-          "menu_items": [
-            {
-              "name": "Digital Transformation Consulting",
-              "link": "/services/digital-transformation-consulting"
-            },
-            {
-              "name": "Product & Platform Strategy",
-              "link": "/services/product-platform-strategy"
-            },
-            {
-              "name": "Business Process Analysis & Optimization",
-              "link": "/services/business-process-analysis-optimization"
-            },
-            {
-              "name": "Technology Road mapping",
-              "link": "/services/technology-road-mapping"
-            },
-            {
-              "name": "AI Adoption & Readiness Assessment",
-              "link": "/services/ai-adoption-readiness-assessment"
-            }
-          ]
-        }
-      ]
-    },
-    "solutions": {
-      "title": "Solutions",
-      "mega_menu": [
-        {
-          "title": "AI and Intelligent Solutions ",
-          "link": "/solutions/ai-and-intelligent-solutions",
-          "menu_items": [
-            {
-              "name": "AI-Driven Business Automation",
-              "link": "/solutions/ai-driven-business-automation"
-            },
-            {
-              "name": "Chatbots & Virtual Assistants",
-              "link": "/solutions/chatbots-virtual-assistants"
-            },
-            {
-              "name": "Predictive Analytics & BI",
-              "link": "/solutions/predictive-analytics-bi"
-            },
-            {
-              "name": "Machine Learning Models",
-              "link": "/solutions/machine-learning-models"
-            },
-            {
-              "name": "Recommendation Engines",
-              "link": "/solutions/recommendation-engines"
-            },
-            {
-              "name": "Computer Vision & NLP Solutions",
-              "link": "/solutions/computer-vision-nlp-solutions"
-            }
-          ]
-        },
-        {
-          "title": "Data Analytics and BI",
-          "link": "/solutions/data-analytics-and-bi",
-          "menu_items": [
-            {
-              "name": "Data Engineering & Warehousing",
-              "link": "/solutions/data-engineering-warehousing"
-            },
-            {
-              "name": "Business Intelligence Dashboards",
-              "link": "/solutions/business-intelligence-dashboards"
-            },
-            {
-              "name": "Data Visualization",
-              "link": "/solutions/data-visualization"
-            },
-            {
-              "name": "Real-Time Reporting",
-              "link": "/solutions/real-time-reporting"
-            },
-            {
-              "name": "AI-Driven Insights",
-              "link": "/solutions/ai-driven-insights"
-            }
-          ]
-        },
-        {
-          "title": "E-Commerce Solutions ",
-          "link": "/solutions/e-commerce-solutions",
-          "menu_items": [
-            {
-              "name": "Custom E-Commerce Development",
-              "link": "/solutions/custom-e-commerce-development"
-            },
-            {
-              "name": "B2B & B2C Commerce Platforms",
-              "link": "/solutions/b2b-b2c-commerce-platforms"
-            },
-            {
-              "name": "Marketplace Development",
-              "link": "/solutions/marketplace-development"
-            },
-            {
-              "name": "Payment Gateway & ERP Integration",
-              "link": "/solutions/payment-gateway-erp-integration"
-            },
-            {
-              "name": "Subscription & SaaS Commerce",
-              "link": "/solutions/subscription-saas-commerce"
-            },
-            {
-              "name": "E-Commerce Automation & Analytics",
-              "link": "/solutions/e-commerce-automation-analytics"
-            }
-          ]
-        },
-        {
-          "title": "Business Process Automation",
-          "link": "/solutions/business-process-automation",
-          "menu_items": [
-            {
-              "name": "Workflow Automation",
-              "link": "/solutions/workflow-automation"
-            },
-            {
-              "name": "Robotic Process Automation (RPA)",
-              "link": "/solutions/robotic-process-automation"
-            },
-            {
-              "name": "CRM & ERP Automation",
-              "link": "/solutions/crm-erp-automation"
-            },
-            {
-              "name": "Document & Data Automation",
-              "link": "/solutions/document-data-automation"
-            },
-            {
-              "name": "AI-Powered Decision Systems ",
-              "link": "/solutions/ai-powered-decision-systems"
-            }
-          ]
-        }
-      ]
-    },
-    "products": {
-      "title": "Products",
-      "mega_menu": [
-        {
-          "title": "",
-          "link": "/products/",
-          "menu_items": [
-            {
-              "name": "",
-              "link": "/solutions/"
-            }
-          ]
-        }
-      ]
-    },
-    "career": {
-      "name": "Career",
-      "link": "/careers"
-    },
-    "contact": {
-      "name": "Contact Us",
-      "link": "/contact"
     }
   }
-}
+]

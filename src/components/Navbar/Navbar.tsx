@@ -206,7 +206,7 @@ export default function Navbar(nav: any) {
                                                             <Link href={item.link}>
                                                                 <div className={styles.productMenuItem}>
                                                                     <div className={styles.productMenuIcon}>
-                                                                        <Image src={productLogo} alt="Product Logo" width={80} height={30} />
+                                                                        <img src={productLogo} alt="Product Logo" style={{ width: '124px', height: 'auto', objectFit: 'contain' }} />
                                                                     </div>
                                                                     <div className={styles.productMenuText}>
                                                                         <span dangerouslySetInnerHTML={{ __html: item.name }} />
@@ -341,7 +341,7 @@ export default function Navbar(nav: any) {
                                                     <Link href={item.link} onClick={toggleMobileMenu}>
                                                         <div className={styles.productMenuItem}>
                                                             <div className={styles.productMenuIcon}>
-                                                                <Image src={productLogo} alt="Product Logo" width={60} height={24} />
+                                                                <img src={productLogo} alt="Product Logo" style={{ width: '80px', height: 'auto', objectFit: 'contain' }} />
                                                             </div>
                                                             <div className={styles.productMenuText}>
                                                                 <span dangerouslySetInnerHTML={{ __html: item.name }} />

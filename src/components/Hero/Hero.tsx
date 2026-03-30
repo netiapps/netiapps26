@@ -109,7 +109,7 @@ export default function Hero(slides: any) {
                                             e.currentTarget.currentTime = 0;
                                             e.currentTarget.play().catch(() => { });
                                         }}
-                                        src={videos[index % videos.length]}
+                                        src={slide.video || videos[index % videos.length]}
                                         style={{
                                             width: '100%',
                                             height: '100%',
@@ -135,7 +135,7 @@ export default function Hero(slides: any) {
                                             e.currentTarget.currentTime = 0;
                                             e.currentTarget.play().catch(() => { });
                                         }}
-                                        src={videos[index % videos.length]}
+                                        src={slide.video || videos[index % videos.length]}
                                         style={{
                                             width: '100%',
                                             height: '100%',
@@ -158,17 +158,19 @@ export default function Hero(slides: any) {
                                                 <div className={styles.title}>
                                                     <div
                                                         dangerouslySetInnerHTML={{
-                                                            __html: slide.title,
+                                                            __html: slide.title || "",
                                                         }}
                                                     />
                                                 </div>
 
-                                                <Link
-                                                    href={slide.link}
-                                                    className={styles.ctaBtn}
-                                                >
-                                                    {slide.button_name}
-                                                </Link>
+                                                {(slide.button_name && slide.link) && (
+                                                    <Link
+                                                        href={slide.link || '#'}
+                                                        className={styles.ctaBtn}
+                                                    >
+                                                        {slide.button_name}
+                                                    </Link>
+                                                )}
                                             </div>
                                         </div>
                                     </div>
