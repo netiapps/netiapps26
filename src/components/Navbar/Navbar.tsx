@@ -199,12 +199,14 @@ export default function Navbar(nav: any) {
                                         <div className={`${styles.dropdown} ${styles.productsDropdown}`}>
                                             <ul>
                                                 {navigationData.products.mega_menu[0].menu_items.map((item: any, index: number) => {
+                                                    const matchedProduct = nav?.products?.find((p: any) => p.slug && item.link?.includes(p.slug));
+                                                    const productLogo = matchedProduct?.acf?.banner?.logo || item.product_icon || getMediaUrl("/images/product_logo.png");
                                                     return (
                                                         <li key={index}>
                                                             <Link href={item.link}>
                                                                 <div className={styles.productMenuItem}>
                                                                     <div className={styles.productMenuIcon}>
-                                                                        <Image src={item.product_icon || getMediaUrl("/images/product_logo.png")} alt="Product Logo" width={80} height={30} />
+                                                                        <Image src={productLogo} alt="Product Logo" width={80} height={30} />
                                                                     </div>
                                                                     <div className={styles.productMenuText}>
                                                                         <span dangerouslySetInnerHTML={{ __html: item.name }} />
@@ -332,12 +334,14 @@ export default function Navbar(nav: any) {
                                 <div className={`${styles.mobileSubMenu} ${styles.mobileProductsMenu} ${expandedMobileMenu === 'products' ? styles.open : ''}`}>
                                     <ul>
                                         {navigationData.products.mega_menu[0].menu_items.map((item: any, index: number) => {
+                                            const matchedProduct = nav?.products?.find((p: any) => p.slug && item.link?.includes(p.slug));
+                                            const productLogo = matchedProduct?.acf?.banner?.logo || item.product_icon || getMediaUrl("/images/product_logo.png");
                                             return (
                                                 <li key={index}>
                                                     <Link href={item.link} onClick={toggleMobileMenu}>
                                                         <div className={styles.productMenuItem}>
                                                             <div className={styles.productMenuIcon}>
-                                                                <Image src={item.product_icon || getMediaUrl("/images/product_logo.png")} alt="Product Logo" width={60} height={24} />
+                                                                <Image src={productLogo} alt="Product Logo" width={60} height={24} />
                                                             </div>
                                                             <div className={styles.productMenuText}>
                                                                 <span dangerouslySetInnerHTML={{ __html: item.name }} />
