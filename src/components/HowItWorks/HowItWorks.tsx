@@ -98,14 +98,16 @@ function HowItWorksBlock({ block, blockIndex }: { block: any; blockIndex: number
 export default function HowItWorks({ howItWorksData }: HowItWorksProps) {
     if (!howItWorksData) return null;
 
-    const blocks: any[] = Array.isArray(howItWorksData) ? howItWorksData : [howItWorksData];
+    const blocks: any[] = Array.isArray(howItWorksData) ? howItWorksData : (howItWorksData.list || [howItWorksData]);
     if (blocks.length === 0) return null;
+
+    const sectionBadge = (!Array.isArray(howItWorksData) ? howItWorksData.tag : null) || (blocks.length > 0 ? blocks[0].how_it_works : null) || "How It Works";
 
     return (
         <section className={styles.howItWorksSection}>
             <div className="container">
                 <div className={styles.header}>
-                    <div className={styles.pillBadge}>How It Works</div>
+                    <div className={styles.pillBadge}>{sectionBadge}</div>
                 </div>
 
                 <div className={styles.blocksWrapper}>
