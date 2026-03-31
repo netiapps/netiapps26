@@ -30,47 +30,45 @@ export default function KeyFeatures({ keyFeaturesData }: KeyFeaturesProps) {
                         <p className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
                     )}
                 </div>
+                {featuresList.length > 0 && (
+                    <div className={styles.sliderContainer}>
+                        <Swiper
+                            modules={[FreeMode]}
+                            spaceBetween={30}
+                            slidesPerView={1.2}
+                            freeMode={true}
+                            breakpoints={{
+                                576: { slidesPerView: 2.2 },
+                                768: { slidesPerView: 2.5 },
+                                992: { slidesPerView: 3.2 },
+                                1200: { slidesPerView: 3.5 },
+                            }}
+                            className={styles.swiperInstance}
+                        >
+                            {featuresList.map((feature: any, index: number) => (
+                                <SwiperSlide key={index} className={styles.slide}>
+                                    <div className={styles.card}>
+                                        {feature.image && (
+                                            <div className={styles.iconWrapper}>
+                                                <img
+                                                    src={feature.image}
+                                                    alt={feature.feature_name || "Feature Icon"}
+                                                    className={styles.featureIcon}
+                                                />
+                                            </div>
+                                        )}
+                                        <h3
+                                            className={styles.cardTitle}
+                                            dangerouslySetInnerHTML={{ __html: feature.feature_name ? feature.feature_name.replace('\n', '<br />') : '' }}
+                                        />
+                                        <p className={styles.cardDescription}>{feature.feature}</p>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                )}
             </div>
-
-            {featuresList.length > 0 && (
-                <div className={styles.sliderContainer}>
-                    <Swiper
-                        modules={[FreeMode]}
-                        spaceBetween={30}
-                        slidesPerView={1.2}
-                        freeMode={true}
-                        centeredSlides={true}
-                        breakpoints={{
-                            576: { slidesPerView: 2.2 },
-                            768: { slidesPerView: 2.5 },
-                            992: { slidesPerView: 3.2 },
-                            1200: { slidesPerView: 3.5 },
-                        }}
-                        className={styles.swiperInstance}
-                    >
-                        {featuresList.map((feature: any, index: number) => (
-                            <SwiperSlide key={index} className={styles.slide}>
-                                <div className={styles.card}>
-                                    {feature.image && (
-                                        <div className={styles.iconWrapper}>
-                                            <img
-                                                src={feature.image}
-                                                alt={feature.feature_name || "Feature Icon"}
-                                                className={styles.featureIcon}
-                                            />
-                                        </div>
-                                    )}
-                                    <h3
-                                        className={styles.cardTitle}
-                                        dangerouslySetInnerHTML={{ __html: feature.feature_name ? feature.feature_name.replace('\n', '<br />') : '' }}
-                                    />
-                                    <p className={styles.cardDescription}>{feature.feature}</p>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
-            )}
         </section>
     );
 }

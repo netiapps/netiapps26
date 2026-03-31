@@ -51,12 +51,7 @@
 }
 
 .contentGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+
 
     &:has(.imageColumn:empty) {
         grid-template-columns: 1fr;
@@ -127,7 +122,6 @@
 .imageColumn {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
 
     @media (max-width: 992px) {
         justify-content: center;
@@ -136,7 +130,7 @@
 
 .featuredImage {
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
 }
