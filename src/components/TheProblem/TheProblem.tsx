@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './TheProblem.module.scss';
-import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface TheProblemProps {
     problemData?: any;
@@ -68,6 +67,9 @@ export default function TheProblem({ problemData }: TheProblemProps) {
                                     >
                                         <div className={styles.accordionHeader}>
                                             <h4 dangerouslySetInnerHTML={{ __html: challenge.title }} />
+                                            <span className={styles.accordionChevron}>
+                                                {activeIndex === index ? '−' : '+'}
+                                            </span>
                                         </div>
                                         <div
                                             className={styles.accordionContent}
