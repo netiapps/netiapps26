@@ -27,7 +27,7 @@ export default function KeyFeatures({ keyFeaturesData }: KeyFeaturesProps) {
                     <div className={styles.pillBadge}>Key Features</div>
                     {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
                     {mainDesc && (
-                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
+                        <div className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
                     )}
                 </div>
                 {featuresList.length > 0 && (

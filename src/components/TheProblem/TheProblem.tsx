@@ -51,7 +51,7 @@ export default function TheProblem({ problemData }: TheProblemProps) {
                     {problemBadge && <div className={styles.pillBadge}>{problemBadge}</div>}
                     {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
                     {mainDesc && (
-                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
+                        <div className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
                     )}
                 </div>
 
@@ -74,7 +74,7 @@ export default function TheProblem({ problemData }: TheProblemProps) {
                                             style={{ maxHeight: activeIndex === index ? '200px' : '0' }}
                                         >
                                             {challenge.description && (
-                                                <p dangerouslySetInnerHTML={{ __html: challenge.description }} />
+                                                <div dangerouslySetInnerHTML={{ __html: challenge.description }} />
                                             )}
                                         </div>
                                     </div>

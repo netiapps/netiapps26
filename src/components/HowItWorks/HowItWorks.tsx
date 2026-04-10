@@ -58,7 +58,7 @@ function HowItWorksBlock({ block, blockIndex }: { block: any; blockIndex: number
                         <h3 className={styles.title} dangerouslySetInnerHTML={{ __html: title }} />
                     )}
                     {description && (
-                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />
+                        <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />
                     )}
 
                     {steps.length > 0 && (
@@ -81,7 +81,7 @@ function HowItWorksBlock({ block, blockIndex }: { block: any; blockIndex: number
                                         style={{ maxHeight: activeIndex === index ? '300px' : '0' }}
                                     >
                                         {step.description && (
-                                            <p dangerouslySetInnerHTML={{ __html: step.description }} />
+                                            <div dangerouslySetInnerHTML={{ __html: step.description }} />
                                         )}
                                     </div>
                                 </div>
@@ -98,10 +98,13 @@ function HowItWorksBlock({ block, blockIndex }: { block: any; blockIndex: number
 export default function HowItWorks({ howItWorksData }: HowItWorksProps) {
     if (!howItWorksData) return null;
 
-    const blocks: any[] = Array.isArray(howItWorksData) ? howItWorksData : (howItWorksData.list || [howItWorksData]);
+    const blocks: any[] = Array.isArray(howItWorksData)
+        ? howItWorksData
+        : (howItWorksData.list && Array.isArray(howItWorksData.list) ? howItWorksData.list : [howItWorksData]);
+
     if (blocks.length === 0) return null;
 
-    const sectionBadge = (!Array.isArray(howItWorksData) ? howItWorksData.tag : null) || (blocks.length > 0 ? blocks[0].how_it_works : null) || "How It Works";
+    const sectionBadge = (!Array.isArray(howItWorksData) ? howItWorksData.tag : null) || (blocks.length > 0 && blocks[0] ? blocks[0].how_it_works : null) || "How It Works";
 
     return (
         <section className={styles.howItWorksSection}>
