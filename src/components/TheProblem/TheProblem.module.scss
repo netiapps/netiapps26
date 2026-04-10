@@ -13,17 +13,17 @@
 }
 
 .pillBadge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
     color: #1a1a1a;
-    font-weight: 600;
-    font-size: 0.85rem;
-    padding: 6px 20px;
-    border-radius: 50px;
-    border: 1px solid #fca000;
+    background-color: #0000;
+    border-bottom: 4px solid #fca000;
+    /* border-radius: 50px; */
+    justify-content: center;
+    align-items: center;
     margin-bottom: 25px;
+    /* padding: 6px 20px; */
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
 }
 
 .title {

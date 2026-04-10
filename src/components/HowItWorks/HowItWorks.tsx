@@ -104,7 +104,7 @@ export default function HowItWorks({ howItWorksData }: HowItWorksProps) {
 
     if (blocks.length === 0) return null;
 
-    const sectionBadge = (!Array.isArray(howItWorksData) ? howItWorksData.tag : null) || (blocks.length > 0 && blocks[0] ? blocks[0].how_it_works : null) || "How It Works";
+    const sectionBadge = (!Array.isArray(howItWorksData) ? howItWorksData.title : null) || "The Solution";
 
     return (
         <section className={styles.howItWorksSection}>
