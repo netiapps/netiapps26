@@ -1,40 +1,66 @@
 .howItWorksSection {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #ffffff;
 }
 
 .header {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 60px;
 }
 
 .pillBadge {
+    color: #1a1a1a;
+    background-color: #0000;
+    border-bottom: 4px solid #fca000;
+    /* border-radius: 50px; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    /* padding: 6px 20px; */
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
+}
+
+// Stacked blocks wrapper
+.blocksWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+// Individual repeater block
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.blockBadge {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    color: #1a1a1a;
-    font-weight: 600;
-    font-size: 0.85rem;
-    padding: 6px 20px;
+    background-color: #fff8ec;
+    color: #fca000;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 5px 16px;
     border-radius: 50px;
     border: 1px solid #fca000;
-    margin-bottom: 25px;
+    align-self: flex-start;
 }
 
 .title {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 500;
     color: #1a1a1a;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     letter-spacing: -0.01em;
+    line-height: 1.3;
 
     @media (max-width: 768px) {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -42,7 +68,7 @@
     font-size: 0.95rem;
     color: #4a4a4a;
     line-height: 1.7;
-    margin: 0;
+    margin-bottom: 32px;
 
     @media (max-width: 768px) {
         font-size: 0.9rem;
@@ -53,27 +79,39 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: center;
+    align-items: start;
 
     @media (max-width: 992px) {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 36px;
+
+        // on mobile always show image first
+        .orderFirst {
+            order: 1;
+        }
+
+        .orderLast {
+            order: 2;
+        }
     }
 }
 
+// desktop order helpers
+.orderFirst {
+    order: 1;
+}
+
+.orderLast {
+    order: 2;
+}
+
+
 .accordionColumn {
-    padding-right: 20px;
+    padding-right: 10px;
 
     @media (max-width: 992px) {
         padding-right: 0;
     }
-}
-
-.columnTitle {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 30px;
 }
 
 .accordion {
@@ -82,81 +120,103 @@
 }
 
 .accordionItem {
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid #e0e0e0;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
 
-    &:last-child {
-        border-bottom: 1px solid #d1d1d1;
-    }
-
     &:first-child {
-        border-top: 1px solid #d1d1d1;
-    }
-
-    h4 {
-        margin: 0;
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: #1a1a1a;
-        padding: 24px 0;
-        transition: all 0.3s ease;
+        border-top: 1px solid #e0e0e0;
     }
 
     &.active {
-        h4 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            padding: 24px 0 10px;
+        .accordionContent {
+            margin-bottom: 20px;
         }
 
-        .accordionContent {
-            margin-bottom: 24px;
+        .accordionHeader h4 {
+            color: #fca000;
+        }
+
+        .stepNum {
+            color: #fca000;
         }
     }
 }
 
+.accordionHeader {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 0;
+
+    h4 {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        flex: 1;
+        transition: color 0.2s ease;
+        line-height: 1.4;
+    }
+}
+
+.stepNum {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #bbb;
+    min-width: 24px;
+    transition: color 0.2s ease;
+}
+
+.accordionChevron {
+    font-size: 1.2rem;
+    color: #aaa;
+    font-weight: 400;
+    line-height: 1;
+}
+
 .accordionContent {
-    transition: max-height 0.3s ease, margin-bottom 0.3s ease;
+    overflow: hidden;
+    transition: max-height 0.35s ease, margin-bottom 0.35s ease;
+    padding-left: 38px;
 
     p {
         margin: 0;
-        font-size: 0.9rem;
-        color: #444;
-        line-height: 1.6;
+        font-size: 0.88rem;
+        color: #555;
+        line-height: 1.7;
     }
 }
 
 .imageColumn {
     width: 100%;
-    height: 100%;
+    position: sticky;
+    top: 100px;
 }
 
 .imageWrapper {
     width: 100%;
-    height: 100%;
-    border-radius: 30px;
+    border-radius: 24px;
     overflow: hidden;
-    min-height: 450px;
-    background-color: #f7f7f7;
+    min-height: 400px;
 
     @media (max-width: 992px) {
-        min-height: 400px;
+        min-height: 260px;
     }
 }
 
 .featuredImage {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0.6;
+        opacity: 0.5;
     }
 
     to {

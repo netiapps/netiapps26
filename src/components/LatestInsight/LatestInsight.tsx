@@ -111,8 +111,8 @@ export default function LatestInsight() {
               >
                 <div className={styles.imageWrapper}>
                   <img
-                    src={insight.acf.image}
-                    alt={insight.acf.title}
+                    src={insight.acf.image || undefined}
+                    alt={insight.acf.title || "Insight"}
                     className={styles.image}
                   />
                 </div>

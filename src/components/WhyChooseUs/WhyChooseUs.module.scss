@@ -16,17 +16,17 @@
 }
 
 .pillBadge {
-    display: inline-flex;
-    align-items: center;
+    color: #fff;
+    background-color: #0000;
+    border-bottom: 4px solid #fca000;
+    /* border-radius: 50px; */
     justify-content: center;
-    background-color: transparent;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 0.85rem;
-    padding: 6px 20px;
-    border-radius: 50px;
-    border: 1px solid #fca000;
+    align-items: center;
     margin-bottom: 25px;
+    /* padding: 6px 20px; */
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
 }
 
 .title {
@@ -52,21 +52,21 @@
     padding: 40px;
     display: flex;
     flex-direction: column;
-    
+
     /* Cross borders */
     &:nth-child(1) {
         border-right: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-    
+
     &:nth-child(2) {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-    
+
     &:nth-child(3) {
         border-right: 1px solid rgba(255, 255, 255, 0.2);
     }
-    
+
     &:nth-child(4) {
         /* No borders for bottom right */
     }
@@ -74,14 +74,14 @@
     @media (max-width: 768px) {
         /* Reset borders on mobile */
         padding: 30px 20px;
-        
+
         &:nth-child(1),
         &:nth-child(2),
         &:nth-child(3) {
             border-right: none;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         &:nth-child(4) {
             border: none;
         }
@@ -100,7 +100,7 @@
     font-size: 0.95rem;
     line-height: 1.6;
     margin: 0;
-    
+
     :global(p) {
         margin: 0;
     }

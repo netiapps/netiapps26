@@ -196,13 +196,22 @@ export default function Navbar(nav: any) {
                                         {navigationData.products.title || "Products"} <ChevronDown size={16} />
                                     </span>
                                     {activeDropdown === 'products' && (
-                                        <div className={styles.dropdown}>
+                                        <div className={`${styles.dropdown} ${styles.productsDropdown}`}>
                                             <ul>
                                                 {navigationData.products.mega_menu[0].menu_items.map((item: any, index: number) => {
+                                                    const matchedProduct = nav?.products?.find((p: any) => p.slug && item.link?.includes(p.slug));
+                                                    const productLogo = matchedProduct?.acf?.banner?.logo || item.product_icon || getMediaUrl("/images/product_logo.png");
                                                     return (
                                                         <li key={index}>
                                                             <Link href={item.link}>
-                                                                <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                                <div className={styles.productMenuItem}>
+                                                                    <div className={styles.productMenuIcon}>
+                                                                        <img src={productLogo} alt="Product Logo" style={{ width: '124px', height: 'auto', objectFit: 'contain' }} />
+                                                                    </div>
+                                                                    <div className={styles.productMenuText}>
+                                                                        <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                                    </div>
+                                                                </div>
                                                             </Link>
                                                         </li>
                                                     );
@@ -322,13 +331,22 @@ export default function Navbar(nav: any) {
                                     {navigationData.products.title || "Products"}
                                     <ChevronDown size={16} className={expandedMobileMenu === 'products' ? styles.rotate : ''} />
                                 </div>
-                                <div className={`${styles.mobileSubMenu} ${expandedMobileMenu === 'products' ? styles.open : ''}`}>
+                                <div className={`${styles.mobileSubMenu} ${styles.mobileProductsMenu} ${expandedMobileMenu === 'products' ? styles.open : ''}`}>
                                     <ul>
                                         {navigationData.products.mega_menu[0].menu_items.map((item: any, index: number) => {
+                                            const matchedProduct = nav?.products?.find((p: any) => p.slug && item.link?.includes(p.slug));
+                                            const productLogo = matchedProduct?.acf?.banner?.logo || item.product_icon || getMediaUrl("/images/product_logo.png");
                                             return (
                                                 <li key={index}>
                                                     <Link href={item.link} onClick={toggleMobileMenu}>
-                                                        <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                        <div className={styles.productMenuItem}>
+                                                            <div className={styles.productMenuIcon}>
+                                                                <img src={productLogo} alt="Product Logo" style={{ width: '80px', height: 'auto', objectFit: 'contain' }} />
+                                                            </div>
+                                                            <div className={styles.productMenuText}>
+                                                                <span dangerouslySetInnerHTML={{ __html: item.name }} />
+                                                            </div>
+                                                        </div>
                                                     </Link>
                                                 </li>
                                             );

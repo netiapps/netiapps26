@@ -17,8 +17,8 @@ export default function TheProblem({ problemData }: TheProblemProps) {
         return null; // Or some meaningful fallback. But per user "dont had static data"
     }
 
-    const problemBadge = problemData.the_problem;
-    const mainTitle = problemData.ttile; // Note the spelling in ACF JSON "ttile"
+    const problemBadge = problemData.tag || problemData.the_problem;
+    const mainTitle = problemData.title || problemData.ttile; // fallback for spelling error in ACF JSON
     const mainDesc = problemData.description;
     const listTitle = problemData.list_title;
 
@@ -51,7 +51,7 @@ export default function TheProblem({ problemData }: TheProblemProps) {
                     {problemBadge && <div className={styles.pillBadge}>{problemBadge}</div>}
                     {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
                     {mainDesc && (
-                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
+                        <div className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />
                     )}
                 </div>
 
@@ -74,7 +74,7 @@ export default function TheProblem({ problemData }: TheProblemProps) {
                                             style={{ maxHeight: activeIndex === index ? '200px' : '0' }}
                                         >
                                             {challenge.description && (
-                                                <p dangerouslySetInnerHTML={{ __html: challenge.description }} />
+                                                <div dangerouslySetInnerHTML={{ __html: challenge.description }} />
                                             )}
                                         </div>
                                     </div>

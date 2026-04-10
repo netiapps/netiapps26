@@ -1,0 +1,228 @@
+{
+  "banner": {
+    "title": "Automated Document Operations",
+    "built_for": "Banks, Enterprises & Process-Driven Organizations",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Products",
+        "link": "/product/automated-document-operations/"
+      },
+      {
+        "label": "Automated Document Operations",
+        "link": "/product/automated-document-operations/"
+      }
+    ],
+    "logo": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/Group-23.png",
+    "banner_details": {
+      "": [
+        {
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+        },
+        {
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+        },
+        {
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+        }
+      ],
+      "get_demo_button": "Get Demo",
+      "link": "/",
+      "download_pdf": "Download PDF"
+    }
+  },
+  "problem": {
+    "tag": "The Problem",
+    "ttile": "Documents shouldn’t live in people’s inboxes.",
+    "description": "These challenges are solvable. The right document management system streamlines workflows, improves visibility, and keeps documents secure and compliant",
+    "list_title": "Common Challenges Organizations Face",
+    "list": [
+      {
+        "list": "Multiple document versions everywhere—Teams struggle to identify the latest or approved version."
+      },
+      {
+        "list": "Slow approval cycles—Manual routing causes unnecessary delays and bottlenecks."
+      },
+      {
+        "list": "Lack of visibility – It’s difficult to track where a document is in the process or who is responsible."
+      },
+      {
+        "list": "Audit and compliance pressure – Demonstrating process adherence becomes time-consuming and stressful."
+      },
+      {
+        "list": "Security vulnerabilities – Sensitive documents may be accessible to unintended users."
+      }
+    ],
+    "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+  },
+  "overview": false,
+  "how_it_works": {
+    "how_it_works": "How It Works",
+    "title_": "From scattered chaos to structured control.",
+    "description": "We don’t hand you a generic tool and expect you to adapt to it. Instead, we understand your existing workflows and build a system tailored around them—ensuring the solution fits your processes, not the other way around.",
+    "list": [
+      {
+        "list": "Requirement Analysis & Workflow Mapping— A detailed assessment of your current document workflows, approval hierarchies, user roles, and compliance requirements."
+      },
+      {
+        "list": "Solution Design & UX Planning —  Designing workflows, approval structures, and user experiences that align seamlessly with your organization’s internal processes."
+      },
+      {
+        "list": "Custom Development—  A fully tailored solution built to your specifications — not a generic platform with minimal customization."
+      },
+      {
+        "list": "Testing & Quality Assurance—  Comprehensive testing in collaboration with your team to ensure reliability, accuracy, and readiness before launch."
+      },
+      {
+        "list": "Deployment & Go-Live—  Flexible deployment options, including cloud, on-premise, or hybrid environments, based on your infrastructure needs."
+      },
+      {
+        "list": "User Training & Ongoing Support—  Hands-on training and continuous support to ensure smooth adoption and long-term success with the system."
+      }
+    ],
+    "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+  },
+  "key_features": {
+    "title": "Everything you need. Nothing you don’t.",
+    "description": "Built for organisations that handle documents seriously—from the front-line employee creating a draft to the senior executive signing off.",
+    "list": [
+      {
+        "feature_name": "Role-Based Access Control",
+        "feature": "Fine-grained control over who can create, view, approve, or modify. Each role sees exactly what they need—nothing more.",
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp"
+      },
+      {
+        "feature_name": "Workflow Automation",
+        "feature": "Single or multi-level approvals with conditional routing. Documents move automatically — no chasing, no follow-up emails.",
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg"
+      },
+      {
+        "feature_name": "Real-Time Document Tracking",
+        "feature": "Always know where a document stands, who has it, and how long it has been sitting there. Full visibility at every stage.",
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Staffing-Blog-Img-619-×-240-px.jpg"
+      },
+      {
+        "feature_name": "Reporting & Analytics",
+        "feature": "Track approval timelines, spot bottlenecks, and prove compliance on demand, not scrambled together before an audit.",
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp"
+      },
+      {
+        "feature_name": "System Integrations",
+        "feature": "Connects with your core banking system, ERP, HR platforms, and identity management tools. No isolated islands",
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+      },
+      {
+        "feature_name": "Mobile-Responsive Interface",
+        "feature": "Approvals shouldn’t wait for someone to get to their desk. Review and sign off securely from any device, anywhere.",
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/software-development-banner.webp"
+      },
+      {
+        "feature_name": "Audit Trails",
+        "feature": "Every action logged — who did what, when, and why. Tamper-proof records that make audits genuinely straightforward.",
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/software-development-banner.webp"
+      }
+    ],
+    "icon_image": false
+  },
+  "industry_applications": {
+    "title": "Built for organizations where documents actually matter.",
+    "description": "We work best with teams that have real document volume, real compliance obligations, and real consequences when something goes wrong.",
+    "industry_details": [
+      {
+        "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg",
+        "industry_description": "<p><b>Banking &amp; Financial Services</b></p>\n<ul>\n<li>Policy document approvals and version control</li>\n<li>Compliance documentation management</li>\n<li>Internal circulars and regulatory notices</li>\n<li>Audit and regulatory records</li>\n<li>KYC and onboarding document workflows</li>\n</ul>\n"
+      },
+      {
+        "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels1.jpg",
+        "industry_description": "<p><b>Government &amp; Public Sector</b></p>\n<ul>\n<li>Inter-departmental approvals</li>\n<li>Policy drafting, review, and circulation</li>\n<li>Procurement and contract workflows</li>\n</ul>\n"
+      },
+      {
+        "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels.jpg",
+        "industry_description": "<p><b>Healthcare</b></p>\n<ul>\n<li>Clinical protocol approvals</li>\n<li>Regulatory submission management</li>\n<li>Accreditation documentation</li>\n</ul>\n"
+      },
+      {
+        "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels1.jpg",
+        "industry_description": "<p><b>Enterprises &amp; Manufacturing</b></p>\n<ul>\n<li>Quality management documents</li>\n<li>HR policy and procedure management</li>\n<li>Vendor contract workflows</li>\n<li>Cross-department approvals at scale</li>\n</ul>\n"
+      }
+    ]
+  },
+  "why_choose_us": {
+    "title": "What makes this different?",
+    "description": [
+      {
+        "list_": "Built around your workflows",
+        "details": "<p>Approval rules, user roles, and routing are configured to match how your organization actually works — the system adapts to you, not the other way around.</p>\n"
+      },
+      {
+        "list_": "Fast to deploy",
+        "details": "<p>Modular architecture means quicker rollout without sacrificing customization. Most implementations go live within 6 weeks.</p>\n"
+      },
+      {
+        "list_": "No vendor lock-in",
+        "details": "<p>No rigid licensing. Full data portability. A dedicated team that stays with you long after go-live.</p>\n"
+      },
+      {
+        "list_": "Scales with you",
+        "details": "<p>Handles growing document volumes with ease. Add users, departments, and document types without starting over.</p>\n"
+      }
+    ]
+  },
+  "contact_us": {
+    "description": "<h3><strong>Ready to see it working for your team?</strong></h3>\n<p>We’ll walk you through the platform with your real use cases—no slides, no scripts, no generic demos. Just an honest look at whether this is the right fit.</p>\n",
+    "button": "Connect Now",
+    "link": "/contact"
+  },
+  "security_compliance": {
+    "tag": "Security & Compliance",
+    "title": "Enterprise trust, not enterprise theatre.",
+    "description": "<p>Security isn&#8217;t an afterthought — it&#8217;s built into every layer, from storage to access.</p>\n<ul>\n<li>Encryption at rest and in transit</li>\n<li>Secure authentication and SSO</li>\n<li>Tamper-proof audit logs</li>\n<li>Banking compliance-ready architecture</li>\n<li>Backup and disaster recovery</li>\n<li>Granular role-based permissions</li>\n<li>Full data portability, no vendor lock-in</li>\n</ul>\n",
+    "image": {
+      "ID": 2662,
+      "id": 2662,
+      "title": "futureCSD13",
+      "filename": "132229.jpg",
+      "filesize": 1236451,
+      "url": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229.jpg",
+      "link": "https://2026wp.netiapps.net/blogs/the-future-of-custom-software-development-2026-trends-predictions/attachment/132229/",
+      "alt": "The Future of Custom Software Development: 2026 Trends & Predictions",
+      "author": "123458",
+      "description": "",
+      "caption": "",
+      "name": "132229",
+      "status": "inherit",
+      "uploaded_to": 2661,
+      "date": "2026-02-17 07:01:46",
+      "modified": "2026-02-17 07:02:50",
+      "menu_order": 0,
+      "mime_type": "image/jpeg",
+      "type": "image",
+      "subtype": "jpeg",
+      "icon": "https://2026wp.netiapps.net/wp-includes/images/media/default.png",
+      "width": 1500,
+      "height": 753,
+      "sizes": {
+        "thumbnail": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229-150x150.jpg",
+        "thumbnail-width": 150,
+        "thumbnail-height": 150,
+        "medium": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229-300x151.jpg",
+        "medium-width": 300,
+        "medium-height": 151,
+        "medium_large": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229-768x386.jpg",
+        "medium_large-width": 768,
+        "medium_large-height": 386,
+        "large": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229-1024x514.jpg",
+        "large-width": 1024,
+        "large-height": 514,
+        "1536x1536": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229.jpg",
+        "1536x1536-width": 1500,
+        "1536x1536-height": 753,
+        "2048x2048": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229.jpg",
+        "2048x2048-width": 1500,
+        "2048x2048-height": 753
+      }
+    }
+  }
+}

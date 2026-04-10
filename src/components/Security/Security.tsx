@@ -19,14 +19,14 @@ export default function Security({ securityData }: SecurityProps) {
 
     // More robust splitting rather than strict <p> / <ul> regex
     const ulIndex = typeof rawHtml === 'string' ? rawHtml.indexOf('<ul') : -1;
-    
+
     let descriptionText = "";
     let ulContent = "";
 
     if (ulIndex !== -1) {
         descriptionText = rawHtml.substring(0, ulIndex).trim();
         const afterUlStart = rawHtml.substring(ulIndex);
-        
+
         // Extract inner HTML of the first <ul>
         const ulMatch = afterUlStart.match(/<ul[^>]*>([\s\S]*?)<\/ul>/i);
         if (ulMatch) {
@@ -35,7 +35,7 @@ export default function Security({ securityData }: SecurityProps) {
     } else {
         descriptionText = rawHtml;
     }
-    
+
     // Default image from local if provided in the screenshot? No, the user says "dont had static data if data is not available"
     // So we just render dynamic image, or if missing we hide the image explicitly.
     const imageUrl = securityData.image?.url || (typeof securityData.image === 'string' ? securityData.image : null);
@@ -47,17 +47,12 @@ export default function Security({ securityData }: SecurityProps) {
                     {pillBadge && <div className={styles.pillBadge}>{pillBadge}</div>}
                     {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
                     {descriptionText && (
-                        <p className={styles.description} dangerouslySetInnerHTML={{ __html: descriptionText }} />
+                        <div className={styles.description} dangerouslySetInnerHTML={{ __html: descriptionText }} />
                     )}
                 </div>
 
                 <div className={styles.contentGrid}>
-                    <div className={styles.textColumn}>
-                        {ulContent && (
-                            <ul className={styles.featureList} dangerouslySetInnerHTML={{ __html: ulContent }} />
-                        )}
-                    </div>
-                    
+
                     <div className={styles.imageColumn}>
                         {imageUrl && (
                             <img

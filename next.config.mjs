@@ -5,6 +5,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const nextConfig = {
+  trailingSlash: true,
   transpilePackages: ["bootstrap"],
   devIndicators: {
     buildActivity: false,
@@ -20,6 +21,21 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "*.digitaloceanspaces.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "*.netiapps.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "netiapps.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
         pathname: "/**",
       },
     ],

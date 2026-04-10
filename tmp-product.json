@@ -1,13 +1,1328 @@
 [
   {
+    "id": 2850,
+    "date": "2026-03-25T10:32:57",
+    "date_gmt": "2026-03-25T10:32:57",
+    "guid": {
+      "rendered": "https://2026wp.netiapps.net/?post_type=product&#038;p=2850"
+    },
+    "modified": "2026-03-30T05:07:47",
+    "modified_gmt": "2026-03-30T05:07:47",
+    "slug": "conduct-management-tool",
+    "status": "publish",
+    "type": "product",
+    "link": "https://2026wp.netiapps.net/product/conduct-management-tool/",
+    "title": {
+      "rendered": "Conduct Management Tool"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-2850",
+      "product",
+      "type-product",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "banner": {
+        "title": "Conduct Management Tool",
+        "built_for": " Web Application (Internet and Intranet)",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "link": "/"
+          },
+          {
+            "label": "Products",
+            "link": "/product/conduct-management-tool/"
+          },
+          {
+            "label": "Conduct Management Tool",
+            "link": "/product/conduct-management-tool/"
+          }
+        ],
+        "logo": false,
+        "banner_details": {
+          "": [
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+            },
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+            },
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+            }
+          ],
+          "get_demo_button": "Get Demo",
+          "link": "/",
+          "download_pdf": "Download PDF"
+        }
+      },
+      "problem": {
+        "tag": "The Problem",
+        "ttile": "Disciplinary issues demand real attention—not just another email thread",
+        "description": "",
+        "list_title": "Common pain points:",
+        "list": [
+          {
+            "list": "Cases managed through emails and calls — no centralized record, no consistent process"
+          },
+          {
+            "list": "No visibility on case status—HR teams can’t see who’s responsible for the next step"
+          },
+          {
+            "list": "Notices drafted each time manually—show cause notices, warning letters, charge sheets - created inconsistently"
+          },
+          {
+            "list": "No Paper Trail, No Accountability—Haphazard document management due to missing email trails, non-responses, delayed responses, etc."
+          },
+          {
+            "list": "Decisions Made, Proof Missing—When an employee challenges a decision, the case history has to be reconstructed from multiple email threads."
+          },
+          {
+            "list": "No Deadlines, No Escalations, No Urgency—Unable to set any turnaround time for every step of the process, as communication is done via emails"
+          }
+        ],
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+      },
+      "overview": false,
+      "how_it_works": [
+        {
+          "how_it_works": "Who’s Involved",
+          "title": "All stakeholders. One tool.",
+          "description": "Disciplinary cases involve multiple stakeholders across departments and locations. The tool gives each of them role-based access — keeping everyone aligned while eliminating back-and-forth communication.",
+          "list": [
+            {
+              "list": "Initiator(Logs & Reports): Raise the case with incident details, supporting documents, and severity indication."
+            },
+            {
+              "list": "Corporate HR(Reviews and escalates): Assesses severity, routes to regional HR, oversees policy compliance, and authorizes final action."
+            },
+            {
+              "list": "Regional HR(Coordinates Locally): Formally notifies the employee and manages the show cause notice process and coordinates the local investigation."
+            },
+            {
+              "list": "Disciplinary Committee(Deliberates & Decides): Reviews evidence, conducts cross-examination if needed, and reaches a final, documented verdict."
+            },
+            {
+              "list": "Legal Team(Validates Legally): Consulted for high-severity cases to ensure legal formalities are complete before action is executed."
+            },
+            {
+              "list": "Employee(Responds & Appeals): Receives formal communications, submits responses and evidence, and can formally appeal the verdict."
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+        },
+        {
+          "how_it_works": "High-Level Workflow",
+          "title": "From complaint to closure, every step is tracked.",
+          "description": "The process is structured but not rigid. Every step can be configured to match your HR policy, escalation rules, and approval hierarchy.",
+          "list": [
+            {
+              "list": "The initiator logs the complaint—a case is registered with a unique ID, incident details, date, parties involved, and initial severity. Immediately visible to Corporate HR."
+            },
+            {
+              "list": "Corporate HR reviews severity—HR assesses the case, determines the severity level, and routes it to the appropriate regional HR team for local coordination."
+            },
+            {
+              "list": "Regional HR formally notifies the employee; case details are shared with the employee. A show-cause notice or charge sheet is auto-generated and served digitally."
+            },
+            {
+              "list": "Employee responds or appeals—The employee submits their response and supporting evidence. They can accept the finding or formally appeal for further discussion."
+            },
+            {
+              "list": "The Disciplinary Committee deliberates—the committee reviews all evidence, conducts cross-examination if required, and reaches a final verdict—fully documented."
+            },
+            {
+              "list": "Legal clearance for high-severity cases—The legal team confirms all formalities are complete before HR executes the final action."
+            },
+            {
+              "list": "HR executes action depending on the severity and outcome: a warning letter, suspension, or dismissal. All actions are generated, stored, and logged automatically."
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+        }
+      ],
+      "key_features": {
+        "title": "Built for every stage of the disciplinary process.",
+        "description": "From the first complaint log to the final action letter, the tool handles the entire lifecycle so your HR team can focus on judgment, not administration.",
+        "list": [
+          {
+            "feature_name": "Case Initiation & Registration",
+            "feature": "Centralized creation and tracking of disciplinary cases with unique case IDs, incident details, and real-time status visibility. Every case has a clear owner from day one.",
+            "image": false
+          },
+          {
+            "feature_name": "Workflow Management",
+            "feature": "Rule-based, multi-level approval workflows mapped to action type, case severity, employee grade, and department. The right people get the right case at the right time—automatically.",
+            "image": false
+          },
+          {
+            "feature_name": "Notice & Document Management",
+            "feature": "Standardized, template-driven generation of Show Cause Notices (SCN), warning letters, and charge sheets. Consistent, professional, and stored securely — no more manual drafting every time.",
+            "image": false
+          },
+          {
+            "feature_name": "Employee Response & Investigation",
+            "feature": "Structured mechanism for employee replies, evidence submission, investigator assignment, and investigation logs. Every exchange is documented, timestamped, and retrievable.",
+            "image": false
+          },
+          {
+            "feature_name": "Audit Trail & Compliance Control",
+            "feature": "End-to-end, tamper-proof audit trail of all actions, approvals, and communications — ensuring full legal and regulatory compliance and making every decision defensible.",
+            "image": false
+          },
+          {
+            "feature_name": "Reporting & MIS Dashboards",
+            "feature": "Real-time dashboards and reports on open and closed cases, delays, trends, and SLA adherence — giving management the oversight they need without asking for it.",
+            "image": false
+          }
+        ]
+      },
+      "industry_applications": {
+        "tag": "Industries",
+        "title": "Where structure, compliance, and accountability matter most.",
+        "description": "",
+        "industry_details": [
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "industry_description": "<p><b>Banking &amp; Financial Services</b></p>\n<ul>\n<li>Regulatory scrutiny makes every disciplinary decision a potential liability.</li>\n<li>The tool ensures every case — from misconduct to policy violations — is documented, auditable, and legally defensible before action is taken.</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<p><b>Government &amp; Public Sector</b></p>\n<ul>\n<li>Proceedings must follow due process to the letter.</li>\n<li>The audit trail, notice management, and legal team integration ensure every action taken can withstand scrutiny under public accountability standards.</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "industry_description": "<p><b>Healthcare</b></p>\n<ul>\n<li>Regulatory compliance and patient safety make disciplinary rigor non-negotiable.</li>\n<li>Role-based access ensures sensitive cases reach only the right stakeholders—clinical leads, HR, and legal—at the right stage.</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "industry_description": "<p><b>Enterprises &amp; Manufacturing</b></p>\n<ul>\n<li>Large, distributed workforces with shift supervisors, floor managers, and corporate HR operating across locations need a single system that brings every case into one place, regardless of where it originates.</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<p><b>Insurance &amp; Financial Institutions</b></p>\n<ul>\n<li>Agent misconduct, compliance breaches, and code-of-conduct violations require a process that is both thorough and time-bound.</li>\n<li>SLA tracking ensures no case is delayed beyond policy-mandated timelines.</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg",
+            "industry_description": "<p><b>Hospitality &amp; Facilities Management</b></p>\n<ul>\n<li>High attrition and a mix of permanent and contractual staff create frequent disciplinary needs.</li>\n<li>Standardized notice templates and automated workflows reduce administrative burden on HR teams.</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Picture1.jpg",
+            "industry_description": "<p><b>Logistics &amp; Supply Chain</b></p>\n<ul>\n<li>Field-heavy workforces and decentralized operations make it difficult to maintain a consistent process.</li>\n<li>The tool routes every case through the same structured workflow, regardless of geography.</li>\n</ul>\n"
+          }
+        ]
+      },
+      "security_compliance": {
+        "tag": "Compliance & Governance",
+        "title": "When decisions are challenged, memory isn’t a reliable record",
+        "description": "<p>The system ensures every case is defensible—legally and procedurally. Not because something might go wrong, but because a good process protects both the organisation and the employee.</p>\n<ul>\n<li>End-to-end, tamper-proof audit trail of all actions and communications</li>\n<li>Legal team integration for high-severity cases before action is executed</li>\n<li>SLA tracking with alerts for overdue steps and pending actions</li>\n<li>Role-based access control—Initiator, HR, Committee, Legal, and Employee each have separate views</li>\n<li>Secure, centralised document storage for all notices and responses</li>\n<li>Deployable on the Internet or Intranet, based on your security requirements</li>\n</ul>\n",
+        "image": {
+          "ID": 2576,
+          "id": 2576,
+          "title": "what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured",
+          "filename": "what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+          "filesize": 15520,
+          "url": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+          "link": "https://2026wp.netiapps.net/blogs/ci-cd-ai-building-intelligent-pipelines-for-faster-and-smarter-releases/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured/",
+          "alt": "",
+          "author": "1",
+          "description": "",
+          "caption": "",
+          "name": "what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured",
+          "status": "inherit",
+          "uploaded_to": 2575,
+          "date": "2026-02-03 12:34:39",
+          "modified": "2026-02-03 12:34:39",
+          "menu_order": 0,
+          "mime_type": "image/webp",
+          "type": "image",
+          "subtype": "webp",
+          "icon": "https://2026wp.netiapps.net/wp-includes/images/media/default.png",
+          "width": 340,
+          "height": 240,
+          "sizes": {
+            "thumbnail": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured-150x150.webp",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured-300x212.webp",
+            "medium-width": 300,
+            "medium-height": 212,
+            "medium_large": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "medium_large-width": 340,
+            "medium_large-height": 240,
+            "large": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "large-width": 340,
+            "large-height": 240,
+            "1536x1536": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "1536x1536-width": 340,
+            "1536x1536-height": 240,
+            "2048x2048": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "2048x2048-width": 340,
+            "2048x2048-height": 240
+          }
+        }
+      },
+      "why_choose_us": {
+        "title": "What makes this different?",
+        "description": [
+          {
+            "list_": "Built around your workflows",
+            "details": "<p>Approval rules, user roles, and routing are configured to match how your organization actually works — the system adapts to you, not the other way around.</p>\n"
+          },
+          {
+            "list_": "Fast to deploy",
+            "details": "<p>Modular architecture means quicker rollout without sacrificing customization. Most implementations go live within 6 weeks.</p>\n"
+          },
+          {
+            "list_": "No vendor lock-in",
+            "details": "<p>No rigid licensing. Full data portability. A dedicated team that stays with you long after go-live.</p>\n"
+          },
+          {
+            "list_": "Scales with you",
+            "details": "<p>Handles growing document volumes with ease. Add users, departments, and document types without starting over.</p>\n"
+          }
+        ]
+      },
+      "contact_us": {
+        "description": "<h3><b>Ready to bring structure to disciplinary proceedings?</b></h3>\n<p><span style=\"font-weight: 400;\">We’ll walk through the system using your actual HR workflows, case types, and escalation rules—not a generic script. A real look at whether this fits your organization.</span></p>\n",
+        "button": "Connect Now",
+        "link": "/contact"
+      }
+    },
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Conduct Management Tool - Netiapps Staging 2026</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://2026wp.netiapps.net/product/conduct-management-tool/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Conduct Management Tool - Netiapps Staging 2026\" />\n<meta property=\"og:url\" content=\"https://2026wp.netiapps.net/product/conduct-management-tool/\" />\n<meta property=\"og:site_name\" content=\"Netiapps Staging 2026\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/netiapps\" />\n<meta property=\"article:modified_time\" content=\"2026-03-30T05:07:47+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@netiapps\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://2026wp.netiapps.net/product/conduct-management-tool/\",\"url\":\"https://2026wp.netiapps.net/product/conduct-management-tool/\",\"name\":\"Conduct Management Tool - Netiapps Staging 2026\",\"isPartOf\":{\"@id\":\"https://2026wp.netiapps.net/#website\"},\"datePublished\":\"2026-03-25T10:32:57+00:00\",\"dateModified\":\"2026-03-30T05:07:47+00:00\",\"breadcrumb\":{\"@id\":\"https://2026wp.netiapps.net/product/conduct-management-tool/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://2026wp.netiapps.net/product/conduct-management-tool/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://2026wp.netiapps.net/product/conduct-management-tool/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://2026wp.netiapps.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Conduct Management Tool\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://2026wp.netiapps.net/#website\",\"url\":\"https://2026wp.netiapps.net/\",\"name\":\"Netiapps Staging 2026\",\"description\":\"A software Company\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://2026wp.netiapps.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Conduct Management Tool - Netiapps Staging 2026",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://2026wp.netiapps.net/product/conduct-management-tool/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Conduct Management Tool - Netiapps Staging 2026",
+      "og_url": "https://2026wp.netiapps.net/product/conduct-management-tool/",
+      "og_site_name": "Netiapps Staging 2026",
+      "article_publisher": "https://www.facebook.com/netiapps",
+      "article_modified_time": "2026-03-30T05:07:47+00:00",
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@netiapps",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://2026wp.netiapps.net/product/conduct-management-tool/",
+            "url": "https://2026wp.netiapps.net/product/conduct-management-tool/",
+            "name": "Conduct Management Tool - Netiapps Staging 2026",
+            "isPartOf": {
+              "@id": "https://2026wp.netiapps.net/#website"
+            },
+            "datePublished": "2026-03-25T10:32:57+00:00",
+            "dateModified": "2026-03-30T05:07:47+00:00",
+            "breadcrumb": {
+              "@id": "https://2026wp.netiapps.net/product/conduct-management-tool/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://2026wp.netiapps.net/product/conduct-management-tool/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://2026wp.netiapps.net/product/conduct-management-tool/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://2026wp.netiapps.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Conduct Management Tool"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://2026wp.netiapps.net/#website",
+            "url": "https://2026wp.netiapps.net/",
+            "name": "Netiapps Staging 2026",
+            "description": "A software Company",
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://2026wp.netiapps.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/product/2850",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/product"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/types/product"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/media?parent=2850"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 2860,
+    "date": "2026-03-25T10:23:36",
+    "date_gmt": "2026-03-25T10:23:36",
+    "guid": {
+      "rendered": "https://2026wp.netiapps.net/?post_type=product&#038;p=2860"
+    },
+    "modified": "2026-03-27T10:18:27",
+    "modified_gmt": "2026-03-27T10:18:27",
+    "slug": "corporate-sustainability-tool",
+    "status": "publish",
+    "type": "product",
+    "link": "https://2026wp.netiapps.net/product/corporate-sustainability-tool/",
+    "title": {
+      "rendered": "Corporate Sustainability Tool"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-2860",
+      "product",
+      "type-product",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "banner": {
+        "title": "Corporate Sustainability Tool",
+        "built_for": "Web Application (Internet and Intranet)",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "link": "/"
+          },
+          {
+            "label": "Products",
+            "link": "/product/corporate-sustainability-tool/"
+          },
+          {
+            "label": "Corporate Sustainability Tool",
+            "link": "/product/corporate-sustainability-tool/"
+          }
+        ],
+        "logo": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/Group-31.png",
+        "banner_details": {
+          "": [
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+            },
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+            },
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+            }
+          ],
+          "get_demo_button": "Get Demo",
+          "link": "/",
+          "download_pdf": "Download PDF"
+        }
+      },
+      "problem": {
+        "tag": "The Problem",
+        "ttile": "Corporate Social Responsibility is a thoughtful commitment— it calls for genuine engagement, not just data tracking",
+        "description": "",
+        "list_title": "Common pain points:",
+        "list": [
+          {
+            "list": "Projects scattered across emails and files—no single source of truth; constant follow-ups"
+          },
+          {
+            "list": "No visibility into approvals—proposals disappear after submission"
+          },
+          {
+            "list": "Volunteering handled manually—forms for sign-ups, verbal approvals"
+          },
+          {
+            "list": "Quarterly reports built from scratch—compiled from scattered data"
+          },
+          {
+            "list": "No audit trail for compliance—unclear who approved what and when"
+          }
+        ],
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+      },
+      "overview": [
+        {
+          "tag": "Platform Modules",
+          "title": "End-to-end CSR handling in 0ne platform",
+          "description": "From proposal to closure, every part of the CSR lifecycle is covered, connected, and auditable. Nothing moves forward without a complete record at each stage.\r\n\r\n",
+          "list_title": "",
+          "list": [
+            {
+              "list": "Register the NGO Partner: Before a project can begin, the NGO partner must be registered and verified. Every project ties to a documented partner — no unvalidated associations. [Create Partner · Edit details · Project linkage]"
+            },
+            {
+              "list": "Create the Project & Save as Draft: Project details are filled in and saved as a draft. The team can continue editing before final submission—each project carries its partner details, budget, documents, and full status history. [In Draft · Update Projects]"
+            },
+            {
+              "list": "Add Budget & Upload Documents: Budget details and supporting documents are entered and stored securely against the project record before submission."
+            },
+            {
+              "list": "Submit for Approval: Once complete, the proposal is formally submitted. A unique project ID is generated, and the multi-level approval flow begins automatically. [Proposal review · Approval flow · Rejection with remarks]"
+            },
+            {
+              "list": "Regional Execution via PSN: Approved projects are distributed to regional implementation units (PSNs) under the master project—each with its own budget, details, and tracking. [Create PSN · View PSN · Region-level tracking]"
+            },
+            {
+              "list": "Project Closure: Once the initiative is completed, the project is marked closed—creating a full auditable record from proposal to closure. [Close Projects]"
+            },
+            {
+              "list": "Roles & Permissions: Module-level access control for every user. Permissions cascade logically across all stages. Approver rights are granted independently of all other access levels.[ Read · Create · Edit · Delete · Approve — configured per module]"
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp"
+        },
+        {
+          "tag": "Lifecycle",
+          "title": "Budget Management & Financial Oversight",
+          "description": "CSR budgets are allocated at the project level, distributed across regions, released in phases, and reported against regulatory obligations. Without a structured system, reconciliation happens after the fact — long after the chance to course-correct has passed.\r\n",
+          "list_title": "",
+          "list": [
+            {
+              "list": "Budget Allocation: Set the total approved budget at the master project level and distribute it across PSN regions. Every allocation is logged from the moment it's entered."
+            },
+            {
+              "list": "Phased Disbursements: Release funds in tranches tied to project milestones. Every release requires a corresponding approval and documented record — no bulk disbursements without evidence of progress."
+            },
+            {
+              "list": "Utilization Tracking: Track spend against allocation in real time. Flag underutilization before year-end and catch overruns before they become compliance issues."
+            },
+            {
+              "list": "Budget Approvals: Revisions and reallocation requests follow the same structured approval flow as project proposals—versioned, approved, and auditable."
+            },
+            {
+              "list": "Document-Linked Expenditure: Every disbursement requires supporting documents — invoices, receipts, utilization certificates. Undocumented spending does not move forward"
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg"
+        },
+        {
+          "tag": "Lifecycle",
+          "title": "The Budget Dashboard",
+          "description": "One screen. Complete financial visibility across every active and closed CSR initiative.",
+          "list_title": "",
+          "list": [
+            {
+              "list": "Total Budget Sanctioned: A consolidated view of the aggregate approved budget across all active projects for the financial year — the single source of truth for total CSR commitment."
+            },
+            {
+              "list": "Committed vs. Disbursed: A clear split between what has been allocated to projects and what has actually been released to partners — instantly revealing the gap between intention and execution."
+            },
+            {
+              "list": "Utilization Rate by Project: Tracks the percentage of budget utilized per project, with RAG status indicators — On Track, At Risk, or Overrun — so problem areas are visible before they escalate."
+            },
+            {
+              "list": "Region-wise Budget Split: Breaks down PSN-level allocation and utilization across geographies—giving regional performance a financial face across the entire program."
+            },
+            {
+              "list": "Pending Disbursements: Lists all approved milestones awaiting fund release, with overdue items flagged—so nothing stays stuck in the pipeline without someone being accountable for it."
+            },
+            {
+              "list": "Underspend Alerts: Surface projects nearing year-end with significant unspent allocation—giving finance and CSR teams enough time to act before the window closes."
+            },
+            {
+              "list": "Top NGO Partners by Spend: Highlights the highest-funded partners alongside their utilization certificate status—linking money released to documented evidence of utilization."
+            },
+            {
+              "list": "Compliance Spend Tracker: Tracks the percentage of mandated CSR spend utilized against regulatory requirements — the one number that matters most when reporting season arrives."
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/software-development-banner.webp"
+        },
+        {
+          "tag": "Volunteering Enagement",
+          "title": "CSR activity initiation to certificate issuance.",
+          "description": "The volunteering process is fully digital — from the manager triggering the activity notification to the employee receiving their participation certificate.",
+          "list_title": "",
+          "list": [
+            {
+              "list": "Manager sets up the activity—selects NGO, links project, schedules it, and notifies employees"
+            },
+            {
+              "list": "Employees receive alerts—activity appears on their dashboard"
+            },
+            {
+              "list": "Employees register and apply via the CSR dashboard for approval"
+            },
+            {
+              "list": "Supervisor reviews requests—approves or rejects nominations"
+            },
+            {
+              "list": "Participants submit post-activity details—log contributions after the event"
+            },
+            {
+              "list": "Manager validates participation—reviews and confirms submissions"
+            },
+            {
+              "list": "Certificates issued—approved participants receive digital certificates"
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp"
+        },
+        {
+          "tag": "PSN (Programme-Specific Nodes)",
+          "title": "One project. Multiple locations. Full visibility.",
+          "description": "PSN allows a single CSR project to be implemented across multiple geographic regions, each with its own details, budget, and tracking — all connected to the master project record.",
+          "list_title": "",
+          "list": [
+            {
+              "list": "Create a project with PSN—add the first region during setup"
+            },
+            {
+              "list": "View PSN regions—all entries listed with status by region"
+            },
+            {
+              "list": "Add new regions—link additional regions to an existing project"
+            },
+            {
+              "list": "Edit region details—update PSN records as needed"
+            },
+            {
+              "list": "Track and report centrally—region data rolls up to the main project"
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels1.jpg"
+        }
+      ],
+      "how_it_works": false,
+      "key_features": {
+        "title": "ROLES & PERMISSIONS",
+        "description": "The relevant access for every user in the process. Permissions are module-level and role-specific — not one-size-fits-all. The default for any user, including Super Admin, is read-only. Every elevated permission is granted deliberately, per module. [Note: Approver rights are special — they must be granted manually and sit independent of all other permission levels, regardless of role.]",
+        "list": [
+          {
+            "feature_name": "CSR Manager",
+            "feature": "Drives projects and activities and validates participation data. Holds the broadest operational access — creating, editing, and managing records across the lifecycle.",
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg"
+          },
+          {
+            "feature_name": "Regional Manager",
+            "feature": "Runs regional activities and verifies submissions at the PSN level. Access is scoped to their geography while remaining connected to the master project record.",
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg"
+          },
+          {
+            "feature_name": "Supervisor",
+            "feature": "Reviews and approves employee registrations for volunteering activities. Nomination approval rights are granted independently — not bundled with other access levels.",
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg"
+          },
+          {
+            "feature_name": "Employee",
+            "feature": "Browses open activities, registers for participation, submits post-activity details, and tracks personal certificates. Access is purposefully limited to what's relevant to them.",
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg"
+          }
+        ]
+      },
+      "industry_applications": {
+        "tag": "",
+        "title": "Where mandatory CSR obligations meet the need for structured, auditable execution",
+        "description": "Where mandatory CSR obligations meet the need for structured, auditable execution",
+        "industry_details": [
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<h3>Banking &amp; Financial Services</h3>\n<p>Regulated CSR spending, mandatory disclosure requirements, and multi-branch operations make a structured platform essential. The system ensures every rupee committed is tracked, every project is documented, and every audit request is answered without scrambling for records.</p>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<h3>Government &amp; Public Sector</h3>\n<p>PSUs (Public Sector Undertakings) operate under some of the most visible CSR obligations in the country. Multi-region project execution, government reporting requirements, and public accountability make structured lifecycle management non-negotiable.</p>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<h3>Healthcare</h3>\n<p>CSR programs in health infrastructure, community wellness, and rural access involve significant fund flows and partner coordination. The platform ensures every disbursement is documented and every partner is verified.</p>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<h3><strong>Enterprises &amp; Manufacturing</strong></h3>\n<p>Plant-level community initiatives, regional CSR committees, and multiple NGO partnerships across locations demand a system where every project, every budget, and every volunteer activity rolls up to a single auditable record.</p>\n"
+          }
+        ]
+      },
+      "security_compliance": {
+        "tag": "Governance & Compliance",
+        "title": "CSR expenditure is regulated. Your records should reflect that.",
+        "description": "<p>Banks have mandatory CSR disclosure requirements. The system is designed so that when a regulator or auditor requests records, everything is already there—organized, complete, and traceable.</p>\n<ol>\n<li>Full project audit trail from creation through approval to closure</li>\n<li>Multi-level approval records with timestamps and decision history</li>\n<li>Module-level, role-specific access control</li>\n<li>Centralised secure document storage for all project files</li>\n<li>Verified NGO partner associations before any project linkage</li>\n<li>Deployable on the Internet or Intranet, based on your security requirements</li>\n</ol>\n",
+        "image": {
+          "ID": 2679,
+          "id": 2679,
+          "title": "Enterprise vs Startup Software Needs",
+          "filename": "Enterprise-vs-Startup-Software-Needs.png",
+          "filesize": 5882876,
+          "url": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+          "link": "https://2026wp.netiapps.net/?attachment_id=2679",
+          "alt": "Enterprise vs Startup Software Needs: What Development Strategies Work Best",
+          "author": "123458",
+          "description": "",
+          "caption": "",
+          "name": "enterprise-vs-startup-software-needs",
+          "status": "inherit",
+          "uploaded_to": 2680,
+          "date": "2026-02-18 07:11:12",
+          "modified": "2026-02-18 10:28:30",
+          "menu_order": 0,
+          "mime_type": "image/png",
+          "type": "image",
+          "subtype": "png",
+          "icon": "https://2026wp.netiapps.net/wp-includes/images/media/default.png",
+          "width": 2048,
+          "height": 1392,
+          "sizes": {
+            "thumbnail": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs-150x150.png",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs-300x204.png",
+            "medium-width": 300,
+            "medium-height": 204,
+            "medium_large": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs-768x522.png",
+            "medium_large-width": 768,
+            "medium_large-height": 522,
+            "large": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs-1024x696.png",
+            "large-width": 1024,
+            "large-height": 696,
+            "1536x1536": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs-1536x1044.png",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1044,
+            "2048x2048": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "2048x2048-width": 2048,
+            "2048x2048-height": 1392
+          }
+        }
+      },
+      "why_choose_us": {
+        "title": "",
+        "description": false
+      },
+      "contact_us": {
+        "description": "<h3><b>Ready to bring an extensive CSR process into one system?</b></h3>\n<p>We’ll walk through the platform using your actual CSR structure — project types, regions, NGO partners, and approval hierarchy. No generic demo. A real conversation about fit.</p>\n",
+        "button": "Connet Now",
+        "link": "/contact"
+      }
+    },
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Corporate Sustainability Tool - Netiapps Staging 2026</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://2026wp.netiapps.net/product/corporate-sustainability-tool/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Corporate Sustainability Tool - Netiapps Staging 2026\" />\n<meta property=\"og:url\" content=\"https://2026wp.netiapps.net/product/corporate-sustainability-tool/\" />\n<meta property=\"og:site_name\" content=\"Netiapps Staging 2026\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/netiapps\" />\n<meta property=\"article:modified_time\" content=\"2026-03-27T10:18:27+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@netiapps\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://2026wp.netiapps.net/product/corporate-sustainability-tool/\",\"url\":\"https://2026wp.netiapps.net/product/corporate-sustainability-tool/\",\"name\":\"Corporate Sustainability Tool - Netiapps Staging 2026\",\"isPartOf\":{\"@id\":\"https://2026wp.netiapps.net/#website\"},\"datePublished\":\"2026-03-25T10:23:36+00:00\",\"dateModified\":\"2026-03-27T10:18:27+00:00\",\"breadcrumb\":{\"@id\":\"https://2026wp.netiapps.net/product/corporate-sustainability-tool/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://2026wp.netiapps.net/product/corporate-sustainability-tool/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://2026wp.netiapps.net/product/corporate-sustainability-tool/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://2026wp.netiapps.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Corporate Sustainability Tool\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://2026wp.netiapps.net/#website\",\"url\":\"https://2026wp.netiapps.net/\",\"name\":\"Netiapps Staging 2026\",\"description\":\"A software Company\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://2026wp.netiapps.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Corporate Sustainability Tool - Netiapps Staging 2026",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://2026wp.netiapps.net/product/corporate-sustainability-tool/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Corporate Sustainability Tool - Netiapps Staging 2026",
+      "og_url": "https://2026wp.netiapps.net/product/corporate-sustainability-tool/",
+      "og_site_name": "Netiapps Staging 2026",
+      "article_publisher": "https://www.facebook.com/netiapps",
+      "article_modified_time": "2026-03-27T10:18:27+00:00",
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@netiapps",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://2026wp.netiapps.net/product/corporate-sustainability-tool/",
+            "url": "https://2026wp.netiapps.net/product/corporate-sustainability-tool/",
+            "name": "Corporate Sustainability Tool - Netiapps Staging 2026",
+            "isPartOf": {
+              "@id": "https://2026wp.netiapps.net/#website"
+            },
+            "datePublished": "2026-03-25T10:23:36+00:00",
+            "dateModified": "2026-03-27T10:18:27+00:00",
+            "breadcrumb": {
+              "@id": "https://2026wp.netiapps.net/product/corporate-sustainability-tool/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://2026wp.netiapps.net/product/corporate-sustainability-tool/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://2026wp.netiapps.net/product/corporate-sustainability-tool/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://2026wp.netiapps.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Corporate Sustainability Tool"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://2026wp.netiapps.net/#website",
+            "url": "https://2026wp.netiapps.net/",
+            "name": "Netiapps Staging 2026",
+            "description": "A software Company",
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://2026wp.netiapps.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/product/2860",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/product"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/types/product"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/media?parent=2860"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 2845,
+    "date": "2026-03-17T10:05:52",
+    "date_gmt": "2026-03-17T10:05:52",
+    "guid": {
+      "rendered": "https://2026wp.netiapps.net/?post_type=product&#038;p=2845"
+    },
+    "modified": "2026-03-30T05:50:12",
+    "modified_gmt": "2026-03-30T05:50:12",
+    "slug": "document-governance-system",
+    "status": "publish",
+    "type": "product",
+    "link": "https://2026wp.netiapps.net/product/document-governance-system/",
+    "title": {
+      "rendered": "Document Governance System"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-2845",
+      "product",
+      "type-product",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "banner": {
+        "title": "Document Governance System",
+        "built_for": "Web Application (Internet and Intranet)",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "link": "/"
+          },
+          {
+            "label": "Products",
+            "link": "/product/document-governance-system/"
+          },
+          {
+            "label": "Document Governance System",
+            "link": "/product/document-governance-system/"
+          }
+        ],
+        "logo": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/Group-32.png",
+        "banner_details": {
+          "": [
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229.jpg"
+            },
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+            },
+            {
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/132229.jpg"
+            }
+          ],
+          "get_demo_button": "Get Demo",
+          "link": "/",
+          "download_pdf": "Download PDF"
+        }
+      },
+      "problem": {
+        "tag": "The Problem",
+        "ttile": "Paper documents get lost. So does accountability.",
+        "description": "",
+        "list_title": "Common Pain Points:",
+        "list": [
+          {
+            "list": "No real-time visibility into document location or status"
+          },
+          {
+            "list": "Missing documents discovered too late — after deadlines have passed"
+          },
+          {
+            "list": "Manual follow-up across branches, regional offices, and vendors"
+          },
+          {
+            "list": "Audit trails that exist only in spreadsheets and emails"
+          },
+          {
+            "list": "No structured escalation when things go wrong"
+          }
+        ],
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+      },
+      "overview": false,
+      "how_it_works": [
+        {
+          "how_it_works": "How It Works",
+          "title": "From branch counter to permanent archive.",
+          "description": "Every step is tracked, every handoff is logged, and every exception surfaces automatically—before it becomes a problem.",
+          "list": [
+            {
+              "list": "Branch collates and dispatches—Staff compile required documents and send them via courier to the respective regional offices. The system logs the dispatch instantly."
+            },
+            {
+              "list": "The regional office receives and validates—staff check for complete and valid copies. Missing documents trigger automatic alerts back to the originating branch."
+            },
+            {
+              "list": "Exceptions handled automatically — The system surfaces exactly what is needed and who needs to act. No manual follow-up emails required."
+            },
+            {
+              "list": "3rd Party Vendor stores and archives—Verified documents are handed to the vendor for permanent or temporary storage. Full chain of custody is recorded and auditable."
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+        },
+        {
+          "how_it_works": "System Capabilites",
+          "title": "Everything needed to manage documents seriously.",
+          "description": "From the moment a document is created at a branch to the day it’s retrieved for an audit — every stage is covered, every action tracked.",
+          "list": [
+            {
+              "list": "Security & Access Control: Role-based access for tellers, managers, and auditors. Activity logs capture every action — who accessed what, and when"
+            },
+            {
+              "list": "Document Lifecycle Management: Full creation, versioning, and archival support. Status tracked at every stage with time-stamped milestones for each document."
+            },
+            {
+              "list": "Real-Time Alerts & Notifications: Live updates on document status. Automatic alerts for delays, pending actions, and exceptions — before they escalate."
+            },
+            {
+              "list": "Categorisation & Smart Search: Documents are tagged and indexed by type, customer ID, and branch. Advanced filters make retrieval fast — even years later."
+            },
+            {
+              "list": "Compliance & Audit Support: Automated audit trail reporting. Retention schedules aligned to regulatory guidelines. Alerts for documents nearing or past expiry."
+            },
+            {
+              "list": "User-Friendly Interface: Works on mobile and desktop—dashboard with at-a-glance summary views, drag-and-drop upload, and intuitive navigation for all user types."
+            },
+            {
+              "list": "Workflow Integration: Connects with existing bank systems. Configurable approval workflows, digital signature support, and an escalation matrix built in."
+            },
+            {
+              "list": "Internet & Intranet Ready: Fully deployable on your internal network or via the internet. On-premise, cloud, or hybrid—your infrastructure, your choice"
+            }
+          ],
+          "image": false
+        }
+      ],
+      "key_features": {
+        "title": "Everything needed to manage documents seriously.",
+        "description": "From the moment a document is created at a branch to the day it’s retrieved for an audit — every stage is covered, every action tracked.",
+        "list": [
+          {
+            "feature_name": "Security & Access Control",
+            "feature": "Role-based access for tellers, managers, and auditors. Activity logs capture every action — who accessed what, and when.",
+            "image": false
+          },
+          {
+            "feature_name": "Document Lifecycle Management",
+            "feature": "Full creation, versioning, and archival support. Status tracked at every stage with time-stamped milestones for each document.",
+            "image": false
+          },
+          {
+            "feature_name": "Real-Time Alerts & Notifications",
+            "feature": "Live updates on document status. Automatic alerts for delays, pending actions, and exceptions — before they escalate.",
+            "image": false
+          },
+          {
+            "feature_name": "Categorisation & Smart Search",
+            "feature": "Documents are tagged and indexed by type, customer ID, and branch. Advanced filters make retrieval fast — even years later.",
+            "image": false
+          },
+          {
+            "feature_name": "Compliance & Audit Support",
+            "feature": "Automated audit trail reporting. Retention schedules aligned to regulatory guidelines. Alerts for documents nearing or past expiry.",
+            "image": false
+          },
+          {
+            "feature_name": "User-Friendly Interface",
+            "feature": "Works on mobile and desktop—dashboard with at-a-glance summary views, drag-and-drop upload, and intuitive navigation for all user types.",
+            "image": false
+          },
+          {
+            "feature_name": "Workflow Integration",
+            "feature": "Connects with existing bank systems. Configurable approval workflows, digital signature support, and an escalation matrix built in.",
+            "image": false
+          },
+          {
+            "feature_name": "Internet & Intranet Ready",
+            "feature": "Fully deployable on your internal network or via the internet. On-premise, cloud, or hybrid—your infrastructure, your choice.",
+            "image": false
+          }
+        ]
+      },
+      "industry_applications": {
+        "tag": "Industries",
+        "title": "Any organization that moves, stores, or retrieves physical documents at scale.",
+        "description": "",
+        "industry_details": [
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<p><b>Banking &amp; Financial Services</b></p>\n<ul>\n<li>Loan files, KYC documents, and compliance records tracked across branches, regional offices, and storage vendors</li>\n<li>Every handoff and exception is logged in a single, auditable view</li>\n<li>Gaps and delays surfaced automatically — before they become compliance issues</li>\n<li>Audit requests answered instantly — no email trails to reconstruct, no files to chase</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<p><b>Government &amp; Public Sector</b></p>\n<ul>\n<li>Citizen records, land documents, licensing files, and interdepartmental correspondence are tracked in one place</li>\n<li>Role-based access and tamper-proof audit trails for compliance-sensitive documents</li>\n<li>Audit readiness maintained at all times—no spreadsheets, no email threads to reconstruct</li>\n<li>Clear ownership is enforced at every handoff across offices and departments</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<p><b>Healthcare</b></p>\n<ul>\n<li>Patient records, consent forms, insurance claims, and regulatory submissions are tracked under strict retention and access controls</li>\n<li>Every record is traceable, retrievable, and access-logged at every stage</li>\n<li>Role-based access ensures sensitive documents reach only authorised personnel</li>\n<li>Retention policies enforced automatically—expiry and compliance alerts built in</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<p><b>Logistics &amp; Supply Chain</b></p>\n<ul>\n<li>Shipping documents, customs declarations, bills of lading, and compliance certificates tracked across parties and geographies</li>\n<li>Every document handoff logged—gaps in the chain surface before they hold up shipments</li>\n<li>Regulatory penalties avoided through real-time alerts on missing or delayed documents</li>\n<li>Full chain of custody maintained from origin to final destination</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<p><b>Real Estate &amp; Property Management</b></p>\n<ul>\n<li>Sale deeds, lease agreements, and property records tracked across developers, legal teams, registrars, and financiers</li>\n<li>Version control maintained—every document update logged and retrievable</li>\n<li>Secure handoffs are recorded at each stage with clear ownership and timestamps</li>\n<li>No critical document was misplaced or overlooked across a complex, multi-party process</li>\n</ul>\n"
+          },
+          {
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png",
+            "industry_description": "<p><b>Education &amp; Universities</b></p>\n<ul>\n<li>Student records, accreditation documents, and examination files are tracked and retained for decades</li>\n<li>Retrieved instantly for verification, legal proceedings, or regulatory inspections — years after original filing</li>\n<li>Retention schedules enforced automatically—no records misplaced or expired unnoticed</li>\n<li>Role-based access ensures sensitive records reach only authorised personnel at every stage</li>\n</ul>\n"
+          }
+        ]
+      },
+      "security_compliance": {
+        "tag": "Security & Compliance",
+        "title": "Built for banking-grade trust.",
+        "description": "<p>Every document carries sensitive customer and financial data. The system is built from the ground up with that responsibility in mind—not bolted on as an afterthought.</p>\n<ul>\n<li>Encryption at rest and in transit</li>\n<li>Role-based access control — teller, manager, and auditor levels</li>\n<li>Tamper-proof, immutable audit logs</li>\n<li>Retention policy enforcement aligned to regulatory guidelines</li>\n<li>Expiry and missing document alerts</li>\n<li>Backup and disaster recovery support</li>\n</ul>\n",
+        "image": {
+          "ID": 2576,
+          "id": 2576,
+          "title": "what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured",
+          "filename": "what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+          "filesize": 15520,
+          "url": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+          "link": "https://2026wp.netiapps.net/blogs/ci-cd-ai-building-intelligent-pipelines-for-faster-and-smarter-releases/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured/",
+          "alt": "",
+          "author": "1",
+          "description": "",
+          "caption": "",
+          "name": "what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured",
+          "status": "inherit",
+          "uploaded_to": 2575,
+          "date": "2026-02-03 12:34:39",
+          "modified": "2026-02-03 12:34:39",
+          "menu_order": 0,
+          "mime_type": "image/webp",
+          "type": "image",
+          "subtype": "webp",
+          "icon": "https://2026wp.netiapps.net/wp-includes/images/media/default.png",
+          "width": 340,
+          "height": 240,
+          "sizes": {
+            "thumbnail": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured-150x150.webp",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured-300x212.webp",
+            "medium-width": 300,
+            "medium-height": 212,
+            "medium_large": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "medium_large-width": 340,
+            "medium_large-height": 240,
+            "large": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "large-width": 340,
+            "large-height": 240,
+            "1536x1536": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "1536x1536-width": 340,
+            "1536x1536-height": 240,
+            "2048x2048": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/what-is-a-crm-solution-and-how-can-it-benefit-your-business-fetured.webp",
+            "2048x2048-width": 340,
+            "2048x2048-height": 240
+          }
+        }
+      },
+      "why_choose_us": {
+        "title": "Our Delivery Apporach",
+        "description": [
+          {
+            "list_": "Requirement Analysis ",
+            "details": "<p>Map existing document flows, user roles, and compliance requirements.</p>\n"
+          },
+          {
+            "list_": "Solution Design",
+            "details": "<p>Tailor every workflow, approval rule, and access level to your bank’s structure.</p>\n"
+          },
+          {
+            "list_": "Custom Development",
+            "details": "<p>Built to your specifications with your branding and integration needs.</p>\n"
+          },
+          {
+            "list_": "Testing & QA",
+            "details": "<p>Rigorous testing with your team before anything goes live.</p>\n"
+          },
+          {
+            "list_": "Deployment",
+            "details": "<p>Internet, intranet, cloud, or on-premise—your call.</p>\n"
+          },
+          {
+            "list_": "Training & Support ",
+            "details": "<p>Real onboarding and ongoing support from the team that built your system.</p>\n"
+          }
+        ]
+      },
+      "contact_us": {
+        "description": "<h3><b>Ready to see it working for your bank?</b></h3>\n<p>We’ll walk you through the system with your actual document types, workflows, and user roles—not a generic demo. A real look at whether this fits your operation.</p>\n",
+        "button": "Connect Now",
+        "link": "/contact"
+      }
+    },
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Document Governance System - Netiapps Staging 2026</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://2026wp.netiapps.net/product/document-governance-system/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Document Governance System - Netiapps Staging 2026\" />\n<meta property=\"og:url\" content=\"https://2026wp.netiapps.net/product/document-governance-system/\" />\n<meta property=\"og:site_name\" content=\"Netiapps Staging 2026\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/netiapps\" />\n<meta property=\"article:modified_time\" content=\"2026-03-30T05:50:12+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@netiapps\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://2026wp.netiapps.net/product/document-governance-system/\",\"url\":\"https://2026wp.netiapps.net/product/document-governance-system/\",\"name\":\"Document Governance System - Netiapps Staging 2026\",\"isPartOf\":{\"@id\":\"https://2026wp.netiapps.net/#website\"},\"datePublished\":\"2026-03-17T10:05:52+00:00\",\"dateModified\":\"2026-03-30T05:50:12+00:00\",\"breadcrumb\":{\"@id\":\"https://2026wp.netiapps.net/product/document-governance-system/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://2026wp.netiapps.net/product/document-governance-system/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://2026wp.netiapps.net/product/document-governance-system/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://2026wp.netiapps.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Document Governance System\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://2026wp.netiapps.net/#website\",\"url\":\"https://2026wp.netiapps.net/\",\"name\":\"Netiapps Staging 2026\",\"description\":\"A software Company\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://2026wp.netiapps.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Document Governance System - Netiapps Staging 2026",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://2026wp.netiapps.net/product/document-governance-system/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Document Governance System - Netiapps Staging 2026",
+      "og_url": "https://2026wp.netiapps.net/product/document-governance-system/",
+      "og_site_name": "Netiapps Staging 2026",
+      "article_publisher": "https://www.facebook.com/netiapps",
+      "article_modified_time": "2026-03-30T05:50:12+00:00",
+      "twitter_card": "summary_large_image",
+      "twitter_site": "@netiapps",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://2026wp.netiapps.net/product/document-governance-system/",
+            "url": "https://2026wp.netiapps.net/product/document-governance-system/",
+            "name": "Document Governance System - Netiapps Staging 2026",
+            "isPartOf": {
+              "@id": "https://2026wp.netiapps.net/#website"
+            },
+            "datePublished": "2026-03-17T10:05:52+00:00",
+            "dateModified": "2026-03-30T05:50:12+00:00",
+            "breadcrumb": {
+              "@id": "https://2026wp.netiapps.net/product/document-governance-system/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://2026wp.netiapps.net/product/document-governance-system/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://2026wp.netiapps.net/product/document-governance-system/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://2026wp.netiapps.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Document Governance System"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://2026wp.netiapps.net/#website",
+            "url": "https://2026wp.netiapps.net/",
+            "name": "Netiapps Staging 2026",
+            "description": "A software Company",
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://2026wp.netiapps.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/product/2845",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/product"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/types/product"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://2026wp.netiapps.net/wp-json/wp/v2/media?parent=2845"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 2818,
     "date": "2026-03-17T06:37:42",
     "date_gmt": "2026-03-17T06:37:42",
     "guid": {
       "rendered": "https://2026wp.netiapps.net/?post_type=product&#038;p=2818"
     },
-    "modified": "2026-03-17T07:14:31",
-    "modified_gmt": "2026-03-17T07:14:31",
+    "modified": "2026-03-30T07:57:48",
+    "modified_gmt": "2026-03-30T07:57:48",
     "slug": "automated-document-operations",
     "status": "publish",
     "type": "product",
@@ -30,18 +1345,33 @@
     ],
     "acf": {
       "banner": {
-        "tag": "Automated Document Operations",
-        "built_for": "Banks, Enterprises & Process-Driven Organizations",
-        "title": {
+        "title": "Automated Document Operations",
+        "built_for": "Banks, Enterprises & Process-Driven Organisations(Internet and Intranet)",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "link": "/"
+          },
+          {
+            "label": "Products",
+            "link": "/product/automated-document-operations/"
+          },
+          {
+            "label": "Automated Document Operations",
+            "link": "/product/automated-document-operations/"
+          }
+        ],
+        "logo": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/Group-23.png",
+        "banner_details": {
           "": [
             {
-              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen3.png"
             },
             {
-              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen2.png"
             },
             {
-              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/pro1.webp"
+              "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen1.png"
             }
           ],
           "get_demo_button": "Get Demo",
@@ -50,10 +1380,10 @@
         }
       },
       "problem": {
-        "the_problem": "The Problem",
+        "tag": "The Problem",
         "ttile": "Documents shouldn’t live in people’s inboxes.",
         "description": "These challenges are solvable. The right document management system streamlines workflows, improves visibility, and keeps documents secure and compliant",
-        "list_title": "Common Challenges Organizations Face",
+        "list_title": "Common Challenges Organisations Face",
         "list": [
           {
             "list": "Multiple document versions everywhere—Teams struggle to identify the latest or approved version."
@@ -71,32 +1401,57 @@
             "list": "Security vulnerabilities – Sensitive documents may be accessible to unintended users."
           }
         ],
-        "image": false
+        "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
       },
-      "overview": {
-        "title": "What Is Document Lifecycle & Workflow Management?",
-        "description": "A fully customized web application designed to manage documents from creation to archival, while automating approvals, tracking every action, and ensuring compliance at every stage of the document lifecycle.",
-        "list_title": "What It Does",
-        "list": [
-          {
-            "list": "Centralizes all organizational documents in a single, secure repository"
-          },
-          {
-            "list": "Automates multi-level approval workflows to streamline document processing"
-          },
-          {
-            "list": "Provides real-time visibility into document status, ownership, and history"
-          },
-          {
-            "list": "Maintains complete, tamper-proof audit trails for transparency and compliance"
-          }
-        ]
-      },
-      "how_it_works": {
-        "how_it_works": "How It Works",
-        "title_": "From scattered chaos to structured control.",
-        "list": "<p>We don’t hand you a generic tool and expect you to adapt to it. Instead, we understand your existing workflows and build a system tailored around them—ensuring the solution fits your processes, not the other way around.</p>\n<ol>\n<li><b> Requirement Analysis &amp; Workflow Mapping</b><br />\nA detailed assessment of your current document workflows, approval hierarchies, user roles, and compliance requirements.</li>\n<li><b> Solution Design &amp; UX Planning</b><br />\nDesigning workflows, approval structures, and user experiences that align seamlessly with your organization’s internal processes.</li>\n<li><b> Custom Development</b><br />\nA fully tailored solution built to your specifications — not a generic platform with minimal customization.</li>\n<li><b> Testing &amp; Quality Assurance</b>&lt;<br />\nComprehensive testing in collaboration with your team to ensure reliability, accuracy, and readiness before launch.</li>\n<li><b> Deployment &amp; Go-Live</b><br />\nFlexible deployment options, including cloud, on-premise, or hybrid environments, based on your infrastructure needs.</li>\n<li><b> User Training &amp; Ongoing Support</b><br />\nHands-on training and continuous support to ensure smooth adoption and long-term success with the system.</li>\n</ol>\n"
-      },
+      "overview": false,
+      "how_it_works": [
+        {
+          "how_it_works": "Product Overview",
+          "title": "What Is Document Lifecycle & Workflow Management?",
+          "description": "A fully customized web application designed to manage documents from creation to archival, while automating approvals, tracking every action, and ensuring compliance at every stage of the document lifecycle. ",
+          "list": [
+            {
+              "list": "One Repository. Every Document—All organisational documents are stored in a single, secure location—no scattered files, no version confusion, and no searching across systems."
+            },
+            {
+              "list": "Approvals That Move Without Being Chased—Multi-level approval workflows run automatically—the right person is notified at the right stage, every time, without manual follow-up."
+            },
+            {
+              "list": "Always Know Where a Document Stands— Real-time visibility into document status, ownership, and history—so no one has to ask for an update or wait for one."
+            },
+            {
+              "list": "A Record That Holds Up Under Scrutiny—Complete, tamper-proof audit trails on every action—ensuring full transparency and a compliance record that's ready when it's needed most."
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+        },
+        {
+          "how_it_works": "How It Works",
+          "title": "From scattered chaos to structured control.",
+          "description": "We don’t hand you a generic tool and expect you to adapt to it. Instead, we understand your existing workflows and build a system tailored around them—ensuring the solution fits your processes, not the other way around.",
+          "list": [
+            {
+              "list": "Requirement Analysis & Workflow Mapping—  A detailed assessment of your current document workflows, approval hierarchies, user roles, and compliance requirements"
+            },
+            {
+              "list": "Solution Design & UX Planning —  Designing workflows, approval structures, and user experiences that align seamlessly with your organization’s internal processes."
+            },
+            {
+              "list": "Custom Development—  A fully tailored solution built to your specifications — not a generic platform with minimal customization."
+            },
+            {
+              "list": "Testing & Quality Assurance—  Comprehensive testing in collaboration with your team to ensure reliability, accuracy, and readiness before launch."
+            },
+            {
+              "list": "Deployment & Go-Live—  Flexible deployment options, including cloud, on-premise, or hybrid environments, based on your infrastructure needs."
+            },
+            {
+              "list": "User Training & Ongoing Support—  Hands-on training and continuous support to ensure smooth adoption and long-term success with the system."
+            }
+          ],
+          "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Enterprise-vs-Startup-Software-Needs.png"
+        }
+      ],
       "key_features": {
         "title": "Everything you need. Nothing you don’t.",
         "description": "Built for organisations that handle documents seriously—from the front-line employee creating a draft to the senior executive signing off.",
@@ -104,59 +1459,55 @@
           {
             "feature_name": "Role-Based Access Control",
             "feature": "Fine-grained control over who can create, view, approve, or modify. Each role sees exactly what they need—nothing more.",
-            "image": false
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/i1.png"
           },
           {
             "feature_name": "Workflow Automation",
             "feature": "Single or multi-level approvals with conditional routing. Documents move automatically — no chasing, no follow-up emails.",
-            "image": false
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/i2.png"
           },
           {
             "feature_name": "Real-Time Document Tracking",
             "feature": "Always know where a document stands, who has it, and how long it has been sitting there. Full visibility at every stage.",
-            "image": false
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/i3.png"
           },
           {
             "feature_name": "Reporting & Analytics",
             "feature": "Track approval timelines, spot bottlenecks, and prove compliance on demand, not scrambled together before an audit.",
-            "image": false
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/i4.png"
           },
           {
             "feature_name": "System Integrations",
             "feature": "Connects with your core banking system, ERP, HR platforms, and identity management tools. No isolated islands",
-            "image": false
-          },
-          {
-            "feature_name": "Mobile-Responsive Interface",
-            "feature": "Approvals shouldn’t wait for someone to get to their desk. Review and sign off securely from any device, anywhere.",
-            "image": false
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/i1.png"
           },
           {
             "feature_name": "Audit Trails",
             "feature": "Every action logged — who did what, when, and why. Tamper-proof records that make audits genuinely straightforward.",
-            "image": false
+            "image": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/i3.png"
           }
         ]
       },
       "industry_applications": {
-        "title": "Built for organizations where documents actually matter.",
+        "tag": "Industries",
+        "title": "Built for organisations where documents actually matter.",
         "description": "We work best with teams that have real document volume, real compliance obligations, and real consequences when something goes wrong.",
         "industry_details": [
           {
-            "industry_image": false,
-            "industry_description": "<p><b>Banking &amp; Financial Services</b></p>\n<ul>\n<li>Policy document approvals and version control</li>\n<li>Compliance documentation management</li>\n<li>Internal circulars and regulatory notices</li>\n<li>Audit and regulatory records</li>\n<li>KYC and onboarding document workflows</li>\n</ul>\n"
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels3.jpg",
+            "industry_description": "<p><b>Banking &amp; Financial Services</b></p>\n"
           },
           {
-            "industry_image": false,
-            "industry_description": "<p><b>Government &amp; Public Sector</b></p>\n<ul>\n<li>Inter-departmental approvals</li>\n<li>Policy drafting, review, and circulation</li>\n<li>Procurement and contract workflows</li>\n</ul>\n"
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels1.jpg",
+            "industry_description": "<p><b>Government &amp; Public Sector</b></p>\n"
           },
           {
-            "industry_image": false,
-            "industry_description": "<p><b>Healthcare</b></p>\n<ul>\n<li>Clinical protocol approvals</li>\n<li>Regulatory submission management</li>\n<li>Accreditation documentation</li>\n</ul>\n"
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels.jpg",
+            "industry_description": "<p><b>Healthcare</b></p>\n"
           },
           {
-            "industry_image": false,
-            "industry_description": "<p><b>Enterprises &amp; Manufacturing</b></p>\n<ul>\n<li>Quality management documents</li>\n<li>HR policy and procedure management</li>\n<li>Vendor contract workflows</li>\n<li>Cross-department approvals at scale</li>\n</ul>\n"
+            "industry_image": "https://2026wp.netiapps.net/wp-content/uploads/2026/02/Untitled-1295-by-780-pixels1.jpg",
+            "industry_description": "<p><b>Enterprises &amp; Manufacturing</b></p>\n"
           }
         ]
       },
@@ -184,16 +1535,60 @@
       "contact_us": {
         "description": "<h3><strong>Ready to see it working for your team?</strong></h3>\n<p>We’ll walk you through the platform with your real use cases—no slides, no scripts, no generic demos. Just an honest look at whether this is the right fit.</p>\n",
         "button": "Connect Now",
-        "link": "/"
+        "link": "/contact"
       },
       "security_compliance": {
         "tag": "Security & Compliance",
         "title": "Enterprise trust, not enterprise theatre.",
         "description": "<p>Security isn&#8217;t an afterthought — it&#8217;s built into every layer, from storage to access.</p>\n<ul>\n<li>Encryption at rest and in transit</li>\n<li>Secure authentication and SSO</li>\n<li>Tamper-proof audit logs</li>\n<li>Banking compliance-ready architecture</li>\n<li>Backup and disaster recovery</li>\n<li>Granular role-based permissions</li>\n<li>Full data portability, no vendor lock-in</li>\n</ul>\n",
-        "image": false
+        "image": {
+          "ID": 2887,
+          "id": 2887,
+          "title": "screen4",
+          "filename": "screen4.png",
+          "filesize": 45659,
+          "url": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen4.png",
+          "link": "https://2026wp.netiapps.net/product/automated-document-operations/screen4/",
+          "alt": "",
+          "author": "123457",
+          "description": "",
+          "caption": "",
+          "name": "screen4",
+          "status": "inherit",
+          "uploaded_to": 2818,
+          "date": "2026-03-26 11:47:32",
+          "modified": "2026-03-26 11:47:32",
+          "menu_order": 0,
+          "mime_type": "image/png",
+          "type": "image",
+          "subtype": "png",
+          "icon": "https://2026wp.netiapps.net/wp-includes/images/media/default.png",
+          "width": 679,
+          "height": 411,
+          "sizes": {
+            "thumbnail": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen4-150x150.png",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen4-300x182.png",
+            "medium-width": 300,
+            "medium-height": 182,
+            "medium_large": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen4.png",
+            "medium_large-width": 679,
+            "medium_large-height": 411,
+            "large": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen4.png",
+            "large-width": 679,
+            "large-height": 411,
+            "1536x1536": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen4.png",
+            "1536x1536-width": 679,
+            "1536x1536-height": 411,
+            "2048x2048": "https://2026wp.netiapps.net/wp-content/uploads/2026/03/screen4.png",
+            "2048x2048-width": 679,
+            "2048x2048-height": 411
+          }
+        }
       }
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Automated Document Operations - Netiapps Staging 2026</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://2026wp.netiapps.net/product/automated-document-operations/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Automated Document Operations - Netiapps Staging 2026\" />\n<meta property=\"og:url\" content=\"https://2026wp.netiapps.net/product/automated-document-operations/\" />\n<meta property=\"og:site_name\" content=\"Netiapps Staging 2026\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/netiapps\" />\n<meta property=\"article:modified_time\" content=\"2026-03-17T07:14:31+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@netiapps\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://2026wp.netiapps.net/product/automated-document-operations/\",\"url\":\"https://2026wp.netiapps.net/product/automated-document-operations/\",\"name\":\"Automated Document Operations - Netiapps Staging 2026\",\"isPartOf\":{\"@id\":\"https://2026wp.netiapps.net/#website\"},\"datePublished\":\"2026-03-17T06:37:42+00:00\",\"dateModified\":\"2026-03-17T07:14:31+00:00\",\"breadcrumb\":{\"@id\":\"https://2026wp.netiapps.net/product/automated-document-operations/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://2026wp.netiapps.net/product/automated-document-operations/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://2026wp.netiapps.net/product/automated-document-operations/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://2026wp.netiapps.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Automated Document Operations\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://2026wp.netiapps.net/#website\",\"url\":\"https://2026wp.netiapps.net/\",\"name\":\"Netiapps Staging 2026\",\"description\":\"A software Company\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://2026wp.netiapps.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Automated Document Operations - Netiapps Staging 2026</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://2026wp.netiapps.net/product/automated-document-operations/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Automated Document Operations - Netiapps Staging 2026\" />\n<meta property=\"og:url\" content=\"https://2026wp.netiapps.net/product/automated-document-operations/\" />\n<meta property=\"og:site_name\" content=\"Netiapps Staging 2026\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/netiapps\" />\n<meta property=\"article:modified_time\" content=\"2026-03-30T07:57:48+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@netiapps\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://2026wp.netiapps.net/product/automated-document-operations/\",\"url\":\"https://2026wp.netiapps.net/product/automated-document-operations/\",\"name\":\"Automated Document Operations - Netiapps Staging 2026\",\"isPartOf\":{\"@id\":\"https://2026wp.netiapps.net/#website\"},\"datePublished\":\"2026-03-17T06:37:42+00:00\",\"dateModified\":\"2026-03-30T07:57:48+00:00\",\"breadcrumb\":{\"@id\":\"https://2026wp.netiapps.net/product/automated-document-operations/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://2026wp.netiapps.net/product/automated-document-operations/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://2026wp.netiapps.net/product/automated-document-operations/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://2026wp.netiapps.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Automated Document Operations\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://2026wp.netiapps.net/#website\",\"url\":\"https://2026wp.netiapps.net/\",\"name\":\"Netiapps Staging 2026\",\"description\":\"A software Company\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://2026wp.netiapps.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
     "yoast_head_json": {
       "title": "Automated Document Operations - Netiapps Staging 2026",
       "robots": {
@@ -210,7 +1605,7 @@
       "og_url": "https://2026wp.netiapps.net/product/automated-document-operations/",
       "og_site_name": "Netiapps Staging 2026",
       "article_publisher": "https://www.facebook.com/netiapps",
-      "article_modified_time": "2026-03-17T07:14:31+00:00",
+      "article_modified_time": "2026-03-30T07:57:48+00:00",
       "twitter_card": "summary_large_image",
       "twitter_site": "@netiapps",
       "schema": {
@@ -225,7 +1620,7 @@
               "@id": "https://2026wp.netiapps.net/#website"
             },
             "datePublished": "2026-03-17T06:37:42+00:00",
-            "dateModified": "2026-03-17T07:14:31+00:00",
+            "dateModified": "2026-03-30T07:57:48+00:00",
             "breadcrumb": {
               "@id": "https://2026wp.netiapps.net/product/automated-document-operations/#breadcrumb"
             },

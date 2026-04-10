@@ -13,17 +13,17 @@
 }
 
 .pillBadge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
     color: #1a1a1a;
-    font-weight: 500;
-    font-size: 0.85rem;
-    padding: 6px 20px;
-    border-radius: 50px;
-    border: 1px solid #fca000;
+    background-color: #0000;
+    border-bottom: 4px solid #fca000;
+    /* border-radius: 50px; */
+    justify-content: center;
+    align-items: center;
     margin-bottom: 25px;
+    /* padding: 6px 20px; */
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
 }
 
 .title {
@@ -60,7 +60,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px 40px;
     max-width: 1000px;
     margin: 0 auto;
@@ -76,10 +76,6 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 .imageWrapper {
@@ -105,7 +101,7 @@
 }
 
 .cardTitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #1a1a1a;
     margin: 0 0 20px 0;

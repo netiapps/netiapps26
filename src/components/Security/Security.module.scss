@@ -13,17 +13,17 @@
 }
 
 .pillBadge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
     color: #1a1a1a;
-    font-weight: 500;
-    font-size: 0.85rem;
-    padding: 6px 20px;
-    border-radius: 50px;
-    border: 1px solid #fca000;
+    background-color: #0000;
+    border-bottom: 4px solid #fca000;
+    /* border-radius: 50px; */
+    justify-content: center;
+    align-items: center;
     margin-bottom: 25px;
+    /* padding: 6px 20px; */
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
 }
 
 .title {
@@ -51,26 +51,23 @@
 }
 
 .contentGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+
 
     &:has(.imageColumn:empty) {
-         grid-template-columns: 1fr; 
-         text-align: center;
-         .textColumn {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        .textColumn {
             padding-left: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+
             ul {
                 text-align: left;
                 display: inline-block;
             }
-         }
+        }
     }
 
     @media (max-width: 992px) {
@@ -125,7 +122,6 @@
 .imageColumn {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
 
     @media (max-width: 992px) {
         justify-content: center;
@@ -134,7 +130,7 @@
 
 .featuredImage {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
 }
