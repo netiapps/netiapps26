@@ -277,8 +277,8 @@
     }
 
     &:hover {
-        background: #E30613;
-        border-color: #E30613;
+        background: #fca000;
+        border-color: #fca000;
         color: #fff;
 
         svg {
@@ -302,8 +302,8 @@
     transition: border-color 0.25s ease, color 0.25s ease;
 
     &:hover {
-        border-color: #E30613;
-        color: #E30613;
+        border-color: #fca000;
+        color: #fca000;
     }
 }
 
@@ -348,7 +348,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #E30613;
+    background: #fca000;
     color: #fff;
     font-weight: 600;
     font-size: 0.95rem;
@@ -364,7 +364,7 @@
     }
 
     &:hover {
-        background: #c80512;
+        background: #fca000;
         transform: translateY(-1px);
 
         svg {
