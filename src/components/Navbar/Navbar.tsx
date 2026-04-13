@@ -2,6 +2,7 @@
 
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Navbar.module.scss';
@@ -81,6 +82,8 @@ export default function Navbar(nav: any) {
     }, [language]);
 
 
+    const pathname = usePathname();
+
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [activeServiceTab, setActiveServiceTab] = useState(0);
@@ -89,6 +92,13 @@ export default function Navbar(nav: any) {
     // Mobile Menu State
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
+
+    // Close all dropdowns and mobile menu on route change
+    useEffect(() => {
+        setActiveDropdown(null);
+        setIsMobileMenuOpen(false);
+        setExpandedMobileMenu(null);
+    }, [pathname]);
 
 
 
