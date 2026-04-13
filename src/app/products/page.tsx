@@ -26,7 +26,7 @@ async function getAllProducts() {
 }
 
 export default async function ProductsPage() {
-        const products = await getAllProducts();
+    const products = await getAllProducts();
 
     // Sort alphabetically by product title
     const sortedProducts = [...products].sort((a: any, b: any) => {
@@ -46,8 +46,7 @@ export default async function ProductsPage() {
                         <span className={styles.heroAccent}>Built for Your Business</span>
                     </h1>
                     <p className={styles.heroSubtitle}>
-                        Explore our comprehensive suite of powerful products designed to help organisations
-                        streamline operations, enhance security, and accelerate growth.
+                        We are now a software company delivering development services and products - customized applications, with a strong focus on the banking industry. Our solutions empower financial institutions with efficient, secure, and scalable digital capabilities
                     </p>
                 </div>
 
