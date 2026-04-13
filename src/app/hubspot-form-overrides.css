@@ -241,9 +241,9 @@
   margin-left: 0 !important;
 }
 
-#hubspot-form-container .hs-form-field:has(.legal-consent-container) > *,
-#hubspot-form-container .hs-form-field:has(.hs-consent-container) > *,
-#hubspot-form-container .hs-form-field:has(.hs-richtext) > * {
+#hubspot-form-container .hs-form-field:has(.legal-consent-container)>*,
+#hubspot-form-container .hs-form-field:has(.hs-consent-container)>*,
+#hubspot-form-container .hs-form-field:has(.hs-richtext)>* {
   display: flex !important;
   flex-direction: column !important;
   gap: 1rem !important;
@@ -294,8 +294,8 @@
 }
 
 /* Same space below checkbox as above: remove extra top margin from the block after the checkbox row */
-#hubspot-form-container .legal-consent-container + *,
-#hubspot-form-container .hs-consent-container + * {
+#hubspot-form-container .legal-consent-container+*,
+#hubspot-form-container .hs-consent-container+* {
   margin-top: 0 !important;
 }
 
@@ -323,4 +323,9 @@
   #hubspot-form-container .form-columns-2 {
     grid-template-columns: 1fr !important;
   }
+}
+
+
+.legal-consent-container {
+  display: block !important;
 }
