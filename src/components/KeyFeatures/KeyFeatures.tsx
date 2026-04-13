@@ -24,7 +24,7 @@ export default function KeyFeatures({ keyFeaturesData }: KeyFeaturesProps) {
         <section className={styles.keyFeaturesSection}>
             <div className="container">
                 <div className={styles.header}>
-                    <div className={styles.pillBadge}>KEY FEATURES</div>
+                    <div className={styles.pillBadge}>Key Features</div>
                     {mainTitle && <h2 className={styles.title} dangerouslySetInnerHTML={{ __html: mainTitle }} />}
                     {mainDesc && (
                         <div className={styles.description} dangerouslySetInnerHTML={{ __html: mainDesc }} />

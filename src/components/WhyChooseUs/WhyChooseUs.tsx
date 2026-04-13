@@ -17,7 +17,7 @@ export default function WhyChooseUs({ whyChooseUsData, industriesApplicationData
 
     // Based on the screenshot, it says "Industries Application \n Built for..."
     // as the title, but the items are from "why_choose_us". We'll combine them or use whyChooseUs title.
-    const pillBadge = "Why Choose us";
+    const pillBadge = "Why Us?";
     const mainTitle = activeData.title || (industriesApplicationData?.title || "What makes this different?");
 
     const items = Array.isArray(activeData.description) ? activeData.description : [];
@@ -34,9 +34,9 @@ export default function WhyChooseUs({ whyChooseUsData, industriesApplicationData
                     {items.map((item: any, idx: number) => (
                         <div key={idx} className={styles.gridItem}>
                             <h3 className={styles.itemTitle}>{item.list_}</h3>
-                            <div 
-                                className={styles.itemDesc} 
-                                dangerouslySetInnerHTML={{ __html: item.details }} 
+                            <div
+                                className={styles.itemDesc}
+                                dangerouslySetInnerHTML={{ __html: item.details }}
                             />
                         </div>
                     ))}
