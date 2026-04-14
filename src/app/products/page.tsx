@@ -40,14 +40,8 @@ export default async function ProductsPage() {
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className="container">
-                    <div className={styles.heroBadge}>Our Products</div>
-                    <h1 className={styles.heroTitle}>
-                        Innovative Solutions <br />
-                        <span className={styles.heroAccent}>Built for Your Business</span>
-                    </h1>
-                    <p className={styles.heroSubtitle}>
-                        We are now a software company delivering development services and products - customized applications, with a strong focus on the banking industry. Our solutions empower financial institutions with efficient, secure, and scalable digital capabilities
-                    </p>
+                    <div className={styles.heroBadge}>Our Banking Products</div>
+
                 </div>
 
                 {/* Decorative blobs */}
