@@ -20,7 +20,12 @@ export default function WhyChooseUs({ whyChooseUsData, industriesApplicationData
     const pillBadge = "Why Us?";
     const mainTitle = activeData.title || (industriesApplicationData?.title || "What makes this different?");
 
-    const items = Array.isArray(activeData.description) ? activeData.description : [];
+    // Support both API formats: 'reasons' (current API) and 'description' (legacy)
+    const items = Array.isArray(activeData.reasons)
+        ? activeData.reasons
+        : Array.isArray(activeData.description)
+            ? activeData.description
+            : [];
 
     return (
         <section className={styles.whyChooseUsSection}>
@@ -33,11 +38,14 @@ export default function WhyChooseUs({ whyChooseUsData, industriesApplicationData
                 <div className={styles.gridContainer}>
                     {items.map((item: any, idx: number) => (
                         <div key={idx} className={styles.gridItem}>
-                            <h3 className={styles.itemTitle}>{item.list_}</h3>
-                            <div
-                                className={styles.itemDesc}
-                                dangerouslySetInnerHTML={{ __html: item.details }}
-                            />
+                            <span className={styles.itemNumber}>{item.number || idx + 1}</span>
+                            <h3 className={styles.itemTitle}>{item.text || item.list_}</h3>
+                            {item.details && (
+                                <div
+                                    className={styles.itemDesc}
+                                    dangerouslySetInnerHTML={{ __html: item.details }}
+                                />
+                            )}
                         </div>
                     ))}
                 </div>

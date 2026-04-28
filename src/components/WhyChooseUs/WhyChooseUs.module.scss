@@ -88,6 +88,20 @@
     }
 }
 
+.itemNumber {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(252, 160, 0, 0.15);
+    color: #fca000;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
 .itemTitle {
     color: #fca000;
     font-size: 1.25rem;
