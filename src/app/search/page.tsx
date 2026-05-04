@@ -42,12 +42,15 @@ function SearchResults() {
 
         const data = await res.json();
 
-        const formatted = data.map((item: any) => ({
-          id: item.id,
-          title: item.title,
-          url: item.url.replace(baseUrl, ""), // convert to frontend route
-          type: item.subtype || item.type,
-        }));
+        const formatted = data.map((item: any) => {
+          const relativePath = item.url.replace(baseUrl, "");
+          return {
+            id: item.id,
+            title: item.title,
+            url: relativePath.startsWith("/") ? relativePath : `/${relativePath}`, // convert to absolute frontend route
+            type: item.subtype || item.type,
+          };
+        });
 
         setResults(formatted);
       } catch (err) {
