@@ -1,0 +1,7 @@
+# Copy to .env.local and fill in values.
+# Media (S3/Spaces): set to your Space CDN URL to serve assets from object storage.
+# Leave empty to serve from local /public.
+# Example: https://your-bucket.nyc3.cdn.digitaloceanspaces.com
+NEXT_PUBLIC_WORDPRESS_URL=https://2026wp.netiapps.net/
+NEXT_PUBLIC_SITE_URL=http://localhost:3000/
+PORT=3000
