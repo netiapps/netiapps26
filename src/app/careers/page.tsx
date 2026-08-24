@@ -4,7 +4,7 @@ import CareerCards from '@/components/CareerCards';
 import Image from 'next/image';
 import { ApiService } from "../../services/api.service";
 import { hasContent } from '@/utils/hasContent';
-import { getMediaUrl } from '@/lib/media';
+import { getMediaUrl, normalizeWpMediaUrls } from '@/lib/media';
 
 export default async function CareersPage() {
     const baseUrl = new ApiService();
@@ -20,7 +20,7 @@ export default async function CareersPage() {
             throw new Error(`API failed: ${resCareers.status}`);
           }
           
-          careers = await resCareers.json();          
+          careers = normalizeWpMediaUrls(await resCareers.json());
     } catch (error) {
         console.error("Careers API error:", error);
     }

@@ -10,6 +10,7 @@ import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs';
 import CTA from '@/components/CTA/CTA';
 import styles from './page.module.scss';
 import { ApiService } from '@/services/api.service';
+import { normalizeWpMediaUrls } from '@/lib/media';
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -23,7 +24,7 @@ async function getProductData(slug: string) {
             { next: { revalidate: 10 } }
         );
         if (!res.ok) return null;
-        const data = await res.json();
+        const data = normalizeWpMediaUrls(await res.json());
         return data?.[0] ?? null;
     } catch (e) {
         console.error("Failed to fetch product data", e);

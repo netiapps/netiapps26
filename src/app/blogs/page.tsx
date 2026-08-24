@@ -1,5 +1,6 @@
 import styles from "./page.module.scss";
 import { ApiService } from "@/services/api.service";
+import { normalizeWpMediaUrls } from "@/lib/media";
 import BlogsClient from "../../components/Blogs/Blogs";
 import type { Metadata } from "next";
 
@@ -26,7 +27,7 @@ export default async function BlogsPage() {
       { next: { revalidate: 10 } }
     );
 
-    Blogs = await resBlogs.json();
+    Blogs = normalizeWpMediaUrls(await resBlogs.json());
   } catch (error) {
     console.error("Error fetching Blogs:", error);
   }

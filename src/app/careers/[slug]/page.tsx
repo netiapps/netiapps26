@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.scss";
 import { ApiService } from "@/services/api.service";
+import { normalizeWpMediaUrls } from "@/lib/media";
 import CareerApplyForm from "../../../components/CareerApplyForm/CareerApplyForm";
 import CareerDetailClient from "../../../components/CareerDetail/CareerDetail";
 export const dynamic = "force-dynamic";
@@ -18,7 +19,7 @@ export default async function CareerDetailPage({   params, }: { params: Promise<
       { cache: "no-store" }
     );
 
-    Jobs = await resJobs.json();
+    Jobs = normalizeWpMediaUrls(await resJobs.json());
   } catch (error) {
     console.error("Error fetching Jobs:", error);
   }

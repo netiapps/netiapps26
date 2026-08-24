@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ApiService } from '@/services/api.service';
 import styles from './page.module.scss';
-import { getMediaUrl } from '@/lib/media';
+import { getMediaUrl, normalizeWpMediaUrls } from '@/lib/media';
 
 export const metadata: Metadata = {
     title: 'Our Products | NetiApps',
@@ -19,7 +19,7 @@ async function getAllProducts() {
             next: { revalidate: 60 },
         });
         if (!res.ok) return [];
-        return await res.json();
+        return normalizeWpMediaUrls(await res.json());
     } catch {
         return [];
     }

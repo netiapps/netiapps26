@@ -1,5 +1,6 @@
 import styles from "./page.module.scss";
 import { ApiService } from "@/services/api.service";
+import { normalizeWpMediaUrls } from "@/lib/media";
 import BlogDetailClient from "../../../components/BlogsDetail/BlogsDetail";
 import type { Metadata } from "next";
 
@@ -13,7 +14,7 @@ async function getBlogDetailData(slug: string) {
 
   if (!res.ok) return null;
 
-  const data = await res.json();
+  const data = normalizeWpMediaUrls(await res.json());
   return data?.[0] ?? null;
 }
 export async function generateMetadata(

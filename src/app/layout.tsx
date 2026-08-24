@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ReactNode } from "react";
 import { ApiService } from "../services/api.service";
+import { normalizeWpMediaUrls } from "@/lib/media";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 import Script from "next/script";
@@ -39,7 +40,7 @@ async function safeFetch(url: string) {
             return null;
         }
 
-        return await res.json();
+        return normalizeWpMediaUrls(await res.json());
     } catch (error) {
         console.error("CMS fetch error:", url, error);
         return null;

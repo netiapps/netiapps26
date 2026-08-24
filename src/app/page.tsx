@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import ClientLogos from "@/components/ClientLogos";
 import Hero from "@/components/Hero";
 import { ApiService } from "../services/api.service";
+import { normalizeWpMediaUrls } from "@/lib/media";
 import type { Metadata } from 'next';
 
 async function getHomePageData() {
@@ -18,7 +19,7 @@ async function getHomePageData() {
 
   if (!res.ok) return null;
 
-  const data = await res.json();
+  const data = normalizeWpMediaUrls(await res.json());
   return data?.[0] ?? null;
 }
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./LatestInsight.module.scss";
 import { ApiService } from "@/services/api.service";
-import { getMediaUrl } from "@/lib/media";
+import { getMediaUrl, normalizeWpMediaUrls } from "@/lib/media";
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
 
 export default function LatestInsight() {
@@ -27,7 +27,7 @@ export default function LatestInsight() {
           { cache: "no-store" }
         );
 
-        const data = await res.json();
+        const data = normalizeWpMediaUrls(await res.json());
         setBlogs(data);
         setTranslatedBlogs(data);
       } catch (error) {

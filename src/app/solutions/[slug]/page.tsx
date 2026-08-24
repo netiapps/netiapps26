@@ -16,6 +16,7 @@ import WhyChoose from '@/components/WhyChoose';
 import { services } from '@/data/servicesData';
 import { ApiService } from '@/services/api.service';
 import { hasContent } from "@/utils/hasContent";
+import { normalizeWpMediaUrls } from "@/lib/media";
 import type { Metadata } from "next";
 
 interface PageProps {
@@ -31,7 +32,7 @@ async function getSolutionPageData(slug: string) {
 
   if (!res.ok) return null;
 
-  const data = await res.json();
+  const data = normalizeWpMediaUrls(await res.json());
   return data?.[0] ?? null;
 }
 

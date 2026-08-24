@@ -5,6 +5,7 @@ import ContactInfo from '@/components/ContactInfo';
 import OfficeLocations from '@/components/OfficeLocations/OfficeLocations';
 import { ApiService } from "../../services/api.service";
 import { hasContent } from '@/utils/hasContent';
+import { normalizeWpMediaUrls } from '@/lib/media';
 
 async function getContactPageData() {
   const baseUrl = new ApiService();
@@ -16,7 +17,7 @@ async function getContactPageData() {
 
   if (!res.ok) return null;
 
-  const data = await res.json();
+  const data = normalizeWpMediaUrls(await res.json());
   return data?.[0] ?? null;
 }
 

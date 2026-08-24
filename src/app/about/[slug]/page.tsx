@@ -10,7 +10,7 @@ import MoreAboutCompany from "@/components/MoreAboutCompany/MoreAboutCompany";
 import ConnectNow from '@/components/ConnectNow';
 import { ApiService } from '@/services/api.service';
 import { hasContent } from "@/utils/hasContent";
-import { getMediaUrl } from "@/lib/media";
+import { getMediaUrl, normalizeWpMediaUrls } from "@/lib/media";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -26,7 +26,7 @@ async function getAboutPageData(slug: string) {
 
   if (!res.ok) return null;
 
-  const data = await res.json();
+  const data = normalizeWpMediaUrls(await res.json());
   return data?.[0] ?? null;
 }
 export async function generateMetadata(
