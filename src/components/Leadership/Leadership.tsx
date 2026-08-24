@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Leadership.module.scss";
+import { getMediaUrl } from "@/lib/media";
 
 export default function Leadership(data: any) {
     return (
@@ -11,7 +12,7 @@ export default function Leadership(data: any) {
                         <div className={styles.imageContainer}>
                             {/* Replace with actual leadership image name */}
                             <img
-                                src={element.image}
+                                src={getMediaUrl(element.image)}
                                 alt="Leadership Vision"
                                 className={styles.image}
                             />

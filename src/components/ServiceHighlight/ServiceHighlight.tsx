@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./ServiceHighlight.module.scss";
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
+import { getMediaUrl } from "@/lib/media";
 
 export default function ServiceHighlight(highlight: any) {
   const { language, translate } = useLanguage();
@@ -99,7 +100,7 @@ export default function ServiceHighlight(highlight: any) {
             <div className={styles.rightCardWrapper}>
               <div className={styles.imageOverlay}>
                 <img
-                  src={translatedHighlight.image}
+                  src={getMediaUrl(translatedHighlight.image)}
                   alt="Service Illustration"
                   width={500}
                   height={400}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Solutions.module.scss";
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
+import { getMediaUrl } from "@/lib/media";
 
 /* ---------- TYPES ---------- */
 
@@ -187,7 +188,7 @@ function Card({ item }: { item: CardItem }) {
   return (
     <>
       {item.img && (
-        <img src={item.img} alt="" className={styles.image} />
+        <img src={getMediaUrl(item.img)} alt="" className={styles.image} />
       )}
 
       {item.title && (

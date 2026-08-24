@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './TheProblem.module.scss';
+import { getMediaUrl } from '@/lib/media';
 
 interface TheProblemProps {
     problemData?: any;
@@ -88,7 +89,7 @@ export default function TheProblem({ problemData }: TheProblemProps) {
                             <div className={styles.imageColumn}>
                                 <div className={styles.imageWrapper}>
                                     <img
-                                        src={currentChallenge.image}
+                                        src={getMediaUrl(currentChallenge.image)}
                                         alt={currentChallenge.title}
                                         className={styles.featuredImage}
                                         key={activeIndex} 

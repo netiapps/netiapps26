@@ -134,7 +134,7 @@ export default function Navbar(nav: any) {
                     <div className={styles.logoSection}>
                         <Link href={nav.nav.logo.link} className={styles.logoLink}>
                             <Image
-                                src={nav.nav.logo.img}
+                                src={getMediaUrl(nav.nav.logo.img)}
                                 alt="netiapps logo"
                                 width={180}
                                 height={60}

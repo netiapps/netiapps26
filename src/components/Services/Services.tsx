@@ -111,7 +111,7 @@ export default function Services(services: any) {
                     <div className={styles.expandedContent}>
                       <div className={styles.imageBlock}>
                         <img
-                          src={service.img}
+                          src={getMediaUrl(service.img)}
                           alt={service.title}
                           width={400}
                           height={250}

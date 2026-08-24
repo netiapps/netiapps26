@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./InnerPageBanner.module.scss";
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
+import { getMediaUrl } from "@/lib/media";
 
 interface Breadcrumb {
   label: string;
@@ -156,7 +157,7 @@ export default function InnerPageBanner(banner: any) {
           ref={imageWrapperRef}
         >
           <img
-            src={translatedBanner.image}
+            src={getMediaUrl(translatedBanner.image)}
             alt="banner"
             width={1400}
             height={600}

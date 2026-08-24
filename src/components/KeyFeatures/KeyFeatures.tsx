@@ -4,6 +4,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
 import styles from './KeyFeatures.module.scss';
+import { getMediaUrl } from '@/lib/media';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
@@ -51,7 +52,7 @@ export default function KeyFeatures({ keyFeaturesData }: KeyFeaturesProps) {
                                         {feature.image && (
                                             <div className={styles.iconWrapper}>
                                                 <img
-                                                    src={feature.image}
+                                                    src={getMediaUrl(feature.image)}
                                                     alt={feature.feature_name || "Feature Icon"}
                                                     className={styles.featureIcon}
                                                 />

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./WhyUs.module.scss";
+import { getMediaUrl } from "@/lib/media";
 
 export default function WhyUs(why: any) {
     
@@ -9,7 +10,7 @@ export default function WhyUs(why: any) {
                 <div className={styles.contentWrapper}>
                     <div className={styles.imageCol}>
                         <div className={styles.imageContainer}>
-                            <img src={why.why.image} alt="Why Choose Us" />
+                            <img src={getMediaUrl(why.why.image)} alt="Why Choose Us" />
                         </div>
                     </div>
                     <div className={styles.textCol}>

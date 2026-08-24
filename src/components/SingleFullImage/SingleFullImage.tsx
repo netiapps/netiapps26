@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import styles from './SingleFullImage.module.scss';
+import { getMediaUrl } from '@/lib/media';
 
 interface SingleFullImageProps {
     image?: {
@@ -44,7 +45,7 @@ interface SingleFullImageProps {
             <div className={styles.imageWrapper}>
                 {Array.isArray(image) && image.map((element, index) => (
                     <div key={index}>
-                        <img ref={imageRef} src={element.image} alt={element.text} width={1920} height={1080} className={styles.mainImg} />
+                        <img ref={imageRef} src={getMediaUrl(element.image)} alt={element.text} width={1920} height={1080} className={styles.mainImg} />
                     </div>
                 ))}
             </div>

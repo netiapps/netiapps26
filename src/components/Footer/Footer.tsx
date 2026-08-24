@@ -135,7 +135,7 @@ export default function Footer(footer: any) {
                   (element: any, index: number) => (
                     <img
                       key={index}
-                      src={element.img}
+                      src={getMediaUrl(element.img)}
                       alt={element.name}
                       width={50}
                       height={50}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./LatestInsight.module.scss";
 import { ApiService } from "@/services/api.service";
+import { getMediaUrl } from "@/lib/media";
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
 
 export default function LatestInsight() {
@@ -111,7 +112,7 @@ export default function LatestInsight() {
               >
                 <div className={styles.imageWrapper}>
                   <img
-                    src={insight.acf.image || undefined}
+                    src={getMediaUrl(insight.acf.image)}
                     alt={insight.acf.title || "Insight"}
                     className={styles.image}
                   />

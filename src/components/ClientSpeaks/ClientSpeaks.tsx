@@ -116,7 +116,7 @@ export default function ClientSpeaks({ testimonials }: ClientSpeaksProps) {
                   <div className="col-md-6 d-flex flex-column justify-content-between">
                     <div className={styles.logoWrapper}>
                       <img
-                        src={item.logo}
+                        src={getMediaUrl(item.logo)}
                         alt={item.company}
                         width={140}
                         height={50}

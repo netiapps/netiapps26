@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './ClientLogos.module.scss';
+import { getMediaUrl } from '@/lib/media';
 
 export default function ClientLogos(client: any) {
 
@@ -11,7 +12,7 @@ export default function ClientLogos(client: any) {
                     {client.client.map((client: any, index: any) => (
                         <div key={index} className={styles.logoBox}>
                             <img
-                                src={client.logo}
+                                src={getMediaUrl(client.logo)}
                                 alt={client.name}
                                 width={200}
                                 height={100}

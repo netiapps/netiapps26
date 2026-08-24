@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Industries.module.scss";
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
+import { getMediaUrl } from "@/lib/media";
 
 export default function Industries(industries: any) {
   const { language, translate } = useLanguage();
@@ -69,7 +70,7 @@ export default function Industries(industries: any) {
             (indus: any, index: number) => (
               <div key={index} className={styles.card}>
                 <img
-                  src={indus.image}
+                  src={getMediaUrl(indus.image)}
                   alt={indus.title}
                   className={styles.image}
                 />

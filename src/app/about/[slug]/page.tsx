@@ -10,6 +10,7 @@ import MoreAboutCompany from "@/components/MoreAboutCompany/MoreAboutCompany";
 import ConnectNow from '@/components/ConnectNow';
 import { ApiService } from '@/services/api.service';
 import { hasContent } from "@/utils/hasContent";
+import { getMediaUrl } from "@/lib/media";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -119,7 +120,7 @@ export default async function AbtPage({ params }: PageProps) {
                               className={styles.clientCard}
                             >
                               <img
-                                src={client.image}
+                                src={getMediaUrl(client.image)}
                                 alt={client.name || 'Client logo'}
                                 width={160}
                                 height={80}

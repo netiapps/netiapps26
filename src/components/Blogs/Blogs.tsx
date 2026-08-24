@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Blogs.module.scss";
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
+import { getMediaUrl } from "@/lib/media";
 
 const BLOGS_PER_PAGE = 9;
 
@@ -67,7 +68,7 @@ export default function Blogs({ blogs }: any) {
               >
                 <div className={styles.imageWrapper}>
                   <img
-                    src={insight.acf.image}
+                    src={getMediaUrl(insight.acf.image)}
                     alt={insight.acf.title}
                     className={styles.image}
                   />

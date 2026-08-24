@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./ExcellenceSection.module.scss";
+import { getMediaUrl } from "@/lib/media";
 
 export default function ExcellenceSection(data: any) {
     return (
@@ -11,7 +12,7 @@ export default function ExcellenceSection(data: any) {
                     </div>
                     <div className={styles.imageCol}>
                         <Image
-                            src={data.data.image}
+                            src={getMediaUrl(data.data.image)}
                             alt="20+ Years of Excellence Badge"
                             width={350}
                             height={350}

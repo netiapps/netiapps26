@@ -4,6 +4,7 @@ import CareerCards from '@/components/CareerCards';
 import Image from 'next/image';
 import { ApiService } from "../../services/api.service";
 import { hasContent } from '@/utils/hasContent';
+import { getMediaUrl } from '@/lib/media';
 
 export default async function CareersPage() {
     const baseUrl = new ApiService();
@@ -47,7 +48,7 @@ export default async function CareersPage() {
             {hasContent(acf?.image) && (
             <section style={{ padding: '4rem 0' }}>
                 <img
-                    src={acf.image}
+                    src={getMediaUrl(acf.image)}
                     alt="Our Diverse Team"
                     width={1920}
                     height={400}

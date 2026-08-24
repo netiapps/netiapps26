@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./BlogsDetail.module.scss";
 import { Facebook, Twitter, Linkedin, Phone } from "lucide-react";
 import { cachedTranslate, useLanguage } from "@/context/LanguageContext";
+import { getMediaUrl } from "@/lib/media";
 
 export default function BlogsDetail({ blog }: any) {
   const { language, translate } = useLanguage();
@@ -91,7 +92,7 @@ export default function BlogsDetail({ blog }: any) {
             {/* Author */}
             <div className={styles.author}>
               <img
-                src={data.acf.author.image}
+                src={getMediaUrl(data.acf.author.image)}
                 alt={data.acf.author.name}
               />
               <div>
@@ -102,7 +103,7 @@ export default function BlogsDetail({ blog }: any) {
 
             {/* Image */}
             <div className={styles.image}>
-              <img src={data.acf.image} alt={data.acf.title} />
+              <img src={getMediaUrl(data.acf.image)} alt={data.acf.title} />
             </div>
 
             {/* Content */}
